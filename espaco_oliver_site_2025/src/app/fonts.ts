@@ -16,9 +16,9 @@ export const funnelSans = localFont({
   style: 'normal',
 });
 
-export const oldStandardTT = localFont({
-  src: '../../fonts/OldStandardTT-Regular.ttf',
-  variable: '--font-old-standard-tt',
+export const displaySerif = localFont({
+  src: '../../fonts/InstrumentSerif-Regular.ttf',
+  variable: '--font-display-serif',
   display: 'swap',
   weight: '400',
   style: 'normal',

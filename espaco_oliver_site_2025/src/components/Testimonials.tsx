@@ -1,7 +1,7 @@
 "use client"
 
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { useState } from 'react';
 
 // Componente de estrelas para avaliação
 const StarRating = ({ rating }: { rating: number }) => {
@@ -80,7 +80,7 @@ const Testimonials = () => {
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto">
-        <h2 className="text-4xl mb-3 text-center font-serif text-black" style={{ fontFamily: "var(--font-old-standard-tt)" }}>
+        <h2 className="text-4xl mb-3 text-center text-black" style={{ fontFamily: "var(--font-display-sans)" }}>
           Avaliações dos nossos clientes
         </h2>
         
@@ -95,7 +95,7 @@ const Testimonials = () => {
         <div className="max-w-4xl mx-auto relative">
           <button 
             onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 shadow-md hover:bg-gray-100 z-10"
             aria-label="Avaliação anterior"
           >
             <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ const Testimonials = () => {
             </svg>
           </button>
           
-          <div className="bg-white rounded-lg shadow-lg p-8 mx-14">
+          <div>
             <div className="flex justify-center mb-4">
               <StarRating rating={activeTestimonial.rating} />
             </div>
@@ -118,11 +118,12 @@ const Testimonials = () => {
             
             <div className="flex items-center justify-center gap-4">
               <div className="flex-shrink-0">
-                <div className="relative w-16 h-16 rounded-full overflow-hidden">
+                <div className="relative w-16 h-16 overflow-hidden">
                   <Image
                     src={activeTestimonial.photo}
                     alt={activeTestimonial.name}
                     fill
+                    sizes="64px"
                     className="object-cover"
                   />
                 </div>
@@ -147,7 +148,7 @@ const Testimonials = () => {
           
           <button 
             onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 shadow-md hover:bg-gray-100 z-10"
             aria-label="Próxima avaliação"
           >
             <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,7 +161,7 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-3 h-3 rounded-full ${activeIndex === index ? 'bg-pink-500' : 'bg-gray-300'}`}
+                className={`w-3 h-3 ${activeIndex === index ? 'bg-pink-500' : 'bg-gray-300'}`}
                 aria-label={`Ir para avaliação ${index + 1}`}
               />
             ))}

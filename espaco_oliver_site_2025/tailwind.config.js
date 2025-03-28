@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ec4899',
-        'primary-dark': '#be185d',
-        secondary: '#8b5cf6',
+        primary: '#000000',
+        'primary-dark': '#000000',
+        secondary: '#000000',
       },
       fontFamily: {
-        serif: ['var(--font-old-standard-tt)', 'serif'],
+        serif: ['var(--font-instrument-serif)', 'serif'],
         sans: ['var(--font-funnel-sans)', 'sans-serif'],
-        instrument: ['var(--font-instrument-serif)', 'serif'],
+        display: ['var(--font-display-serif)', 'serif'],
       },
     },
   },
   plugins: [],
-} 
+}; 

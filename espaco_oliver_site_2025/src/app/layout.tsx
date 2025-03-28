@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { instrumentSerif, funnelSans, oldStandardTT } from "./fonts";
+import { instrumentSerif, funnelSans, displaySerif } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${instrumentSerif.variable} ${funnelSans.variable} ${oldStandardTT.variable} antialiased`}
+        className={`${instrumentSerif.variable} ${funnelSans.variable} ${displaySerif.variable} antialiased`}
       >
         {children}
       </body>
