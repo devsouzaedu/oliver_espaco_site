@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../supabase';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState({
