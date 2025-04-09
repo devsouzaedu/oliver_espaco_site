@@ -1,0 +1,5 @@
+[33mcommit 84a778719d254937b9b1d9a9a8a81715229dcc1d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: José Eduardo <dev.souzaedu@gmail.com>
+Date:   Wed Apr 9 18:27:32 2025 -0300
+
+    Corrige configuração do PostCSS para usar tailwindcss diretamente
