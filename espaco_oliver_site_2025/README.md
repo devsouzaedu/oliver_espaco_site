@@ -34,8 +34,15 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 NEXT_PUBLIC_SITE_URL=https://seu-dominio-vercel.vercel.app
 ```
 
-6. Clique em "Deploy"
-7. Após o deploy, vá para a aba "Settings" → "Environment Variables" e atualize a variável `NEXT_PUBLIC_SITE_URL` com o domínio correto fornecido pela Vercel
+6. Em "Build & Development Settings", certifique-se de que:
+   - Framework Preset: Next.js
+   - Build Command: `npm install && npm run build`
+   - Output Directory: .next
+
+7. Clique em "Deploy"
+8. Após o deploy, vá para a aba "Settings" → "Environment Variables" e atualize a variável `NEXT_PUBLIC_SITE_URL` com o domínio correto fornecido pela Vercel
+
+> **Nota importante**: Se você encontrar erros relacionados a dependências durante o build (como "Can't resolve '@supabase/supabase-js'"), verifique se o Vercel está instalando todas as dependências corretamente. Você pode tentar forçar uma nova implantação clicando em "Redeploy" e marcar a opção "Clear build cache and deploy".
 
 ## Configuração do Supabase
 
