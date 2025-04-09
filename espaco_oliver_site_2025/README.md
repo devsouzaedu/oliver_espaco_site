@@ -25,7 +25,7 @@ Este projeto é um sistema de formulários para o Espaço Oliver, permitindo a c
 2. Acesse [vercel.com](https://vercel.com) e crie uma nova conta ou faça login
 3. Clique em "Add New" → "Project"
 4. Importe o repositório do GitHub
-5. Configure as seguintes variáveis de ambiente:
+5. Na tela de configuração do projeto, vá para a seção "Environment Variables" e adicione as seguintes variáveis:
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=https://lpfgkqcswyjsclmmctty.supabase.co
@@ -35,7 +35,7 @@ NEXT_PUBLIC_SITE_URL=https://seu-dominio-vercel.vercel.app
 ```
 
 6. Clique em "Deploy"
-7. Após o deploy, atualize a variável `NEXT_PUBLIC_SITE_URL` com o domínio correto fornecido pela Vercel
+7. Após o deploy, vá para a aba "Settings" → "Environment Variables" e atualize a variável `NEXT_PUBLIC_SITE_URL` com o domínio correto fornecido pela Vercel
 
 ## Configuração do Supabase
 
