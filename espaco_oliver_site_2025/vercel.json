@@ -2,7 +2,6 @@
   "buildCommand": "npm install --force && npm run build",
   "framework": "nextjs",
   "outputDirectory": ".next",
-  "nodeVersion": "18.x",
   "rewrites": [
     { "source": "/admin", "destination": "/admin/dashboard" },
     { "source": "/admin/", "destination": "/admin/dashboard" }
