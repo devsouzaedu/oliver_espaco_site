@@ -1,51 +1,150 @@
 "use client"
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import React, { useRef } from 'react';
+import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 
 const AboutSection = () => {
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
     <motion.section 
+      id="sobre-nos"
       ref={ref}
-      className="py-24 bg-[#f9f5f2]"
+      className="py-16 px-4 bg-white"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          <motion.div 
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <motion.h2 
-              className="text-3xl mb-8 tracking-widest uppercase text-black" 
-              style={{ fontFamily: "var(--font-instrument-serif)", letterSpacing: '0.2em' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+      <div className="container mx-auto">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Espaço Oliver
-            </motion.h2>
+              <div className="relative h-[600px] w-full rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="/images/espaco_oliver_beauty_fachada.jpg"
+                  alt="Fachada do Espaço Oliver Beauty"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            </motion.div>
             
-            <motion.p 
-              className="text-gray-700 text-lg leading-loose text-center mx-auto" 
-              style={{ fontFamily: "var(--font-funnel-sans)", maxWidth: '80%', lineHeight: '1.8' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
             >
-              O Espaço Oliver, um estúdio de nail art incrível bem no centro de Barueri, 
-              torna a experiência de fazer as unhas algo especial e único para cada cliente. 
-              Aqui, você encontra coleções sazonais com designs e cores pensados especialmente 
-              para quem quer se sentir cuidada, bonita e cheia de estilo, tudo com um toque bem pessoal.
-            </motion.p>
+              <motion.p 
+                className="uppercase text-sm tracking-wider mb-2 text-gray-600"
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+                initial={{ opacity: 0, y: 15 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+              >
+                NOSSA HISTÓRIA
+              </motion.p>
+              <motion.h2 
+                className="text-4xl mb-6 text-black"
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+                initial={{ opacity: 0, y: 15 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                Sobre o Espaço Oliver Beauty
+              </motion.h2>
+              
+              <motion.div
+                className="space-y-4 text-gray-600"
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+              >
+                <p>
+                  Fundado em 2015, o Espaço Oliver Beauty nasceu da paixão pela arte de transformar mãos e unhas em verdadeiras obras de arte. Começamos como um pequeno estúdio e hoje somos referência em nail design na região.
+                </p>
+                <p>
+                  Nossa missão é proporcionar momentos de beleza, autocuidado e bem-estar para todos os nossos clientes, oferecendo serviços de alta qualidade em um ambiente acolhedor e sofisticado.
+                </p>
+                <p>
+                  Com uma equipe de profissionais altamente capacitados e em constante atualização, trabalhamos com as melhores técnicas e produtos do mercado, garantindo resultados impecáveis e duradouros.
+                </p>
+                <p>
+                  No Espaço Oliver Beauty, acreditamos que cuidar das unhas vai além da estética – é um momento de conexão consigo mesmo, uma pausa no dia a dia para se dedicar ao autocuidado e ao bem-estar.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                className="mt-8 grid grid-cols-3 gap-4"
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+              >
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold text-black mb-2" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                    8+
+                  </h3>
+                  <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                    Anos de experiência
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold text-black mb-2" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                    15+
+                  </h3>
+                  <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                    Profissionais
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold text-black mb-2" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                    5000+
+                  </h3>
+                  <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                    Clientes satisfeitos
+                  </p>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+          
+          <motion.div 
+            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6"
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <div className="bg-[#F3EDE8] p-6 rounded-lg shadow-md">
+              <h3 className="text-xl mb-3 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                Nossa Missão
+              </h3>
+              <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                Proporcionar experiências únicas de beleza e bem-estar, transformando o cuidado com as unhas em momentos especiais de autocuidado.
+              </p>
+            </div>
+            <div className="bg-[#F3EDE8] p-6 rounded-lg shadow-md">
+              <h3 className="text-xl mb-3 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                Nossa Visão
+              </h3>
+              <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                Ser referência em nail design, reconhecido pela excelência, inovação e pelo compromisso com a qualidade e satisfação dos clientes.
+              </p>
+            </div>
+            <div className="bg-[#F3EDE8] p-6 rounded-lg shadow-md">
+              <h3 className="text-xl mb-3 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                Nossos Valores
+              </h3>
+              <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                Excelência, ética, respeito, inovação, comprometimento com o cliente e valorização dos nossos profissionais.
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

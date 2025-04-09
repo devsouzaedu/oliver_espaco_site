@@ -1,9 +1,6 @@
 "use client"
 
 import React from 'react';
-import Image from 'next/image';
-// Componentes originais (comentados temporariamente)
-/*
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Banner from "@/components/Banner";
@@ -16,49 +13,28 @@ import SocialInspiration from "@/components/SocialInspiration";
 import Location from "@/components/Location";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
-*/
+import OurSpaceSection from '@/components/OurSpaceSection';
+import OurTeamSection from '@/components/OurTeamSection';
+import FAQSection from '@/components/FAQSection';
+import ContactSection from '@/components/ContactSection';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-[#F3EDE8] p-4">
-      <div className="max-w-md mx-auto text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f7f3ec]">
+      <div className="text-center">
         <div className="mb-8">
-          <Image 
-            src="/images/logo_espaco_oliver.png" 
-            alt="Espaço Oliver" 
-            width={200} 
-            height={100}
+          <img 
+            src="/logo-oliver.svg" 
+            alt="Espaço Oliver"
+            width={120}
+            height={120}
             className="mx-auto"
           />
         </div>
-        <h1 className="text-3xl mb-4 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
-          Site em criação
-        </h1>
-        <p className="text-xl mb-6 text-gray-700" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-          Em breve um novo site do Espaço Oliver Beauty
-        </p>
+        <h1 className="text-3xl font-serif mb-4 text-black">Site em criação</h1>
+        <p className="text-lg text-black">Em breve um novo site do Espaço Oliver Beauty</p>
       </div>
-    </main>
+    </div>
   );
 }
-
-{/* Conteúdo original (temporariamente desativado)
-export default function OriginalHome() {
-  return (
-    <main className="flex flex-col min-h-screen">
-      <Banner />
-      <Navbar />
-      <Hero />
-      <Gallery />
-      <TeamCards />
-      <GiftCard />
-      <SocialInspiration />
-      <Location />
-      <Newsletter />
-      <Testimonials />
-      <AboutSection />
-      <Footer />
-    </main>
-  );
-}
-*/}

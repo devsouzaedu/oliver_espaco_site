@@ -1,45 +1,91 @@
-# Espaço Oliver - Site Institucional
+# Espaço Oliver - Sistema de Formulários
 
-Este é o site institucional do Espaço Oliver, um estúdio de nail art localizado em Barueri, São Paulo.
+Este projeto é um sistema de formulários para o Espaço Oliver, permitindo a criação e gerenciamento de formulários personalizados, bem como a visualização das submissões recebidas.
+
+## Funcionalidades
+
+- Área administrativa protegida com login
+- Criação de formulários com campos personalizáveis
+- Upload de imagem de capa para formulários
+- Compartilhamento de formulários via link
+- Visualização e exportação das submissões de formulários
+- Interface intuitiva e responsiva
 
 ## Tecnologias Utilizadas
 
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Para tipagem estática
-- **Tailwind CSS** - Para estilização
-- **Fontes Personalizadas** - OldStandardTT e FunnelSans
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Supabase (autenticação, banco de dados e armazenamento)
 
-## Estrutura do Projeto
+## Configuração para Deploy na Vercel
 
-O site conta com as seguintes seções:
+1. Faça fork/clone deste repositório
+2. Acesse [vercel.com](https://vercel.com) e crie uma nova conta ou faça login
+3. Clique em "Add New" → "Project"
+4. Importe o repositório do GitHub
+5. Configure as seguintes variáveis de ambiente:
 
-- **Banner** - Chamada para agendamento no topo da página
-- **Navbar** - Barra de navegação com logo e links
-- **Hero** - Seção principal com imagem de fundo e chamada para ação
-- **Gallery** - Galeria de trabalhos realizados com navegação slide
-- **Testimonials** - Depoimentos de clientes com fotos e avaliações
-- **AboutSection** - Descrição sobre o Espaço Oliver
+```
+NEXT_PUBLIC_SUPABASE_URL=https://lpfgkqcswyjsclmmctty.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxwZmdrcWNzd3lqc2NsbW1jdHR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQyMjMyOTEsImV4cCI6MjA1OTc5OTI5MX0.vv3cEKMK89gSna4w6Aj_PjMssBsnVdf-i1mzhytjIHw
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxwZmdrcWNzd3lqc2NsbW1jdHR5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NDIyMzI5MSwiZXhwIjoyMDU5Nzk5MjkxfQ.9ZjfkvUzoIFoC-SfY26KDqSU3PU55VCRuOa2bo6igVo
+NEXT_PUBLIC_SITE_URL=https://seu-dominio-vercel.vercel.app
+```
 
-## Como Executar Localmente
+6. Clique em "Deploy"
+7. Após o deploy, atualize a variável `NEXT_PUBLIC_SITE_URL` com o domínio correto fornecido pela Vercel
 
-1. Clone o repositório
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Execute o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-4. Acesse `http://localhost:3000` em seu navegador
+## Configuração do Supabase
 
-## Deploy na Vercel
+1. Crie um bucket chamado "forms" no Storage do Supabase
+2. Configure as políticas de segurança para permitir uploads (veja abaixo)
+3. Desabilite temporariamente o RLS (Row Level Security) nas tabelas:
 
-Este projeto está configurado para ser facilmente implantado na Vercel:
+```sql
+ALTER TABLE forms DISABLE ROW LEVEL SECURITY;
+ALTER TABLE form_fields DISABLE ROW LEVEL SECURITY;
+ALTER TABLE form_submissions DISABLE ROW LEVEL SECURITY;
+```
 
-1. Faça o fork ou clone deste repositório
-2. Conecte seu repositório à sua conta Vercel
-3. A Vercel irá detectar automaticamente as configurações do Next.js e realizar o deploy
+4. Execute o script SQL de criação das tabelas (disponível em `scripts/supabase-schema.sql`)
+5. Crie um usuário administrador no painel de Authentication do Supabase
+
+## Política de Storage para o Bucket "forms"
+
+Execute o seguinte SQL no Editor SQL do Supabase:
+
+```sql
+-- Permitir uploads para usuários autenticados
+CREATE POLICY "Allow uploads for authenticated users"
+ON storage.objects FOR INSERT
+TO authenticated
+WITH CHECK (bucket_id = 'forms');
+
+-- Permitir acesso público para visualização
+CREATE POLICY "Allow public access to forms files"
+ON storage.objects FOR SELECT
+TO public
+USING (bucket_id = 'forms');
+```
+
+## Acessando a Área Administrativa
+
+1. Acesse `/admin/login` para fazer login com o usuário criado no Supabase
+2. Após o login, você será redirecionado para o dashboard administrativo
+
+## Desenvolvimento Local
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar servidor de desenvolvimento
+npm run dev
+```
+
+Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação.
 
 ## Créditos
 
