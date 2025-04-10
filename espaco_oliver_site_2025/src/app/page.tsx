@@ -19,6 +19,52 @@ import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
+
+// Variantes para diferentes tipos de animações
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: -30 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: 30 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { 
+    opacity: 1,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
+const scaleUp = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { 
+    opacity: 1, 
+    scale: 1,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
 
 export default function Home() {
   const [showPasswordModal, setShowPasswordModal] = useState(false);
@@ -58,15 +104,88 @@ export default function Home() {
         <Banner />
         <Navbar />
         <Hero />
-        <Gallery />
-        <OurSpaceSection />
-        <OurTeamSection />
-        <GiftCard />
-        <SocialInspiration />
-        <FAQSection />
-        <ContactSection />
-        <Location />
-        <Newsletter />
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <Gallery />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInRight}
+        >
+          <OurSpaceSection />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInLeft}
+        >
+          <OurTeamSection />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={scaleUp}
+        >
+          <GiftCard />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeIn}
+        >
+          <SocialInspiration />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <FAQSection />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInRight}
+        >
+          <ContactSection />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={fadeInLeft}
+        >
+          <Location />
+        </motion.div>
+        
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.15 }}
+          variants={fadeIn}
+        >
+          <Newsletter />
+        </motion.div>
+        
         <Footer />
       </main>
     );
@@ -75,7 +194,12 @@ export default function Home() {
   // Página "Em breve" com botão de acesso admin
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#f7f3ec]">
-      <div className="text-center">
+      <motion.div 
+        className="text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="mb-8">
           <img 
             src="/logo-oliver.svg" 
@@ -88,18 +212,30 @@ export default function Home() {
         <h1 className="text-3xl font-serif mb-4 text-black">Site em criação</h1>
         <p className="text-lg text-black mb-8">Em breve um novo site do Espaço Oliver Beauty</p>
         
-        <button 
+        <motion.button 
           onClick={handleAdminAccess}
           className="px-4 py-2 bg-[#C59F6E] text-white rounded-md hover:bg-[#B08C5E] transition-colors"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Acesso Admin
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
 
       {/* Modal de senha */}
       {showPasswordModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+        <motion.div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.div 
+            className="bg-white p-6 rounded-lg shadow-lg w-80"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+          >
             <h2 className="text-xl font-semibold mb-4 text-black">Acesso Restrito</h2>
             
             <div className="mb-4">
@@ -115,21 +251,25 @@ export default function Home() {
             </div>
             
             <div className="flex justify-end space-x-2">
-              <button 
+              <motion.button 
                 onClick={() => setShowPasswordModal(false)}
                 className="px-3 py-1.5 border border-gray-300 rounded-md hover:bg-gray-100 text-black"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Cancelar
-              </button>
-              <button 
+              </motion.button>
+              <motion.button 
                 onClick={handlePasswordSubmit}
                 className="px-3 py-1.5 bg-[#C59F6E] text-black rounded-md hover:bg-[#B08C5E]"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Acessar
-              </button>
+              </motion.button>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
