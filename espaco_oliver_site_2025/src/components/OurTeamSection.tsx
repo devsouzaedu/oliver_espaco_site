@@ -130,7 +130,7 @@ const OurTeamSection = () => {
                     alt={`${member.name} - ${member.role}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="p-6">
@@ -176,7 +176,7 @@ const OurTeamSection = () => {
                   alt="Equipe Espaço Oliver Beauty"
                   fill
                   sizes="(max-width: 1200px) 100vw, 1200px"
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                 />
               </div>
             </div>

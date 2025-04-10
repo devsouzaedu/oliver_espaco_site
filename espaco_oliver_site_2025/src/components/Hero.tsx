@@ -38,7 +38,7 @@ const Hero = () => {
       {images.map((image, index) => (
         <div 
           key={index}
-          className="absolute inset-0 bg-cover bg-center z-0 transition-opacity duration-1000 ease-in-out"
+          className="absolute inset-0 bg-cover bg-top z-0 transition-opacity duration-1000 ease-in-out"
           style={{ 
             backgroundImage: `url('${image}')`,
             opacity: currentImageIndex === index ? 1 : 0,
