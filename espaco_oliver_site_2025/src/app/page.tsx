@@ -21,46 +21,41 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
-// Variantes para diferentes tipos de animações - sempre totalmente visíveis
-const fadeInUp = {
-  hidden: { opacity: 1, y: 30 },
+// Variantes para diferentes tipos de animações - movimento sem alterar a visibilidade
+const moveUp = {
+  hidden: { y: 30 },
   visible: { 
-    opacity: 1, 
     y: 0,
     transition: { duration: 0.8, ease: "easeOut" }
   }
 };
 
-const fadeInRight = {
-  hidden: { opacity: 1, x: -30 },
+const moveRight = {
+  hidden: { x: -30 },
   visible: { 
-    opacity: 1, 
     x: 0,
     transition: { duration: 0.8, ease: "easeOut" }
   }
 };
 
-const fadeInLeft = {
-  hidden: { opacity: 1, x: 30 },
+const moveLeft = {
+  hidden: { x: 30 },
   visible: { 
-    opacity: 1, 
     x: 0,
     transition: { duration: 0.8, ease: "easeOut" }
   }
 };
 
-const fadeIn = {
-  hidden: { opacity: 1 },
+const noMove = {
+  hidden: {},
   visible: { 
-    opacity: 1,
     transition: { duration: 0.8, ease: "easeOut" }
   }
 };
 
 const scaleUp = {
-  hidden: { opacity: 1, scale: 0.98 },
+  hidden: { scale: 0.98 },
   visible: { 
-    opacity: 1, 
     scale: 1,
     transition: { duration: 0.8, ease: "easeOut" }
   }
@@ -100,39 +95,44 @@ export default function Home() {
   // Mostrar a página completa se autenticado
   if (typeof window !== 'undefined' && isAuthenticated()) {
     return (
-      <main>
+      <main className="bg-white">
         <Banner />
         <Navbar />
         <Hero />
         
+        {/* As divs de seção têm fundo branco ou #F3EDE8 explicitamente definido */}
         <motion.div
+          className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInUp}
+          variants={moveUp}
         >
           <Gallery />
         </motion.div>
         
         <motion.div
+          className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInRight}
+          variants={moveRight}
         >
           <OurSpaceSection />
         </motion.div>
         
         <motion.div
+          className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInLeft}
+          variants={moveLeft}
         >
           <OurTeamSection />
         </motion.div>
         
         <motion.div
+          className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
@@ -142,46 +142,51 @@ export default function Home() {
         </motion.div>
         
         <motion.div
+          className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeIn}
+          variants={noMove}
         >
           <SocialInspiration />
         </motion.div>
         
         <motion.div
+          className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInUp}
+          variants={moveUp}
         >
           <FAQSection />
         </motion.div>
         
         <motion.div
+          className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInRight}
+          variants={moveRight}
         >
           <ContactSection />
         </motion.div>
         
         <motion.div
+          className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeInLeft}
+          variants={moveLeft}
         >
           <Location />
         </motion.div>
         
         <motion.div
+          className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
-          variants={fadeIn}
+          variants={noMove}
         >
           <Newsletter />
         </motion.div>
