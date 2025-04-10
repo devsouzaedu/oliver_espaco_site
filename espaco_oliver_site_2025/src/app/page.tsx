@@ -100,15 +100,15 @@ export default function Home() {
       {showPasswordModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-80">
-            <h2 className="text-xl font-semibold mb-4">Acesso Restrito</h2>
+            <h2 className="text-xl font-semibold mb-4 text-black">Acesso Restrito</h2>
             
             <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700 mb-1">Senha</label>
+              <label className="block text-sm font-medium text-black mb-1">Senha</label>
               <input 
                 type="password" 
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C59F6E]"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C59F6E] text-black"
                 onKeyDown={(e) => e.key === 'Enter' && handlePasswordSubmit()}
               />
               {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
@@ -117,13 +117,13 @@ export default function Home() {
             <div className="flex justify-end space-x-2">
               <button 
                 onClick={() => setShowPasswordModal(false)}
-                className="px-3 py-1.5 border border-gray-300 rounded-md hover:bg-gray-100"
+                className="px-3 py-1.5 border border-gray-300 rounded-md hover:bg-gray-100 text-black"
               >
                 Cancelar
               </button>
               <button 
                 onClick={handlePasswordSubmit}
-                className="px-3 py-1.5 bg-[#C59F6E] text-white rounded-md hover:bg-[#B08C5E]"
+                className="px-3 py-1.5 bg-[#C59F6E] text-black rounded-md hover:bg-[#B08C5E]"
               >
                 Acessar
               </button>
