@@ -11,17 +11,17 @@ const FAQSection = () => {
     {
       id: 1,
       question: 'Quanto tempo dura o atendimento (média todos os procedimentos)',
-      answer: 'Entre 45min a 2hrs'
+      answer: 'Entre 1h a 3h30min'
     },
     {
       id: 2,
       question: 'Quanto tempo dura a esmaltação em gel em unhas naturais?',
-      answer: 'Até 30 dias'
+      answer: 'Até 25 dias'
     },
     {
       id: 3,
       question: 'Precisa fazer manutenção, se sim, quanto tempo?',
-      answer: 'Sim, recomendamos o retorno em 15 dias.'
+      answer: 'Sim, recomendamos o período dentro de 30 dias, podendo fazer com 15, 20 ou 30 dias'
     },
     {
       id: 4,
@@ -31,17 +31,17 @@ const FAQSection = () => {
     {
       id: 5,
       question: 'Vocês oferecem pacotes mensais ou promoções?',
-      answer: 'Sim, fique ligada no nosso perfil do instagram/whatsapp para saber mais!'
+      answer: 'Oferecemos algumas promoções de épocas, fique ligada no nosso site e Instagram que você sempre verá!'
     },
     {
       id: 6,
       question: 'Unhas roídas podem fazer alongamento?',
-      answer: 'Sim, é perfeitamente possivel realizar alongamentos em unhas roidas'
+      answer: 'Sim, é perfeitamente possivel realizar alongamentos em unhas roidas, precisa ser feita primeiramente uma analise do quão roída, e como 1ª manutenção tem o intervalo de menos de 15 dias, entre em contato para maiores duvidas'
     },
     {
       id: 7,
       question: 'Trabalham com podologia?',
-      answer: 'Sim, nosso time tem podológa preparada para te atender'
+      answer: 'Não, mas estamos aprimorando nosso time!'
     },
     {
       id: 8,
@@ -51,12 +51,12 @@ const FAQSection = () => {
     {
       id: 9,
       question: 'Fazem manutenções de outra profissional?',
-      answer: 'Não, somente manutenção feita aqui no Espaço'
+      answer: 'Sim, somente mediante à foto de como está'
     },
     {
       id: 10,
       question: 'Qual o melhor procedimento para unhas?',
-      answer: 'Blindagem e Alongamento em gel'
+      answer: 'o que for ideal para seu dia a dia!'
     }
   ];
 

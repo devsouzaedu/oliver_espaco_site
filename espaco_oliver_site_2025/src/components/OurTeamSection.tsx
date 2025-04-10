@@ -14,64 +14,37 @@ const OurTeamSection = () => {
       id: 1,
       name: 'Mariana',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_mariana (1).JPG',
-      instagram: '@mariana.espacooliver'
+      image: '/images/espaco_oliver_beauty_time_mariana (1).JPG'
     },
     {
       id: 2,
       name: 'Joyce',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_joyce (1).jpg',
-      instagram: '@joyce.espacooliver'
+      image: '/images/espaco_oliver_beauty_time_joyce (1).jpg'
     },
     {
       id: 3,
       name: 'Nega',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_nega.jpg',
-      instagram: '@nega.espacooliver'
+      image: '/images/espaco_oliver_beauty_time_nega.jpg'
     },
     {
       id: 4,
       name: 'Leticia',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_leticia (1).jpg',
-      instagram: '@leticia.espacooliver'
+      image: '/images/espaco_oliver_beauty_time_leticia (1).jpg'
     },
     {
       id: 5,
       name: 'Geovanna',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_geovanna (1).jpg',
-      instagram: '@geovanna.espacooliver'
+      image: '/images/espaco_oliver_beauty_time_geovanna (1).jpg'
     },
     {
       id: 6,
       name: 'Simone',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_simone (1).jpg',
-      instagram: '@simone.espacooliver'
-    },
-    {
-      id: 7,
-      name: 'Espaço Oliver',
-      role: 'Studio',
-      image: '/images/equipe/espaco_oliver_logo_perfil.png',
-      instagram: '@espacooliverbeauty'
-    },
-    {
-      id: 8,
-      name: 'Equipe Oliver',
-      role: 'Time Completo',
-      image: '/images/equipe/equipe_espaco_oliver.jpeg',
-      instagram: '@espacooliverbeauty'
-    },
-    {
-      id: 9,
-      name: 'Eventos',
-      role: 'Nail Parties',
-      image: '/images/equipe/nail_party_espaco_oliver.jpeg',
-      instagram: '@espacooliverbeauty'
+      image: '/images/espaco_oliver_beauty_time_simone (1).jpg'
     }
   ];
 
@@ -168,21 +141,11 @@ const OurTeamSection = () => {
                     {member.name}
                   </h3>
                   <p 
-                    className="text-gray-600 mb-3"
+                    className="text-gray-600"
                     style={{ fontFamily: "var(--font-funnel-sans)" }}
                   >
                     {member.role}
                   </p>
-                  <a 
-                    href={`https://www.instagram.com/${member.instagram.replace('@', '')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-black hover:text-gray-700 transition-colors"
-                    style={{ fontFamily: "var(--font-funnel-sans)" }}
-                  >
-                    <FaInstagram className="h-4 w-4 mr-2" />
-                    <span>{member.instagram.replace('@', '')}</span>
-                  </a>
                 </div>
               </motion.div>
             ))}
