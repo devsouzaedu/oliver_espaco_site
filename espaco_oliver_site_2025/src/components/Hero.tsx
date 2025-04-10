@@ -51,15 +51,17 @@ const Hero = () => {
       <motion.div 
         className="z-10 text-center text-white"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.1 }}
       >
         <motion.h1 
           className="text-5xl font-bold mb-4" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           Unhas feitas
         </motion.h1>
@@ -67,15 +69,17 @@ const Hero = () => {
           className="text-3xl mb-8" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           Você feliz
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.55 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           <Link 
             href="/agendar" 
@@ -91,8 +95,9 @@ const Hero = () => {
       <motion.div 
         className="absolute bottom-6 z-10 flex space-x-2 justify-center w-full"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.75 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        viewport={{ once: false, amount: 0.1 }}
       >
         {images.map((_, index) => (
           <button
