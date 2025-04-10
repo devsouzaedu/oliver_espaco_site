@@ -9,7 +9,12 @@ const Hero = () => {
   const images = [
     '/images/hero_espaco_oliver_manicures.jpeg',
     '/images/hero_espaco_oliver_manicures (1).jpeg',
-    '/images/hero_espaco_oliver_manicures (2).jpeg'
+    '/images/hero_espaco_oliver_manicures (2).jpeg',
+    '/images/equipe/equipe_espaco_oliver.jpeg',
+    '/images/equipe/nail_party_espaco_oliver.jpeg',
+    '/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpeg',
+    '/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpeg',
+    '/images/espaco_oliver_beauty_time_todas_juntas (4).JPG'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

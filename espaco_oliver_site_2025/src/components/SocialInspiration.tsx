@@ -15,7 +15,7 @@ const SocialInspiration = () => {
       className="py-16 px-4 bg-[#F3EDE8]"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
@@ -23,7 +23,7 @@ const SocialInspiration = () => {
             className="relative aspect-video overflow-hidden shadow-lg mb-8"
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 30, scale: 0.95 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             whileHover={{ scale: 1.02 }}
           >
             <Image
@@ -38,14 +38,14 @@ const SocialInspiration = () => {
             className="text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
           >
             <motion.p 
               className="text-gray-600 text-sm uppercase tracking-wider mb-2" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.25 }}
             >
               FIQUE INSPIRADA
             </motion.p>
@@ -54,14 +54,14 @@ const SocialInspiration = () => {
               style={{ fontFamily: "var(--font-instrument-serif)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
               Siga o Espaço Oliver no Instagram @espacooliverbeauty
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
+              transition={{ duration: 0.4, delay: 0.35 }}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >

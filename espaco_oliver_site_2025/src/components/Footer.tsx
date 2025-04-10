@@ -74,28 +74,28 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Serviços</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/servicos/corte" className="text-white hover:text-gray-300 transition-colors">
-                  Cortes
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/coloracao" className="text-white hover:text-gray-300 transition-colors">
-                  Coloração
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/tratamentos" className="text-white hover:text-gray-300 transition-colors">
-                  Tratamentos
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/penteados" className="text-white hover:text-gray-300 transition-colors">
-                  Penteados
-                </Link>
-              </li>
-              <li>
                 <Link href="/servicos/manicure" className="text-white hover:text-gray-300 transition-colors">
                   Manicure e Pedicure
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos/alongamento" className="text-white hover:text-gray-300 transition-colors">
+                  Alongamento
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos/blindagem" className="text-white hover:text-gray-300 transition-colors">
+                  Blindagem
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos/esmaltacao" className="text-white hover:text-gray-300 transition-colors">
+                  Esmaltação em Gel
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos/podologia" className="text-white hover:text-gray-300 transition-colors">
+                  Podologia
                 </Link>
               </li>
             </ul>
@@ -105,9 +105,9 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Contato</h3>
             <address className="not-italic text-white space-y-2" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-              <p>Rua das Flores, 123</p>
-              <p>São Paulo - SP</p>
-              <p>CEP: 01234-567</p>
+              <p>Rua Campos Sales, 303</p>
+              <p>Centro - Barueri/SP</p>
+              <p>CEP: 06401-000</p>
               <p>Tel: (11) 95618-4727</p>
               <p>Email: site.eobeauty@gmail.com</p>
             </address>
@@ -118,7 +118,7 @@ const Footer = () => {
 
         <div className="text-center">
           <p className="text-white text-sm" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-            &copy; {currentYear} Espaço Oliver. Todos os direitos reservados.
+            &copy; {currentYear} Espaço Oliver. Todos os direitos reservados. Site desenvolvido por <a href="https://jmsouza.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline">JMSOUZA</a>, com muito amor &lt;3
           </p>
         </div>
       </div>

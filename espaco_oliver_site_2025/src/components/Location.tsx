@@ -60,7 +60,7 @@ const Location = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Av. Campos Sales 303, Centro - Barueri
+            Rua Campos Sales, 303, Centro - Barueri
           </motion.p>
 
           <motion.div 
