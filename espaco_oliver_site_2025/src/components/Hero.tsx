@@ -7,14 +7,17 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const images = [
-    '/images/hero_espaco_oliver_manicures.jpeg',
+    '/images/espaco_oliver_beauty_time_todas_juntas (4).JPG',
     '/images/hero_espaco_oliver_manicures (1).jpeg',
-    '/images/hero_espaco_oliver_manicures (2).jpeg',
-    '/images/equipe/equipe_espaco_oliver.jpeg',
-    '/images/equipe/nail_party_espaco_oliver.jpeg',
-    '/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpeg',
-    '/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpeg',
-    '/images/espaco_oliver_beauty_time_todas_juntas (4).JPG'
+    '/images/card1_conhecanossotime_espaço_oliver.jpeg',
+    '/images/espaco_oliver_beauty_foco_interno (1).jpg',
+    '/images/espaco_oliver_beauty_interno_cadeiras (1).jpg',
+    '/images/espaco_oliver_beauty_interno_cadeiras (2).jpg',
+    '/images/espaco_oliver_beauty_interno_cadeiras (3).jpg',
+    '/images/espaco_oliver_beauty_interno_cadeiras (4).jpg',
+    '/images/espaco_oliver_beauty_interno_cadeiras (6).jpg',
+    '/images/espaco_oliver_beauty_time_todas_juntas (1).JPG',
+    '/images/espaco_oliver_beauty_time_todas_juntas (2).JPG'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
