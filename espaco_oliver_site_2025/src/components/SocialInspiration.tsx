@@ -56,7 +56,7 @@ const SocialInspiration = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Siga o Espaço Oliver no Instagram e TikTok @espaço_oliver
+              Siga o Espaço Oliver no Instagram @espacooliverbeauty
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -66,7 +66,7 @@ const SocialInspiration = () => {
               whileTap={{ scale: 0.98 }}
             >
               <Link
-                href="https://instagram.com/espaco_oliver"
+                href="https://www.instagram.com/espacooliverbeauty"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-block"

@@ -25,13 +25,13 @@ const Footer = () => {
               Tornando mulheres mais belas e confiantes há mais de 15 anos.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+              <a href="https://www.instagram.com/espacooliverbeauty" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                 <FaInstagram size={24} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+              <a href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                 <FaWhatsapp size={24} />
               </a>
             </div>
@@ -108,8 +108,8 @@ const Footer = () => {
               <p>Rua das Flores, 123</p>
               <p>São Paulo - SP</p>
               <p>CEP: 01234-567</p>
-              <p>Tel: (11) 99999-9999</p>
-              <p>Email: contato@espacooliver.com</p>
+              <p>Tel: (11) 95618-4727</p>
+              <p>Email: site.eobeauty@gmail.com</p>
             </address>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Gallery = () => {
-  const instagramUrl = "https://www.instagram.com/espaco_oliver/";
+  const instagramUrl = "https://www.instagram.com/espacooliverbeauty/";
   
   const galleryItems = [
     {

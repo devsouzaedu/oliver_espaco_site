@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Location = () => {
   const businessHours = [
@@ -103,12 +104,12 @@ const Location = () => {
             whileTap={{ scale: 0.98 }}
           >
             <Link
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-block"
-              style={{ fontFamily: "var(--font-instrument-serif)" }}
+              className="inline-flex items-center px-6 py-3 bg-[#25D366] text-white font-medium rounded-md hover:bg-[#128C7E] transition-colors"
             >
+              <FaWhatsapp className="mr-2 h-5 w-5" />
               Fale conosco pelo WhatsApp
             </Link>
           </motion.div>

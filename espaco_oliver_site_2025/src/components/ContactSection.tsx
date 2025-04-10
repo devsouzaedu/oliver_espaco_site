@@ -81,13 +81,13 @@ const ContactSection = () => {
                   <div>
                     <p className="text-gray-600 font-medium mb-1" style={{ fontFamily: "var(--font-funnel-sans)" }}>WhatsApp</p>
                     <Link 
-                      href="https://wa.me/5511998889988" 
+                      href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-black hover:text-gray-700 transition-colors"
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
-                      (11) 99888-9988
+                      (11) 95618-4727
                     </Link>
                   </div>
                 </motion.li>
@@ -103,11 +103,11 @@ const ContactSection = () => {
                   <div>
                     <p className="text-gray-600 font-medium mb-1" style={{ fontFamily: "var(--font-funnel-sans)" }}>Email</p>
                     <Link 
-                      href="mailto:contato.espacooliver@gmail.com"
+                      href="mailto:site.eobeauty@gmail.com"
                       className="text-black hover:text-gray-700 transition-colors"
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
-                      contato.espacooliver@gmail.com
+                      site.eobeauty@gmail.com
                     </Link>
                   </div>
                 </motion.li>
@@ -146,13 +146,13 @@ const ContactSection = () => {
                   <div>
                     <p className="text-gray-600 font-medium mb-1" style={{ fontFamily: "var(--font-funnel-sans)" }}>Instagram</p>
                     <Link 
-                      href="https://instagram.com/espaco_oliver"
+                      href="https://www.instagram.com/espacooliverbeauty"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-black hover:text-gray-700 transition-colors"
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
-                      @espaco_oliver
+                      @espacooliverbeauty
                     </Link>
                   </div>
                 </motion.li>
@@ -179,7 +179,7 @@ const ContactSection = () => {
               
               <div className="text-center">
                 <Link
-                  href="https://wa.me/5511998889988?text=Olá,%20gostaria%20de%20agendar%20um%20horário"
+                  href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center"

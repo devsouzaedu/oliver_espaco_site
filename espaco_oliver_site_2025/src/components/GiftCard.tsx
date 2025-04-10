@@ -26,7 +26,7 @@ const GiftCard = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Image
-              src="/images/SpringSummer_Editorial_09_005_0.5x_1280x1280_crop_center_c483eda5-db45-4205-a983-7aed6da2d25e.webp"
+              src="/images/cartao_de_presente_espaco_oliver_beauty.png"
               alt="Cartão presente"
               fill
               sizes="(max-width: 1024px) 100vw, 1024px"

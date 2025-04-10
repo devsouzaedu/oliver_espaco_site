@@ -54,24 +54,24 @@ const OurTeamSection = () => {
     },
     {
       id: 7,
-      name: 'Gilmara',
-      role: 'Diretora/Proprietária',
-      image: '/images/espaco_oliver_beauty_time_todas_juntas (1).JPG',
-      instagram: '@espaco_oliver'
+      name: 'Espaço Oliver',
+      role: 'Studio',
+      image: '/images/equipe/espaco_oliver_logo_perfil.png',
+      instagram: '@espacooliverbeauty'
     },
     {
       id: 8,
-      name: 'Agatha',
-      role: 'Recepcionista',
-      image: '/images/espaco_oliver_beauty_time_todas_juntas (2).JPG',
-      instagram: '@espaco_oliver'
+      name: 'Equipe Oliver',
+      role: 'Time Completo',
+      image: '/images/equipe/equipe_espaco_oliver.jpeg',
+      instagram: '@espacooliverbeauty'
     },
     {
       id: 9,
-      name: 'Viviane',
-      role: 'Social Media',
-      image: '/images/espaco_oliver_beauty_time_todas_juntas (3).JPG',
-      instagram: '@espaco_oliver'
+      name: 'Eventos',
+      role: 'Nail Parties',
+      image: '/images/equipe/nail_party_espaco_oliver.jpeg',
+      instagram: '@espacooliverbeauty'
     }
   ];
 
@@ -174,7 +174,7 @@ const OurTeamSection = () => {
                     {member.role}
                   </p>
                   <a 
-                    href={`https://instagram.com/${member.instagram.replace('@', '')}`}
+                    href={`https://www.instagram.com/${member.instagram.replace('@', '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-black hover:text-gray-700 transition-colors"
