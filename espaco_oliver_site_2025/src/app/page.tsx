@@ -21,9 +21,9 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
-// Variantes para diferentes tipos de animações
+// Variantes para diferentes tipos de animações - sempre totalmente visíveis
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 1, y: 30 },
   visible: { 
     opacity: 1, 
     y: 0,
@@ -32,7 +32,7 @@ const fadeInUp = {
 };
 
 const fadeInRight = {
-  hidden: { opacity: 0, x: -30 },
+  hidden: { opacity: 1, x: -30 },
   visible: { 
     opacity: 1, 
     x: 0,
@@ -41,7 +41,7 @@ const fadeInRight = {
 };
 
 const fadeInLeft = {
-  hidden: { opacity: 0, x: 30 },
+  hidden: { opacity: 1, x: 30 },
   visible: { 
     opacity: 1, 
     x: 0,
@@ -50,7 +50,7 @@ const fadeInLeft = {
 };
 
 const fadeIn = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: { 
     opacity: 1,
     transition: { duration: 0.8, ease: "easeOut" }
@@ -58,7 +58,7 @@ const fadeIn = {
 };
 
 const scaleUp = {
-  hidden: { opacity: 0, scale: 0.95 },
+  hidden: { opacity: 1, scale: 0.98 },
   visible: { 
     opacity: 1, 
     scale: 1,
@@ -108,7 +108,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInUp}
         >
           <Gallery />
@@ -117,7 +117,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInRight}
         >
           <OurSpaceSection />
@@ -126,7 +126,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInLeft}
         >
           <OurTeamSection />
@@ -135,7 +135,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={scaleUp}
         >
           <GiftCard />
@@ -144,7 +144,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeIn}
         >
           <SocialInspiration />
@@ -153,7 +153,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInUp}
         >
           <FAQSection />
@@ -162,7 +162,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInRight}
         >
           <ContactSection />
@@ -171,7 +171,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeInLeft}
         >
           <Location />
@@ -180,7 +180,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.15 }}
+          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
           variants={fadeIn}
         >
           <Newsletter />
