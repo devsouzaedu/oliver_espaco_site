@@ -9,7 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Sobre */}
@@ -21,7 +21,7 @@ const Footer = () => {
               height={80}
               className="mb-4"
             />
-            <p className="text-gray-400 mb-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+            <p className="text-white mb-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
               Tornando mulheres mais belas e confiantes há mais de 15 anos.
             </p>
             <div className="flex space-x-4">
@@ -42,27 +42,27 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/" className="text-white hover:text-gray-300 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/sobre" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/sobre" className="text-white hover:text-gray-300 transition-colors">
                   Sobre
                 </Link>
               </li>
               <li>
-                <Link href="/servicos" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos" className="text-white hover:text-gray-300 transition-colors">
                   Serviços
                 </Link>
               </li>
               <li>
-                <Link href="/equipe" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/equipe" className="text-white hover:text-gray-300 transition-colors">
                   Equipe
                 </Link>
               </li>
               <li>
-                <Link href="/contato" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/contato" className="text-white hover:text-gray-300 transition-colors">
                   Contato
                 </Link>
               </li>
@@ -74,27 +74,27 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Serviços</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/servicos/corte" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos/corte" className="text-white hover:text-gray-300 transition-colors">
                   Cortes
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/coloracao" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos/coloracao" className="text-white hover:text-gray-300 transition-colors">
                   Coloração
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/tratamentos" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos/tratamentos" className="text-white hover:text-gray-300 transition-colors">
                   Tratamentos
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/penteados" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos/penteados" className="text-white hover:text-gray-300 transition-colors">
                   Penteados
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/manicure" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/servicos/manicure" className="text-white hover:text-gray-300 transition-colors">
                   Manicure e Pedicure
                 </Link>
               </li>
@@ -104,7 +104,7 @@ const Footer = () => {
           {/* Contato */}
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Contato</h3>
-            <address className="not-italic text-gray-400 space-y-2" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+            <address className="not-italic text-white space-y-2" style={{ fontFamily: "var(--font-funnel-sans)" }}>
               <p>Rua das Flores, 123</p>
               <p>São Paulo - SP</p>
               <p>CEP: 01234-567</p>
@@ -114,10 +114,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-8 border-gray-800" />
+        <hr className="my-8 border-white border-opacity-20" />
 
         <div className="text-center">
-          <p className="text-gray-500 text-sm" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+          <p className="text-white text-sm" style={{ fontFamily: "var(--font-funnel-sans)" }}>
             &copy; {currentYear} Espaço Oliver. Todos os direitos reservados.
           </p>
         </div>

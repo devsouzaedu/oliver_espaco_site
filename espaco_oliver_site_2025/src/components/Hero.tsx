@@ -44,14 +44,14 @@ const Hero = () => {
         className="z-10 text-center text-white"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.4, delay: 0.1 }}
       >
         <motion.h1 
           className="text-5xl font-bold mb-4" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 0.4, delay: 0.25 }}
         >
           Unhas feitas
         </motion.h1>
@@ -60,14 +60,14 @@ const Hero = () => {
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
         >
           Você feliz
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.1 }}
+          transition={{ duration: 0.4, delay: 0.55 }}
         >
           <Link 
             href="/agendar" 
@@ -84,7 +84,7 @@ const Hero = () => {
         className="absolute bottom-6 z-10 flex space-x-2 justify-center w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 0.5, delay: 0.75 }}
       >
         {images.map((_, index) => (
           <button

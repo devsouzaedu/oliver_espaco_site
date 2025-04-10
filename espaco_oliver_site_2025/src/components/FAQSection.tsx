@@ -10,53 +10,53 @@ const FAQSection = () => {
   const faqs = [
     {
       id: 1,
-      question: 'Quais tipos de alongamento de unha vocês oferecem?',
-      answer: 'Oferecemos diversos tipos de alongamento, incluindo gel, fibra de vidro e acrílico. Cada técnica tem suas próprias vantagens e nossa equipe pode ajudar você a escolher a mais adequada para suas necessidades.'
+      question: 'Quanto tempo dura o atendimento (média todos os procedimentos)',
+      answer: 'Entre 45min a 2hrs'
     },
     {
       id: 2,
-      question: 'Quanto tempo dura o atendimento para manicure e pedicure?',
-      answer: 'Um atendimento completo de manicure e pedicure tradicional dura em média 1 hora. Perfeito para quem tem a agenda apertada ou precisa encaixar na rotina.'
+      question: 'Quanto tempo dura a esmaltação em gel em unhas naturais?',
+      answer: 'Até 30 dias'
     },
     {
       id: 3,
-      question: 'Os materiais são esterilizados e individuais?',
-      answer: 'Sim! A segurança e higiene de nossas clientes é prioridade. Utilizamos materiais esterilizados, seguindo rigorosamente os protocolos sanitários, e vários itens são de uso individual.'
+      question: 'Precisa fazer manutenção, se sim, quanto tempo?',
+      answer: 'Sim, recomendamos o retorno em 15 dias.'
     },
     {
       id: 4,
-      question: 'Vocês fazem nail art personalizada? Posso levar referências?',
-      answer: 'Com certeza! Adoramos criar designs personalizados. Fique à vontade para trazer referências, fotos ou ideias e nossas nail designers farão o possível para criar algo único para você.'
+      question: 'Preciso marcar horário ou aceitam encaixe?',
+      answer: 'Sim, todos os procedimentos são feitos mediante agendamento prévio'
     },
     {
       id: 5,
-      question: 'Quanto tempo dura o esmalte em gel ou o alongamento?',
-      answer: 'O esmalte em gel dura em média 2 a 3 semanas, enquanto os alongamentos podem durar de 3 a 4 semanas, dependendo do crescimento natural das unhas e dos cuidados diários.'
+      question: 'Vocês oferecem pacotes mensais ou promoções?',
+      answer: 'Sim, fique ligada no nosso perfil do instagram/whatsapp para saber mais!'
     },
     {
       id: 6,
-      question: 'Com quanto tempo devo voltar para fazer a manutenção?',
-      answer: 'Recomendamos manutenção a cada 15-21 dias para esmaltação em gel e a cada 21-30 dias para alongamentos, dependendo do crescimento das suas unhas.'
+      question: 'Unhas roídas podem fazer alongamento?',
+      answer: 'Sim, é perfeitamente possivel realizar alongamentos em unhas roidas'
     },
     {
       id: 7,
-      question: 'Tenho unhas fracas ou roídas. Posso fazer alongamento?',
-      answer: 'Sim! Na verdade, o alongamento pode ser uma ótima solução para quem tem unhas fracas ou roídas. Nossas profissionais irão avaliar o melhor método para o seu caso específico.'
+      question: 'Trabalham com podologia?',
+      answer: 'Sim, nosso time tem podológa preparada para te atender'
     },
     {
       id: 8,
-      question: 'Vocês trabalham com marcas específicas de esmalte ou gel?',
-      answer: 'Trabalhamos com as melhores marcas do mercado, garantindo qualidade e durabilidade em todos os nossos serviços. Entre nossas marcas parceiras estão Andreia, OPI, CND e Colorama.'
+      question: 'Atendem crianças?',
+      answer: 'Sim, mas somente procedimentos mais básicos'
     },
     {
       id: 9,
-      question: 'Preciso marcar horário ou aceitam encaixe?',
-      answer: 'Recomendamos agendar com antecedência para garantir disponibilidade, especialmente em horários de pico. Porém, sempre que possível, tentamos acomodar encaixes.'
+      question: 'Fazem manutenções de outra profissional?',
+      answer: 'Não, somente manutenção feita aqui no Espaço'
     },
     {
       id: 10,
-      question: 'Vocês oferecem pacotes mensais ou promoções?',
-      answer: 'Sim, oferecemos pacotes mensais com desconto para nossas clientes frequentes. Também temos promoções sazonais e combos de serviços. Fique ligada em nossas redes sociais para saber das novidades!'
+      question: 'Qual o melhor procedimento para unhas?',
+      answer: 'Blindagem e Alongamento em gel'
     }
   ];
 
@@ -73,7 +73,7 @@ const FAQSection = () => {
       className="py-16 px-4 bg-white"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
@@ -81,14 +81,14 @@ const FAQSection = () => {
             className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             <motion.p 
               className="uppercase text-sm tracking-wider mb-2 text-gray-600" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.15 }}
             >
               DÚVIDAS FREQUENTES
             </motion.p>
@@ -97,7 +97,7 @@ const FAQSection = () => {
               style={{ fontFamily: "var(--font-instrument-serif)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               FAQ – Espaço Oliver Beauty
             </motion.h2>
@@ -106,7 +106,7 @@ const FAQSection = () => {
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.25 }}
             >
               Encontre respostas para as perguntas mais comuns sobre nossos serviços e atendimento.
             </motion.p>
@@ -119,7 +119,7 @@ const FAQSection = () => {
                 className="border border-gray-200 rounded-md overflow-hidden"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                transition={{ duration: 0.25, delay: 0.1 + index * 0.05 }}
               >
                 <button
                   className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
@@ -149,7 +149,7 @@ const FAQSection = () => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.15 }}
                       className="overflow-hidden"
                     >
                       <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">

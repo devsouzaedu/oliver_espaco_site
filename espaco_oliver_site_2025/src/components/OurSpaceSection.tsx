@@ -64,7 +64,7 @@ const OurSpaceSection = () => {
       className="py-16 px-4 bg-white"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
@@ -72,14 +72,14 @@ const OurSpaceSection = () => {
             className="text-center mb-12"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             <motion.p 
               className="uppercase text-sm tracking-wider mb-2 text-gray-600" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.15 }}
             >
               NOSSO AMBIENTE
             </motion.p>
@@ -88,7 +88,7 @@ const OurSpaceSection = () => {
               style={{ fontFamily: "var(--font-instrument-serif)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               Conheça Nosso Espaço
             </motion.h2>
@@ -97,7 +97,7 @@ const OurSpaceSection = () => {
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.25 }}
             >
               Um ambiente aconchegante e sofisticado para você relaxar enquanto cuida da sua beleza.
             </motion.p>
@@ -115,7 +115,7 @@ const OurSpaceSection = () => {
                 className="overflow-hidden rounded-lg shadow-md h-80 relative"
                 variants={item}
                 whileHover={{ scale: 1.03 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
               >
                 <Image
                   src={image.src}

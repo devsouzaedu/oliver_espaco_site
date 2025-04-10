@@ -55,9 +55,9 @@ export default function Home() {
   if (typeof window !== 'undefined' && isAuthenticated()) {
     return (
       <main>
+        <Banner />
         <Navbar />
         <Hero />
-        <Banner />
         <Gallery />
         <OurSpaceSection />
         <OurTeamSection />
