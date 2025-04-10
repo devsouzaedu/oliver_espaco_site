@@ -1,14 +1,10 @@
 "use client"
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import { FaInstagram } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const OurTeamSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
-
   const team = [
     {
       id: 1,
@@ -48,89 +44,48 @@ const OurTeamSection = () => {
     }
   ];
 
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.25 } }
-  };
-
   return (
-    <motion.section 
-      ref={ref}
-      id="nosso-time"
-      className="py-16 px-4 bg-[#F3EDE8]"
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 0.4 }}
-    >
+    <section id="nosso-time" className="py-16 px-4 bg-[#F3EDE8]">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-          >
-            <motion.p 
+          <div className="text-center mb-12">
+            <p 
               className="uppercase text-sm tracking-wider mb-2 text-gray-600" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
-              initial={{ opacity: 0, y: 15 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
             >
               PROFISSIONAIS
-            </motion.p>
-            <motion.h2 
+            </p>
+            <h2 
               className="text-4xl mb-4 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
-              initial={{ opacity: 0, y: 15 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.25 }}
             >
               Nosso Time
-            </motion.h2>
-            <motion.p 
+            </h2>
+            <p 
               className="max-w-2xl mx-auto text-gray-600 mb-8" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
-              initial={{ opacity: 0, y: 15 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
             >
               Conheça nossas profissionais apaixonadas e altamente capacitadas, prontas para cuidar de você.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            variants={container}
-            initial="hidden"
-            animate={isInView ? "show" : "hidden"}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
               <motion.div 
                 key={member.id}
                 className="bg-white rounded-lg overflow-hidden shadow-md"
-                variants={item}
-                whileHover={{ y: -10 }}
-                transition={{ duration: 0.3 }}
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.2 }}
               >
-                <div className="h-80 relative">
+                <div className="h-72 relative">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.role}`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-top"
+                    loading="eager"
+                    priority={member.id <= 2}
                   />
                 </div>
                 <div className="p-6">
@@ -149,14 +104,9 @@ const OurTeamSection = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.div 
-            className="mt-16 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.4, delay: 0.4 }}
-          >
+          <div className="mt-16 text-center">
             <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
               <h3 
                 className="text-2xl mb-4 text-black"
@@ -177,13 +127,15 @@ const OurTeamSection = () => {
                   fill
                   sizes="(max-width: 1200px) 100vw, 1200px"
                   className="object-cover object-top"
+                  loading="eager"
+                  priority
                 />
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

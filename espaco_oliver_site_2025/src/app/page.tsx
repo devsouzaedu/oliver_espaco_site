@@ -105,7 +105,7 @@ export default function Home() {
           className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveUp}
         >
           <Gallery />
@@ -115,7 +115,7 @@ export default function Home() {
           className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveRight}
         >
           <OurSpaceSection />
@@ -125,7 +125,7 @@ export default function Home() {
           className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveLeft}
         >
           <OurTeamSection />
@@ -135,7 +135,7 @@ export default function Home() {
           className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={scaleUp}
         >
           <GiftCard />
@@ -145,7 +145,7 @@ export default function Home() {
           className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={noMove}
         >
           <SocialInspiration />
@@ -155,7 +155,7 @@ export default function Home() {
           className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveUp}
         >
           <FAQSection />
@@ -165,7 +165,7 @@ export default function Home() {
           className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveRight}
         >
           <ContactSection />
@@ -175,7 +175,7 @@ export default function Home() {
           className="bg-[#F3EDE8] w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={moveLeft}
         >
           <Location />
@@ -185,7 +185,7 @@ export default function Home() {
           className="bg-white w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.1, margin: "100px 0px" }}
+          viewport={{ once: false, amount: 0.01, margin: "100px 0px" }}
           variants={noMove}
         >
           <Newsletter />

@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   const images = [
     '/images/espaco_oliver_beauty_time_todas_juntas (4).JPG',
-    '/images/hero_espaco_oliver_manicures (1).jpeg',
     '/images/card1_conhecanossotime_espaço_oliver.jpeg',
     '/images/espaco_oliver_beauty_foco_interno (1).jpg',
     '/images/espaco_oliver_beauty_interno_cadeiras (1).jpg',
@@ -16,7 +15,6 @@ const Hero = () => {
     '/images/espaco_oliver_beauty_interno_cadeiras (3).jpg',
     '/images/espaco_oliver_beauty_interno_cadeiras (4).jpg',
     '/images/espaco_oliver_beauty_interno_cadeiras (6).jpg',
-    '/images/espaco_oliver_beauty_time_todas_juntas (1).JPG',
     '/images/espaco_oliver_beauty_time_todas_juntas (2).JPG'
   ];
   
