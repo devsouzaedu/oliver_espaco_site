@@ -43,7 +43,7 @@ export default function BlogPage() {
               style={{ fontFamily: "var(--font-instrument-serif)" }}>
             Novidades & Blog
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto" 
+          <p className="text-black max-w-2xl mx-auto" 
              style={{ fontFamily: "var(--font-funnel-sans)" }}>
             Acompanhe as últimas novidades, tendências e dicas do Espaço Oliver Beauty
           </p>
@@ -78,7 +78,7 @@ export default function BlogPage() {
                       {post.tags.map((tag, index) => (
                         <span 
                           key={index} 
-                          className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"
+                          className="bg-gray-100 text-black text-xs px-2 py-1 rounded"
                           style={{ fontFamily: "var(--font-funnel-sans)" }}
                         >
                           {tag}
@@ -92,13 +92,13 @@ export default function BlogPage() {
                       {post.title}
                     </h2>
                     <p 
-                      className="text-gray-600 text-sm mb-4" 
+                      className="text-black text-sm mb-4" 
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
                       {new Date(post.created_at).toLocaleDateString('pt-BR')}
                     </p>
                     <p 
-                      className="text-gray-700 line-clamp-3" 
+                      className="text-black line-clamp-3" 
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
                       {post.excerpt || post.content.substring(0, 150)}...
@@ -125,7 +125,7 @@ export default function BlogPage() {
               Nenhum post disponível no momento
             </h2>
             <p 
-              className="text-gray-600" 
+              className="text-black" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
               Em breve teremos novidades. Volte mais tarde!
