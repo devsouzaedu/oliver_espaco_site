@@ -72,6 +72,28 @@ const Gallery = () => {
             ))}
           </div>
         </div>
+
+        <div className="text-center mt-12">
+          <Link 
+            href={instagramUrl}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block border-2 border-black hover:bg-black hover:text-white transition-colors text-black font-bold py-3 px-8 text-lg" 
+            style={{ fontFamily: "var(--font-instrument-serif)" }}
+          >
+            Veja nossos últimos trabalhos
+          </Link>
+        </div>
+
+        <div className="text-center mt-8">
+          <Link 
+            href="/agendar"
+            className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+            style={{ fontFamily: "var(--font-instrument-serif)" }}
+          >
+            Agendar agora
+          </Link>
+        </div>
       </div>
 
       <style jsx global>{`

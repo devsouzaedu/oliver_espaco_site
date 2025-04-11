@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 
 const OurSpaceSection = () => {
@@ -61,7 +62,7 @@ const OurSpaceSection = () => {
     <motion.section 
       ref={ref}
       id="nosso-espaco"
-      className="py-16 px-4 bg-white"
+      className="py-16 px-4 bg-[#F3EDE8]"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.4 }}
@@ -79,16 +80,16 @@ const OurSpaceSection = () => {
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.15 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
-              NOSSO AMBIENTE
+              AMBIENTE
             </motion.p>
             <motion.h2 
               className="text-4xl mb-4 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.25 }}
             >
               Conheça Nosso Espaço
             </motion.h2>
@@ -97,9 +98,9 @@ const OurSpaceSection = () => {
               style={{ fontFamily: "var(--font-funnel-sans)" }}
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.4, delay: 0.25 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
             >
-              Um ambiente aconchegante e sofisticado para você relaxar enquanto cuida da sua beleza.
+              Projetado para proporcionar uma experiência de beleza confortável e relaxante. Nosso ambiente combina elegância e aconchego para que você se sinta em casa.
             </motion.p>
           </motion.div>
 
@@ -126,6 +127,21 @@ const OurSpaceSection = () => {
                 />
               </motion.div>
             ))}
+          </motion.div>
+
+          <motion.div 
+            className="text-center mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+          >
+            <Link 
+              href="/agendar"
+              className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+              style={{ fontFamily: "var(--font-instrument-serif)" }}
+            >
+              Agendar agora
+            </Link>
           </motion.div>
         </div>
       </div>

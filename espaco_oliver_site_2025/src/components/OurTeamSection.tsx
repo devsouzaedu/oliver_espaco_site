@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const OurTeamSection = () => {
@@ -130,6 +131,15 @@ const OurTeamSection = () => {
                   loading="eager"
                   priority
                 />
+              </div>
+              <div className="mt-6">
+                <Link 
+                  href="/agendar"
+                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  Agendar agora
+                </Link>
               </div>
             </div>
           </div>
