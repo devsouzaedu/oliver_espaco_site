@@ -102,3 +102,28 @@ Design inspirado nas melhores práticas de estúdios de nail art
 ## Licença
 
 [Inclua informações sobre a licença aqui]
+
+## Configuração do Blog
+
+Para configurar o blog, siga estas etapas:
+
+1. Acesse o dashboard do Supabase para o projeto: https://vhyuzjqwsbhuilbgadik.supabase.co
+2. Navegue até a seção "SQL Editor" (ou "SQL").
+3. Crie uma nova query e cole o conteúdo do arquivo `create_blog_table.sql`.
+4. Execute a query para criar a tabela `blog_posts`.
+5. Configure as políticas de segurança na tabela:
+   - Na seção "Authentication > Policies" (ou "Table Editor > blog_posts > Policies"):
+   - Para leitura pública: `SELECT` com condição `published = true`
+   - Para operações de administração (INSERT, UPDATE, DELETE): Usar a função de autenticação para restringir acesso
+
+Após configurar a tabela, você poderá gerenciar posts do blog na área administrativa em `/admin/blog`.
+
+## Recursos do Blog
+
+- Página principal do blog: `/novidadesblog`
+- Página de posts individuais: `/novidadesblog/[slug]`
+- Painel de administração: `/admin/blog`
+- Criação de posts: `/admin/blog/novo`
+- Edição de posts: `/admin/blog/editar/[id]`
+
+Os posts aceitam formatação Markdown, imagens via URL, tags, e podem ser publicados ou salvos como rascunho.

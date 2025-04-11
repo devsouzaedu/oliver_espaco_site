@@ -177,16 +177,38 @@ const ContactSection = () => {
                 className="mb-6"
               ></iframe>
               
-              <div className="text-center">
+              <div className="flex flex-col space-y-3">
                 <Link
                   href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center"
+                  className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center justify-center"
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                 >
                   <FaWhatsapp className="mr-2 h-5 w-5" />
                   <span>Agendar pelo WhatsApp</span>
+                </Link>
+
+                <Link
+                  href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20comprar%20um%20agendamento%20como%20presente"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center justify-center"
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  <FaWhatsapp className="mr-2 h-5 w-5" />
+                  <span>Comprar Cartão de Presente</span>
+                </Link>
+
+                <Link
+                  href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20entrar%20no%20grupo%20da%20comunidade%20Espa%C3%A7o%20Oliver%20Beauty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center justify-center"
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  <FaWhatsapp className="mr-2 h-5 w-5" />
+                  <span>Faça Parte da Nossa Comunidade</span>
                 </Link>
               </div>
             </motion.div>

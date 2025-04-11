@@ -1,9 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { supabase } from './supabase';
+import Image from 'next/image';
+import { 
+  FaHome, 
+  FaWpforms, 
+  FaRegListAlt, 
+  FaUsers, 
+  FaSignOutAlt, 
+  FaChevronRight,
+  FaBlog
+} from 'react-icons/fa';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
@@ -99,6 +109,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   }`}
                 >
                   Submissões
+                </Link>
+                <Link
+                  href="/admin/blog"
+                  className={`px-3 py-2 rounded-md text-sm font-medium ${
+                    pathname.startsWith('/admin/blog')
+                      ? 'bg-indigo-700'
+                      : 'hover:bg-indigo-500'
+                  }`}
+                >
+                  Blog
                 </Link>
               </div>
             </div>
