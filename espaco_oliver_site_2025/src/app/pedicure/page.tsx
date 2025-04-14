@@ -48,7 +48,7 @@ const PedicurePage = () => {
                   alt="Serviço de Pedicure"
                   width={200}
                   height={200}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
@@ -57,7 +57,7 @@ const PedicurePage = () => {
                   alt="Serviço de Pedicure"
                   width={200}
                   height={200}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
@@ -66,7 +66,7 @@ const PedicurePage = () => {
                   alt="Serviço de Pedicure"
                   width={200}
                   height={200}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
@@ -75,7 +75,7 @@ const PedicurePage = () => {
                   alt="Serviço de Pedicure"
                   width={200}
                   height={200}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
             </div>
@@ -94,7 +94,7 @@ const PedicurePage = () => {
                   alt="Serviço de Pedicure"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover rounded-lg"
+                  className="object-cover object-bottom rounded-lg"
                 />
               </div>
             </motion.div>
@@ -150,7 +150,7 @@ const PedicurePage = () => {
                   alt="Esmaltação em Gel nos Pés"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover rounded-lg"
+                  className="object-cover object-bottom rounded-lg"
                 />
               </div>
             </motion.div>
@@ -219,7 +219,7 @@ const PedicurePage = () => {
                   alt="Trabalho de Pedicure"
                   width={220}
                   height={220}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
@@ -228,7 +228,7 @@ const PedicurePage = () => {
                   alt="Trabalho de Pedicure"
                   width={220}
                   height={220}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
@@ -237,7 +237,7 @@ const PedicurePage = () => {
                   alt="Trabalho de Pedicure"
                   width={220}
                   height={220}
-                  className="w-full h-auto object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
             </div>

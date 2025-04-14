@@ -127,7 +127,7 @@ const OurTeamSection = () => {
                   alt="Equipe Espaço Oliver Beauty"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
+                  className="object-contain sm:object-cover object-center"
                   priority
                 />
               </div>
