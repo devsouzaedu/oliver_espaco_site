@@ -7,15 +7,15 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const images = [
-    '/images/espaco_oliver_beauty_time_todas_juntas (4).JPG',
-    '/images/card1_conhecanossotime_espaço_oliver.jpeg',
-    '/images/espaco_oliver_beauty_foco_interno (1).jpg',
-    '/images/espaco_oliver_beauty_interno_cadeiras (1).jpg',
-    '/images/espaco_oliver_beauty_interno_cadeiras (2).jpg',
-    '/images/espaco_oliver_beauty_interno_cadeiras (3).jpg',
-    '/images/espaco_oliver_beauty_interno_cadeiras (4).jpg',
-    '/images/espaco_oliver_beauty_interno_cadeiras (6).jpg',
-    '/images/espaco_oliver_beauty_time_todas_juntas (2).JPG'
+    '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp',
+    '/images/convertedwebp/card1_conhecanossotime_espaço_oliver.webp',
+    '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).webp',
+    '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

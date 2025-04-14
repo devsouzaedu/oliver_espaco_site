@@ -63,10 +63,10 @@ const TeamCards = () => {
           <div className="relative group overflow-hidden shadow-lg">
             <div className="relative aspect-square overflow-hidden">
               <Image
-                src="/images/card1_conhecanossotime_espaço_oliver.jpeg"
+                src="/images/convertedwebp/card1_conhecanossotime_espaço_oliver.webp"
                 alt="Conheça nosso time"
                 fill
-                sizes="(max-width: 768px) 100vw, 768px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center">

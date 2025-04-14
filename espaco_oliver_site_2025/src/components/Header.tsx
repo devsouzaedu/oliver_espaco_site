@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image 
-              src="/images/logo_espaco_oliver.png" 
+              src="/images/convertedwebp/logo_espaco_oliver.webp" 
               alt="Espaço Oliver" 
               width={150} 
               height={50} 

@@ -43,7 +43,7 @@ const ManicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpeg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
                   alt="Serviço de Manicure"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -100,7 +100,7 @@ const ManicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpeg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp"
                   alt="Esmaltação em Gel"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

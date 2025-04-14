@@ -43,7 +43,7 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
                   alt="Alongamento de Unhas"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -100,7 +100,7 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
                   alt="Nail Art Artística"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo e Sobre */}
           <div className="col-span-1 md:col-span-1">
             <Image 
-              src="/images/logo_branco_espaco_oliver.png" 
+              src="/images/convertedwebp/logo_branco_espaco_oliver.webp" 
               alt="Espaço Oliver" 
               width={150} 
               height={80}

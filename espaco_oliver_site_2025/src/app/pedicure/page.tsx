@@ -44,42 +44,38 @@ const PedicurePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).webp"
                   alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className="object-cover"
-                  priority
+                  width={200}
+                  height={200}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).webp"
                   alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className="object-cover"
-                  priority
+                  width={200}
+                  height={200}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).webp"
                   alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className="object-cover"
-                  priority
+                  width={200}
+                  height={200}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).webp"
                   alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className="object-cover"
-                  priority
+                  width={200}
+                  height={200}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
             </div>
@@ -94,12 +90,11 @@ const PedicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.jpg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp"
                   alt="Serviço de Pedicure"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="object-cover rounded-lg"
                 />
               </div>
             </motion.div>
@@ -151,12 +146,11 @@ const PedicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
                   alt="Esmaltação em Gel nos Pés"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="object-cover rounded-lg"
                 />
               </div>
             </motion.div>
@@ -221,32 +215,29 @@ const PedicurePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).webp"
                   alt="Trabalho de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                  loading="eager"
+                  width={220}
+                  height={220}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (2).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (2).webp"
                   alt="Trabalho de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                  loading="eager"
+                  width={220}
+                  height={220}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).JPG"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp"
                   alt="Trabalho de Pedicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                  loading="eager"
+                  width={220}
+                  height={220}
+                  className="w-full h-auto object-cover mb-4 rounded-lg"
                 />
               </div>
             </div>

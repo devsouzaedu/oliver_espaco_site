@@ -122,13 +122,12 @@ const OurTeamSection = () => {
                 Nossa equipe trabalha em conjunto para oferecer a melhor experiência possível. Venha conhecer pessoalmente nossos profissionais e descobrir por que somos referência em nail design.
               </p>
               <div className="relative h-80 w-full mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/espaco_oliver_beauty_time_todas_juntas (4).JPG"
+                <Image 
+                  src="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp" 
                   alt="Equipe Espaço Oliver Beauty"
                   fill
-                  sizes="(max-width: 1200px) 100vw, 1200px"
-                  className="object-cover object-top"
-                  loading="eager"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
                   priority
                 />
               </div>
