@@ -41,41 +41,41 @@ const PedicurePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).webp"
                   alt="Serviço de Pedicure"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
                 />
               </div>
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).webp"
                   alt="Serviço de Pedicure"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
                 />
               </div>
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).webp"
                   alt="Serviço de Pedicure"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
                 />
               </div>
-              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).webp"
                   alt="Serviço de Pedicure"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
                 />
               </div>
             </div>
