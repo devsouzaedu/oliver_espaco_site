@@ -134,7 +134,8 @@ const OurTeamSection = () => {
               </div>
               <div className="mt-6">
                 <Link 
-                  href="/agendar"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
+                  target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                 >

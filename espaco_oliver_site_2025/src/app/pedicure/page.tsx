@@ -131,7 +131,7 @@ const PedicurePage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20pedicure%20completa"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20pedicure%20completa"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -188,7 +188,7 @@ const PedicurePage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20Spa%20dos%20Pés"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20Spa%20dos%20Pés"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -272,7 +272,7 @@ const PedicurePage = () => {
               com produtos de alta qualidade e equipamentos esterilizados para sua total segurança.
             </p>
             <Link 
-              href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20pedicure"
+              href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20pedicure"
               target="_blank"
               className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}

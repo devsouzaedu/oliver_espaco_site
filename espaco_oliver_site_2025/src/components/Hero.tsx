@@ -80,7 +80,8 @@ const Hero = () => {
           viewport={{ once: false, amount: 0.1 }}
         >
           <Link 
-            href="/agendar" 
+            href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
+            target="_blank"
             className="border-2 border-white hover:border-gray-300 transition-colors text-white font-bold py-3 px-8 text-lg"
             style={{ fontFamily: "var(--font-instrument-serif)" }}
           >

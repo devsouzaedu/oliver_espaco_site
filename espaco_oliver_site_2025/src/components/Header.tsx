@@ -77,7 +77,8 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link 
-              href="/agendar" 
+              href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
+              target="_blank"
               className="border-2 border-black hover:border-gray-600 transition-colors text-black font-bold py-2 px-5"
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
@@ -152,7 +153,8 @@ const Header = () => {
               </li>
               <li>
                 <Link 
-                  href="/agendar" 
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
+                  target="_blank"
                   className="inline-block border-2 border-black hover:border-gray-600 transition-colors text-black font-bold py-2 px-5"
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                   onClick={() => setIsOpen(false)}

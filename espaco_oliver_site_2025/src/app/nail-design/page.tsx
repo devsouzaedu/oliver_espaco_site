@@ -80,7 +80,7 @@ const NailDesignPage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20em%20gel"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20em%20gel"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -137,7 +137,7 @@ const NailDesignPage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20exclusiva"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20exclusiva"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -168,7 +168,7 @@ const NailDesignPage = () => {
                 Fortalecimento das unhas naturais com camadas de fibra e gel para proteger e promover o crescimento saudável.
               </p>
               <Link 
-                href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20blindagem%20de%20unhas"
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20blindagem%20de%20unhas"
                 target="_blank"
                 className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
@@ -196,7 +196,7 @@ const NailDesignPage = () => {
                 Alongamento durável e resistente que proporciona um aspecto muito natural às unhas.
               </p>
               <Link 
-                href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20em%20fibra%20de%20vidro"
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20em%20fibra%20de%20vidro"
                 target="_blank"
                 className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
@@ -224,7 +224,7 @@ const NailDesignPage = () => {
                 Técnica sofisticada de degradê que vai do branco ao rosa nude, criando um efeito elegante e atemporal.
               </p>
               <Link 
-                href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20baby%20boomer"
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20baby%20boomer"
                 target="_blank"
                 className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
@@ -254,7 +254,7 @@ const NailDesignPage = () => {
               combinando técnica, qualidade e criatividade para resultados surpreendentes.
             </p>
             <Link 
-              href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20serviço%20de%20nail%20design"
+              href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20serviço%20de%20nail%20design"
               target="_blank"
               className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}

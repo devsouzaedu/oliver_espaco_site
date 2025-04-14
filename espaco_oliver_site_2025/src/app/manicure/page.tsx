@@ -80,7 +80,7 @@ const ManicurePage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20manicure"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20manicure"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -137,7 +137,7 @@ const ManicurePage = () => {
               </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20uma%20esmaltação%20em%20gel"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20esmaltação%20em%20gel"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
@@ -168,7 +168,7 @@ const ManicurePage = () => {
               em um ambiente aconchegante e com produtos de primeira linha.
             </p>
             <Link 
-              href="https://wa.me/551143224005?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20manicure"
+              href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20manicure"
               target="_blank"
               className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
