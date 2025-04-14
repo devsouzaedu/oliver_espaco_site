@@ -62,7 +62,7 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold mb-6">Dashboard Administrativo</h1>
+      <h1 className="text-2xl font-semibold mb-6 text-black">Dashboard Administrativo</h1>
 
       {loading ? (
         <div className="text-center py-10">
@@ -110,7 +110,7 @@ export default function AdminDashboard() {
                   {stats.recentForms.map((form) => (
                     <li key={form.id} className="py-3">
                       <Link 
-                        href={`/admin/forms/${form.id}`}
+                        href={`/form/${form.id}`}
                         className="flex justify-between items-center hover:bg-gray-50 p-2 -mx-2 rounded"
                       >
                         <div>
