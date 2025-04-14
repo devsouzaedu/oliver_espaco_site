@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { instrumentSerif, funnelSans, displaySerif } from "./fonts";
 import "./globals.css";
+import { Instrument_Serif, Fraunces } from 'next/font/google';
+import localFont from 'next/font/local';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: "Espaço Oliver Beauty - Manicure e Pedicure",
@@ -37,6 +40,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp"
+        />
+      </head>
       <body
         className={`${instrumentSerif.variable} ${funnelSans.variable} ${displaySerif.variable} antialiased`}
       >

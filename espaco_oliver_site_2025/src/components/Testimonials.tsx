@@ -125,6 +125,7 @@ const Testimonials = () => {
                     fill
                     sizes="64px"
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
