@@ -46,7 +46,7 @@ const Hero = () => {
             alt={`Slide ${index + 1}`}
             fill
             sizes="100vw"
-            className="object-contain sm:object-cover brightness-[0.7]"
+            className="object-cover brightness-[0.7]"
             priority={index === 0}
             loading={index === 0 ? "eager" : "lazy"}
             quality={80}
