@@ -86,10 +86,14 @@ export default function Home() {
 
   // Verificar se o usuário já está autenticado
   const isAuthenticated = () => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('adminAuthenticated') === 'true';
-    }
-    return false;
+    // Temporariamente retornando true para permitir acesso direto
+    return true;
+    
+    // Código original comentado:
+    // if (typeof window !== 'undefined') {
+    //   return localStorage.getItem('adminAuthenticated') === 'true';
+    // }
+    // return false;
   };
 
   // Mostrar a página completa se autenticado
