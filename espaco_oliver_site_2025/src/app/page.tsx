@@ -104,52 +104,8 @@ export default function Home() {
         <Banner />
         <Navbar />
         
-        {/* Hero section com imagem principal pré-carregada para otimizar LCP */}
-        <div className="relative h-[600px] w-full flex items-center justify-center overflow-hidden">
-          {/* Imagem principal do Hero - pré-carregada estaticamente */}
-          <div className="absolute inset-0 z-0">
-            <Image 
-              src="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp"
-              alt="Espaço Oliver Beauty"
-              fill
-              sizes="100vw"
-              className="object-cover brightness-[0.7]"
-              priority={true}
-              quality={80}
-            />
-          </div>
-          
-          {/* Conteúdo do Hero */}
-          <div className="z-10 text-center text-white">
-            <h1 
-              className="text-5xl font-bold mb-4" 
-              style={{ fontFamily: "var(--font-instrument-serif)" }}
-            >
-              Unhas feitas
-            </h1>
-            <h2 
-              className="text-3xl mb-8" 
-              style={{ fontFamily: "var(--font-instrument-serif)" }}
-            >
-              Você feliz
-            </h2>
-            <div>
-              <Link 
-                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
-                target="_blank"
-                className="border-2 border-white hover:border-gray-300 transition-colors text-white font-bold py-3 px-8 text-lg"
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
-              >
-                Agendar agora
-              </Link>
-            </div>
-          </div>
-        </div>
-        
-        {/* Componente Hero carregado de forma assíncrona para funcionalidade completa */}
-        <div className="hidden">
-          <Hero />
-        </div>
+        {/* Hero com carousel de imagens */}
+        <Hero />
         
         {/* As divs de seção têm fundo branco ou #F3EDE8 explicitamente definido */}
         <motion.div
