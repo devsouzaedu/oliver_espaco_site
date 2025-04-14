@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.espacooliverbeauty.com.br'),
   openGraph: {
     title: "Espaço Oliver Beauty - Manicure e Pedicure",
-    description: "Serviços de manicure, pedicure e nail design de alta qualidade em Alphaville, Barueri.",
+    description: "Serviços de manicure, pedicure e nail design de alta qualidade em Barueri.",
     url: 'https://www.espacooliverbeauty.com.br',
     siteName: 'Espaço Oliver Beauty',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Espaço Oliver Beauty - Manicure e Pedicure",
-    description: "Serviços de manicure, pedicure e nail design de alta qualidade em Alphaville, Barueri.",
+    description: "Serviços de manicure, pedicure e nail design de alta qualidade em Barueri.",
     images: ['/images/espaco_oliver_beauty_interno_cadeiras (1).jpg'],
   },
 };
