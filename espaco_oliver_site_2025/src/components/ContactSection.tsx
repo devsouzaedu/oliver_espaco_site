@@ -193,11 +193,11 @@ const ContactSection = () => {
                   href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20comprar%20um%20agendamento%20como%20presente"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-flex items-center justify-center"
+                  className="bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 inline-flex items-center justify-center"
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                 >
                   <FaWhatsapp className="mr-2 h-5 w-5" />
-                  <span>Comprar Cartão de Presente</span>
+                  <span>Compre agora seu cartão-presente</span>
                 </Link>
 
                 <Link

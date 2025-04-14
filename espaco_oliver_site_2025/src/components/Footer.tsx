@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,9 +28,6 @@ const Footer = () => {
               <a href="https://www.instagram.com/espacooliverbeauty" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                <FaFacebook size={24} />
-              </a>
               <a href="https://wa.me/5511956184727?text=Oi%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20h%C3%B3rario" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                 <FaWhatsapp size={24} />
               </a>
@@ -46,26 +43,6 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link href="/sobre" className="text-white hover:text-gray-300 transition-colors">
-                  Sobre
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos" className="text-white hover:text-gray-300 transition-colors">
-                  Serviços
-                </Link>
-              </li>
-              <li>
-                <Link href="/equipe" className="text-white hover:text-gray-300 transition-colors">
-                  Equipe
-                </Link>
-              </li>
-              <li>
-                <Link href="/contato" className="text-white hover:text-gray-300 transition-colors">
-                  Contato
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -76,26 +53,6 @@ const Footer = () => {
               <li>
                 <Link href="/servicos/manicure" className="text-white hover:text-gray-300 transition-colors">
                   Manicure e Pedicure
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/alongamento" className="text-white hover:text-gray-300 transition-colors">
-                  Alongamento
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/blindagem" className="text-white hover:text-gray-300 transition-colors">
-                  Blindagem
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/esmaltacao" className="text-white hover:text-gray-300 transition-colors">
-                  Esmaltação em Gel
-                </Link>
-              </li>
-              <li>
-                <Link href="/servicos/podologia" className="text-white hover:text-gray-300 transition-colors">
-                  Podologia
                 </Link>
               </li>
             </ul>

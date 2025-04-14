@@ -64,13 +64,15 @@ const GiftCard = () => {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Link
-                href="/gift-card"
-                className="border border-black hover:border-gray-600 transition-colors text-black font-bold py-3 px-8 inline-block"
+              <a
+                href="https://api.whatsapp.com/send/?phone=5511956184727&text=Oi%2C+gostaria+de+comprar+um+agendamento+como+presente&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 inline-block"
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
-                Comprar cartão-presente
-              </Link>
+                Compre agora seu cartão-presente
+              </a>
             </motion.div>
           </motion.div>
         </div>
