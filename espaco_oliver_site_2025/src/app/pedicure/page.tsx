@@ -146,8 +146,8 @@ const PedicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
-                  alt="Esmaltação em Gel nos Pés"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp"
+                  alt="Spa dos Pés"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-bottom rounded-lg"
