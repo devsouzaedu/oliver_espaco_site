@@ -34,6 +34,57 @@ const PedicurePage = () => {
             </p>
           </motion.div>
 
+          {/* Galeria de imagens */}
+          <motion.div 
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).JPG"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).JPG"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).JPG"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).JPG"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </motion.div>
+
           <div className="flex flex-col md:flex-row gap-12 mb-16">
             <motion.div 
               className="md:w-1/2"
@@ -147,6 +198,59 @@ const PedicurePage = () => {
               </div>
             </motion.div>
           </div>
+
+          {/* Seção adicional com mais imagens */}
+          <motion.div 
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <h2 
+              className="text-3xl mb-6 text-center text-black" 
+              style={{ fontFamily: "var(--font-instrument-serif)" }}
+            >
+              Nossos Trabalhos
+            </h2>
+            <p 
+              className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
+              style={{ fontFamily: "var(--font-funnel-sans)" }}
+            >
+              Confira alguns dos nossos trabalhos realizados com excelência e dedicação.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).JPG"
+                  alt="Trabalho de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  loading="eager"
+                />
+              </div>
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (2).JPG"
+                  alt="Trabalho de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  loading="eager"
+                />
+              </div>
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).JPG"
+                  alt="Trabalho de Pedicure"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </motion.div>
 
           <motion.div 
             className="text-center mt-16"

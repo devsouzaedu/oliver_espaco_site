@@ -111,15 +111,9 @@ export default function Home() {
           <Gallery />
         </motion.div>
         
-        <motion.div
-          className="bg-[#F3EDE8] w-full"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.01, margin: "300px 0px" }}
-          variants={moveRight}
-        >
+        <div className="bg-[#F3EDE8] w-full">
           <OurSpaceSection />
-        </motion.div>
+        </div>
         
         <motion.div
           className="bg-white w-full"

@@ -116,14 +116,14 @@ export default function SubmissionsPage() {
   };
 
   return (
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-black">Submissões de Formulários</h1>
+    <div className="px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6">
+        <h1 className="text-xl md:text-2xl font-semibold text-black mb-4 sm:mb-0">Submissões de Formulários</h1>
       </div>
       
-      <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-        <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-          <div className="flex-grow">
+      <div className="bg-white p-4 md:p-6 rounded-lg shadow-md mb-6">
+        <div className="flex flex-col space-y-4">
+          <div className="w-full">
             <label htmlFor="form-filter" className="block text-sm font-medium text-black mb-1">
               Filtrar por Formulário
             </label>
@@ -142,11 +142,11 @@ export default function SubmissionsPage() {
             </select>
           </div>
           
-          <div className="self-end">
+          <div className="w-full">
             <button
               onClick={exportToCSV}
               disabled={loading || exportLoading || submissions.length === 0}
-              className={`inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 ${
+              className={`w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 ${
                 (loading || exportLoading || submissions.length === 0) ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >
@@ -176,20 +176,20 @@ export default function SubmissionsPage() {
           </p>
         </div>
       ) : (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
               <tr>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Formulário
                 </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="hidden sm:table-cell px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Data de submissão
                 </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Dados Principais
                 </th>
-                <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-right text-xs font-medium text-black uppercase tracking-wider">
                   Ações
                 </th>
               </tr>
@@ -201,18 +201,21 @@ export default function SubmissionsPage() {
                 
                 return (
                   <tr key={submission.id} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                       <div className="text-sm font-medium text-black">
                         {submission.forms.title}
                       </div>
+                      <div className="sm:hidden text-xs text-gray-500 mt-1">
+                        {new Date(submission.created_at).toLocaleString('pt-BR')}
+                      </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-black">
+                    <td className="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm text-black">
                       {new Date(submission.created_at).toLocaleString('pt-BR')}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-4 md:px-6 py-4">
                       <div className="text-sm text-black">
                         {mainData.map(([key, value], index) => (
-                          <div key={index} className="truncate max-w-md">
+                          <div key={index} className="truncate max-w-[150px] md:max-w-md">
                             <span className="font-medium">{key}:</span> {String(value)}
                           </div>
                         ))}
@@ -223,7 +226,7 @@ export default function SubmissionsPage() {
                         )}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <td className="px-4 md:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                       <Link
                         href={`/admin/submissions/${submission.id}`}
                         className="text-indigo-600 hover:text-indigo-900"

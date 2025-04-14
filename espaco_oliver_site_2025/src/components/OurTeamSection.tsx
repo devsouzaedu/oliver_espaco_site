@@ -33,9 +33,9 @@ const OurTeamSection = () => {
     },
     {
       id: 5,
-      name: 'Geovanna',
+      name: 'Giovana',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_geovanna (1).jpg'
+      image: '/images/espaco_oliver_beauty_time_giovana2.jpg'
     },
     {
       id: 6,

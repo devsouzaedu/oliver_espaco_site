@@ -94,12 +94,12 @@ export default function FormsPage() {
   };
 
   return (
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-black">Gerenciar Formulários</h1>
+    <div className="px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6">
+        <h1 className="text-xl md:text-2xl font-semibold text-black mb-4 sm:mb-0">Gerenciar Formulários</h1>
         <Link
           href="/admin/forms/new"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium text-center"
         >
           Novo Formulário
         </Link>
@@ -127,20 +127,20 @@ export default function FormsPage() {
           </Link>
         </div>
       ) : (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
               <tr>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Título
                 </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="hidden md:table-cell px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Data de criação
                 </th>
-                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
                   Status
                 </th>
-                <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-black uppercase tracking-wider">
+                <th scope="col" className="px-4 md:px-6 py-3 text-right text-xs font-medium text-black uppercase tracking-wider">
                   Ações
                 </th>
               </tr>
@@ -148,20 +148,23 @@ export default function FormsPage() {
             <tbody className="bg-white divide-y divide-gray-200">
               {forms.map((form) => (
                 <tr key={form.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                     <div className="text-sm font-medium text-black">
                       {form.title}
                     </div>
                     {form.description && (
-                      <div className="text-xs text-black truncate max-w-xs">
+                      <div className="text-xs text-black truncate max-w-[150px] md:max-w-xs">
                         {form.description}
                       </div>
                     )}
+                    <div className="md:hidden text-xs text-gray-500 mt-1">
+                      {new Date(form.created_at).toLocaleDateString('pt-BR')}
+                    </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-black">
+                  <td className="hidden md:table-cell px-6 py-4 whitespace-nowrap text-sm text-black">
                     {new Date(form.created_at).toLocaleDateString('pt-BR')}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                     <button
                       onClick={() => handleToggleStatus(form.id, form.is_active)}
                       className={`px-3 py-1 rounded-full text-xs font-medium ${
@@ -173,8 +176,8 @@ export default function FormsPage() {
                       {form.is_active ? 'Ativo' : 'Inativo'}
                     </button>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <div className="flex justify-end space-x-2">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <div className="flex flex-wrap justify-end gap-2">
                       <Link
                         href={`/admin/forms/${form.id}`}
                         className="text-indigo-600 hover:text-indigo-900"

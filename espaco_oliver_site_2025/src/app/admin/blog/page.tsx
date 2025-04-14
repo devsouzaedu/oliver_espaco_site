@@ -80,12 +80,12 @@ export default function AdminBlogPage() {
   };
 
   return (
-    <div className="px-6 py-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-2xl font-bold text-black">Gerenciar Blog</h1>
+    <div className="px-4 py-4 md:px-6 md:py-8">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6">
+        <h1 className="text-xl md:text-2xl font-bold text-black mb-4 sm:mb-0">Gerenciar Blog</h1>
         <Link 
           href="/admin/blog/novo" 
-          className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 flex items-center"
+          className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 flex items-center justify-center sm:justify-start"
         >
           <FaPlus className="mr-2" /> Novo Post
         </Link>
@@ -102,20 +102,20 @@ export default function AdminBlogPage() {
           <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-black"></div>
         </div>
       ) : posts.length > 0 ? (
-        <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="bg-white rounded-lg shadow overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Título
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="hidden sm:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Data
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Status
                 </th>
-                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-4 md:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Ações
                 </th>
               </tr>
@@ -123,16 +123,19 @@ export default function AdminBlogPage() {
             <tbody className="bg-white divide-y divide-gray-200">
               {posts.map((post) => (
                 <tr key={post.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                     <div className="text-sm font-medium text-gray-900">{post.title}</div>
-                    <div className="text-sm text-gray-500">{post.slug}</div>
+                    <div className="text-xs sm:text-sm text-gray-500 truncate max-w-[150px] sm:max-w-none">{post.slug}</div>
+                    <div className="sm:hidden text-xs text-gray-500 mt-1">
+                      {new Date(post.created_at).toLocaleDateString('pt-BR')}
+                    </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-gray-500">
                       {new Date(post.created_at).toLocaleDateString('pt-BR')}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap">
                     <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
                       post.published 
                         ? 'bg-green-100 text-green-800' 
@@ -141,11 +144,12 @@ export default function AdminBlogPage() {
                       {post.published ? 'Publicado' : 'Rascunho'}
                     </span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <td className="px-4 md:px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <div className="flex justify-end space-x-2">
                       <Link 
                         href={`/admin/blog/editar/${post.id}`}
                         className="text-blue-600 hover:text-blue-900"
+                        aria-label="Editar"
                       >
                         <FaEdit className="h-5 w-5" />
                       </Link>
@@ -154,12 +158,14 @@ export default function AdminBlogPage() {
                         className={`${
                           post.published ? 'text-yellow-600 hover:text-yellow-900' : 'text-green-600 hover:text-green-900'
                         }`}
+                        aria-label={post.published ? "Despublicar" : "Publicar"}
                       >
                         {post.published ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
                       </button>
                       <button
                         onClick={() => handleDeletePost(post.id)}
                         className="text-red-600 hover:text-red-900"
+                        aria-label="Excluir"
                       >
                         <FaTrash className="h-5 w-5" />
                       </button>

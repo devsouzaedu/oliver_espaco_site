@@ -258,9 +258,9 @@ export default function NewFormPage() {
   };
 
   return (
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-black">Criar Novo Formulário</h1>
+    <div className="w-full">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+        <h1 className="text-xl md:text-2xl font-semibold text-black mb-2 md:mb-0">Criar Novo Formulário</h1>
       </div>
       
       {error && (
@@ -269,13 +269,13 @@ export default function NewFormPage() {
         </div>
       )}
       
-      <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
         <form onSubmit={handleSubmit}>
           <div className="space-y-6">
             {/* Informações básicas */}
             <div>
               <h2 className="text-lg font-medium text-black mb-4">Informações Básicas</h2>
-              <div className="grid grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 gap-4 md:gap-6">
                 <div>
                   <label htmlFor="title" className="block text-sm font-medium text-black mb-1">
                     Título <span className="text-red-500">*</span>
@@ -324,7 +324,7 @@ export default function NewFormPage() {
                       <img 
                         src={coverImagePreview} 
                         alt="Preview" 
-                        className="h-40 object-cover rounded-md"
+                        className="max-h-40 object-cover rounded-md"
                       />
                     </div>
                   )}
@@ -334,12 +334,12 @@ export default function NewFormPage() {
             
             {/* Campos do formulário */}
             <div>
-              <div className="flex justify-between items-center mb-4">
-                <h2 className="text-lg font-medium text-black">Campos do Formulário</h2>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4">
+                <h2 className="text-lg font-medium text-black mb-2 sm:mb-0">Campos do Formulário</h2>
                 <button
                   type="button"
                   onClick={() => openFieldModal()}
-                  className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex items-center justify-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   + Adicionar Campo
                 </button>
@@ -354,8 +354,8 @@ export default function NewFormPage() {
               ) : (
                 <div className="space-y-3">
                   {fields.map((field, index) => (
-                    <div key={field.id} className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md">
-                      <div className="flex-1">
+                    <div key={field.id} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-md">
+                      <div className="flex-1 mb-2 sm:mb-0">
                         <p className="font-medium text-gray-800">{field.label}</p>
                         <div className="flex items-center mt-1 space-x-3">
                           <span className="text-xs text-gray-500">
@@ -408,18 +408,18 @@ export default function NewFormPage() {
             </div>
             
             <div className="pt-5 border-t border-gray-200">
-              <div className="flex justify-end">
+              <div className="flex flex-col-reverse sm:flex-row sm:justify-end space-y-2 space-y-reverse sm:space-y-0 sm:space-x-3">
                 <button
                   type="button"
                   onClick={() => router.push('/admin/forms')}
-                  className="px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Cancelar
                 </button>
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`ml-3 inline-flex justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
+                  className={`w-full sm:w-auto px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
                     loading ? 'opacity-70 cursor-not-allowed' : ''
                   }`}
                 >
@@ -439,86 +439,84 @@ export default function NewFormPage() {
               <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
             
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <h3 className="text-lg font-medium text-gray-900 mb-4">
-                  {editingFieldIndex !== null ? 'Editar Campo' : 'Adicionar Campo'}
-                </h3>
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-full max-w-lg p-6">
+              <h3 className="text-lg font-medium text-gray-900 mb-4">
+                {editingFieldIndex !== null ? 'Editar Campo' : 'Adicionar Campo'}
+              </h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="field-label" className="block text-sm font-medium text-black mb-1">
+                    Nome do Campo <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="field-label"
+                    value={currentField.label}
+                    onChange={(e) => setCurrentField({...currentField, label: e.target.value})}
+                    className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black placeholder-black"
+                    placeholder="Ex: Nome completo"
+                  />
+                </div>
                 
-                <div className="space-y-4">
+                <div>
+                  <label htmlFor="field-type" className="block text-sm font-medium text-black mb-1">
+                    Tipo de Campo <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="field-type"
+                    value={currentField.type}
+                    onChange={(e) => setCurrentField({
+                      ...currentField, 
+                      type: e.target.value as any,
+                      options: e.target.value === 'select' ? [] : undefined
+                    })}
+                    className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
+                  >
+                    <option value="text" className="text-black">Texto</option>
+                    <option value="email" className="text-black">Email</option>
+                    <option value="number" className="text-black">Número</option>
+                    <option value="date" className="text-black">Data</option>
+                    <option value="textarea" className="text-black">Área de texto</option>
+                    <option value="select" className="text-black">Seleção</option>
+                    <option value="checkbox" className="text-black">Checkbox</option>
+                  </select>
+                </div>
+                
+                {currentField.type === 'select' && (
                   <div>
-                    <label htmlFor="field-label" className="block text-sm font-medium text-black mb-1">
-                      Nome do Campo <span className="text-red-500">*</span>
+                    <label htmlFor="field-options" className="block text-sm font-medium text-black mb-1">
+                      Opções <span className="text-red-500">*</span>
                     </label>
-                    <input
-                      type="text"
-                      id="field-label"
-                      value={currentField.label}
-                      onChange={(e) => setCurrentField({...currentField, label: e.target.value})}
+                    <textarea
+                      id="field-options"
+                      value={currentOptions}
+                      onChange={(e) => setCurrentOptions(e.target.value)}
+                      rows={4}
                       className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black placeholder-black"
-                      placeholder="Ex: Nome completo"
+                      placeholder="Digite uma opção por linha"
                     />
+                    <p className="mt-1 text-xs text-black">
+                      Adicione uma opção por linha. Ex: Opção 1, Opção 2, etc.
+                    </p>
                   </div>
-                  
-                  <div>
-                    <label htmlFor="field-type" className="block text-sm font-medium text-black mb-1">
-                      Tipo de Campo <span className="text-red-500">*</span>
-                    </label>
-                    <select
-                      id="field-type"
-                      value={currentField.type}
-                      onChange={(e) => setCurrentField({
-                        ...currentField, 
-                        type: e.target.value as any,
-                        options: e.target.value === 'select' ? [] : undefined
-                      })}
-                      className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
-                    >
-                      <option value="text" className="text-black">Texto</option>
-                      <option value="email" className="text-black">Email</option>
-                      <option value="number" className="text-black">Número</option>
-                      <option value="date" className="text-black">Data</option>
-                      <option value="textarea" className="text-black">Área de texto</option>
-                      <option value="select" className="text-black">Seleção</option>
-                      <option value="checkbox" className="text-black">Checkbox</option>
-                    </select>
-                  </div>
-                  
-                  {currentField.type === 'select' && (
-                    <div>
-                      <label htmlFor="field-options" className="block text-sm font-medium text-black mb-1">
-                        Opções <span className="text-red-500">*</span>
-                      </label>
-                      <textarea
-                        id="field-options"
-                        value={currentOptions}
-                        onChange={(e) => setCurrentOptions(e.target.value)}
-                        rows={4}
-                        className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black placeholder-black"
-                        placeholder="Digite uma opção por linha"
-                      />
-                      <p className="mt-1 text-xs text-black">
-                        Adicione uma opção por linha. Ex: Opção 1, Opção 2, etc.
-                      </p>
-                    </div>
-                  )}
-                  
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      id="field-required"
-                      checked={currentField.required}
-                      onChange={(e) => setCurrentField({...currentField, required: e.target.checked})}
-                      className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                    />
-                    <label htmlFor="field-required" className="ml-2 block text-sm text-black">
-                      Campo obrigatório
-                    </label>
-                  </div>
+                )}
+                
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="field-required"
+                    checked={currentField.required}
+                    onChange={(e) => setCurrentField({...currentField, required: e.target.checked})}
+                    className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                  />
+                  <label htmlFor="field-required" className="ml-2 block text-sm text-black">
+                    Campo obrigatório
+                  </label>
                 </div>
               </div>
               
-              <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <div className="mt-5 sm:mt-6 flex flex-col-reverse sm:flex-row-reverse sm:space-x-2 sm:space-x-reverse space-y-2 space-y-reverse sm:space-y-0">
                 <button
                   type="button"
                   onClick={saveField}
@@ -529,7 +527,7 @@ export default function NewFormPage() {
                 <button
                   type="button"
                   onClick={closeFieldModal}
-                  className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm"
                 >
                   Cancelar
                 </button>
