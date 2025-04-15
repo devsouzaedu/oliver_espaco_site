@@ -23,13 +23,13 @@ const OurTeamSection = () => {
       id: 3,
       name: 'Nega',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_nega.jpg'
+      image: '/images/convertedwebp/espaco_oliver_beauty_time_nega.webp'
     },
     {
       id: 4,
       name: 'Leticia',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_leticia.jpg'
+      image: '/images/convertedwebp/espaco_oliver_beauty_time_leticia.webp'
     },
     {
       id: 5,

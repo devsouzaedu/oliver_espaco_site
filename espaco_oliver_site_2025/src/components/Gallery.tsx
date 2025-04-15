@@ -1,8 +1,9 @@
 "use client"
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Gallery = () => {
   const instagramUrl = "https://www.instagram.com/espacooliverbeauty/";
@@ -35,6 +36,31 @@ const Gallery = () => {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Função para avançar para o próximo slide
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryItems.length);
+  };
+
+  // Função para voltar para o slide anterior
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Auto-rotação dos slides
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <section className="py-16 px-4 bg-white">
       <div className="container mx-auto">
@@ -45,31 +71,64 @@ const Gallery = () => {
           Confira alguns dos nossos trabalhos mais recentes
         </p>
         
-        <div className="relative w-full overflow-hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item) => (
-              <div 
-                key={item.id}
-                className="mb-4"
+        <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+          {/* Botões de navegação */}
+          <button 
+            onClick={prevSlide} 
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/70 hover:bg-white text-gray-900 p-2 rounded-full"
+            aria-label="Slide anterior"
+          >
+            &#10094;
+          </button>
+          <button 
+            onClick={nextSlide} 
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/70 hover:bg-white text-gray-900 p-2 rounded-full"
+            aria-label="Próximo slide"
+          >
+            &#10095;
+          </button>
+          
+          {/* Imagem atual com animação */}
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative h-80 md:h-96 w-full"
+            >
+              <Link 
+                href={instagramUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full h-full"
               >
-                <Link 
-                  href={instagramUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block overflow-hidden shadow-lg hover:shadow-xl transition-shadow rounded-lg"
-                >
-                  <div className="relative h-80 w-full">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-300 hover:scale-105"
-                      loading="lazy"
-                    />
-                  </div>
-                </Link>
-              </div>
+                <Image
+                  src={galleryItems[currentIndex].image}
+                  alt={galleryItems[currentIndex].alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover"
+                  priority={currentIndex === 0}
+                  loading={currentIndex === 0 ? "eager" : "lazy"}
+                  quality={80}
+                />
+              </Link>
+            </motion.div>
+          </AnimatePresence>
+          
+          {/* Indicadores */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            {galleryItems.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  currentIndex === index ? 'bg-white' : 'bg-white/50'
+                }`}
+                aria-label={`Ir para slide ${index + 1}`}
+              />
             ))}
           </div>
         </div>

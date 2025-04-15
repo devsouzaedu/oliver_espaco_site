@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const images = [
-    '/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg',
+    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
     '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp',
     '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
@@ -19,8 +19,14 @@ const Hero = () => {
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   
   useEffect(() => {
+    // Pré-carregar a primeira imagem
+    const preloadImage = new window.Image();
+    preloadImage.src = images[0];
+    preloadImage.onload = () => setImagesLoaded(true);
+    
     const timer = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 4000);
@@ -28,7 +34,7 @@ const Hero = () => {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  }, [images]);
 
   return (
     <div className="relative h-[600px] w-full flex items-center justify-center overflow-hidden">
