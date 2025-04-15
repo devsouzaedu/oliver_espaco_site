@@ -1,17 +1,18 @@
 "use client"
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Gallery = () => {
   const instagramUrl = "https://www.instagram.com/espacooliverbeauty/";
   
+  // Apenas 4 imagens em um grid simples
   const galleryItems = [
     {
       id: 1,
       image: "/images/convertedwebp/espaco_oliver_manicure_unhas1.webp",
-      alt: "Manicure design exclusivo"
+      alt: "Unhas design exclusivo"
     },
     {
       id: 2,
@@ -27,19 +28,8 @@ const Gallery = () => {
       id: 4,
       image: "/images/convertedwebp/espaco_oliver_manicure_unhas4.webp",
       alt: "Nail art exclusiva"
-    },
-    {
-      id: 5,
-      image: "/images/convertedwebp/espaco_oliver_manicure_pe.webp",
-      alt: "Pedicure profissional"
     }
   ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Navegação simples
-  const nextSlide = () => setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryItems.length);
-  const prevSlide = () => setCurrentIndex((prevIndex) => prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1);
 
   return (
     <section className="py-16 px-4 bg-white">
@@ -47,55 +37,27 @@ const Gallery = () => {
         <h2 className="text-4xl mb-4 text-center text-black" style={{ fontFamily: "var(--font-display-sans)" }}>
           Explore: Galeria de trabalhos
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           Confira alguns dos nossos trabalhos mais recentes
         </p>
         
-        {/* Galeria simplificada */}
-        <div className="relative w-full max-w-2xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md">
-          <div className="relative h-80 md:h-96 w-full">
-            <Image
-              src={galleryItems[currentIndex].image}
-              alt={galleryItems[currentIndex].alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover"
-              priority
-            />
-          </div>
-          
-          {/* Botões de navegação simplificados */}
-          <button 
-            onClick={prevSlide} 
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-900 w-8 h-8 rounded-full flex items-center justify-center"
-            aria-label="Slide anterior"
-          >
-            &#10094;
-          </button>
-          <button 
-            onClick={nextSlide} 
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-900 w-8 h-8 rounded-full flex items-center justify-center"
-            aria-label="Próximo slide"
-          >
-            &#10095;
-          </button>
-          
-          {/* Indicadores simplificados */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-            {galleryItems.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full ${
-                  currentIndex === index ? 'bg-white' : 'bg-white/50'
-                }`}
-                aria-label={`Ir para slide ${index + 1}`}
+        {/* Grid simples de 4 fotos */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-10">
+          {galleryItems.map((item) => (
+            <div key={item.id} className="aspect-square relative rounded-lg overflow-hidden shadow-md">
+              <Image
+                src={item.image}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 640px) 100vw, 50vw"
+                className="object-cover"
+                priority={item.id <= 2}
               />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center">
           <Link 
             href={instagramUrl}
             target="_blank" 
@@ -118,12 +80,6 @@ const Gallery = () => {
           </Link>
         </div>
       </div>
-
-      <style jsx global>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 };
