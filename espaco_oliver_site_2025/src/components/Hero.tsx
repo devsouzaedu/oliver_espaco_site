@@ -6,81 +6,141 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  // Versão otimizada da primeira imagem
+  const optimizedFirstImage = {
+    webp: '/images/optimized/hero-first-slide.webp',
+    jpg: '/images/optimized/hero-first-slide.jpg'
+  };
+
   const images = [
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).jpg'
+      webp: optimizedFirstImage.webp,
+      jpg: optimizedFirstImage.jpg
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg'
+      webp: '/images/optimized/hero-slide-1.webp',
+      jpg: '/images/optimized/hero-slide-1.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).jpg'
+      webp: '/images/optimized/hero-slide-2.webp',
+      jpg: '/images/optimized/hero-slide-2.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).jpg'
+      webp: '/images/optimized/hero-slide-3.webp',
+      jpg: '/images/optimized/hero-slide-3.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).jpg'
+      webp: '/images/optimized/hero-slide-4.webp',
+      jpg: '/images/optimized/hero-slide-4.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).jpg'
+      webp: '/images/optimized/hero-slide-5.webp',
+      jpg: '/images/optimized/hero-slide-5.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).jpg'
+      webp: '/images/optimized/hero-slide-6.webp',
+      jpg: '/images/optimized/hero-slide-6.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg'
+      webp: '/images/optimized/hero-slide-7.webp',
+      jpg: '/images/optimized/hero-slide-7.jpg'
     },
     {
-      webp: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp',
-      jpg: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).jpg'
+      webp: '/images/optimized/hero-slide-8.webp',
+      jpg: '/images/optimized/hero-slide-8.jpg'
+    },
+    {
+      webp: '/images/optimized/hero-slide-9.webp',
+      jpg: '/images/optimized/hero-slide-9.jpg'
     }
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [highQualityLoaded, setHighQualityLoaded] = useState(false);
   
   useEffect(() => {
-    // Pré-carregar a primeira imagem
-    const preloadImage = new window.Image();
-    preloadImage.src = images[0].jpg;
-    preloadImage.onload = () => setImagesLoaded(true);
+    // Carregar a versão de alta qualidade da primeira imagem
+    if (typeof window !== 'undefined') {
+      const highQualityImage = new window.Image();
+      highQualityImage.src = images[0].jpg;
+      highQualityImage.onload = () => setHighQualityLoaded(true);
+    }
     
-    const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
+    // Iniciar o carrossel apenas após carregamento inicial
+    const timer = setTimeout(() => {
+      const carouselInterval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000);
+      
+      return () => {
+        clearInterval(carouselInterval);
+      };
+    }, 5000); // Espera 5 segundos antes de iniciar o carrossel
     
     return () => {
-      clearInterval(timer);
+      clearTimeout(timer);
     };
-  }, [images]);
+  }, [images.length]);
 
   return (
     <div className="relative h-[600px] w-full flex items-center justify-center overflow-hidden">
-      {/* Imagens com transição */}
-      {images.map((image, index) => (
+      {/* Primeira imagem otimizada para LCP (baixa qualidade) */}
+      <div 
+        className={`absolute inset-0 z-0 ${highQualityLoaded ? 'opacity-0' : 'opacity-100'}`}
+        style={{ transition: 'opacity 1000ms ease-in-out' }}
+      >
+        <div className="absolute inset-0 z-0">
+          <picture>
+            <source srcSet={optimizedFirstImage.webp} type="image/webp" />
+            <img
+              src={optimizedFirstImage.jpg}
+              alt="Espaço Oliver Beauty"
+              className="absolute inset-0 w-full h-full object-cover brightness-[0.7]"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              style={{ 
+                transform: 'translateZ(0)',
+                willChange: 'opacity'
+              }}
+            />
+          </picture>
+        </div>
+      </div>
+      
+      {/* Primeira imagem com alta prioridade para LCP (alta qualidade) */}
+      <div 
+        className={`absolute inset-0 z-0 ${currentImageIndex === 0 && highQualityLoaded ? 'opacity-100' : 'opacity-0'}`}
+        style={{ transition: 'opacity 1000ms ease-in-out' }}
+      >
+        <picture>
+          <source srcSet={optimizedFirstImage.webp} type="image/webp" />
+          <img
+            src={optimizedFirstImage.jpg}
+            alt="Espaço Oliver Beauty"
+            className="absolute inset-0 w-full h-full object-cover brightness-[0.7]"
+            loading="eager"
+          />
+        </picture>
+      </div>
+      
+      {/* Imagens restantes com transição */}
+      {images.slice(1).map((image, index) => (
         <div 
-          key={index}
+          key={index + 1}
           className="absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out"
           style={{ 
-            opacity: currentImageIndex === index ? 1 : 0,
+            opacity: currentImageIndex === index + 1 ? 1 : 0,
           }}
         >
           <picture>
             <source srcSet={image.webp} type="image/webp" />
             <img
               src={image.jpg}
-              alt={`Slide ${index + 1}`}
+              alt={`Espaço Oliver Beauty - Slide ${index + 2}`}
               className="absolute inset-0 w-full h-full object-cover brightness-[0.7]"
-              loading={index === 0 ? "eager" : "lazy"}
+              loading="lazy"
             />
           </picture>
         </div>
@@ -90,17 +150,15 @@ const Hero = () => {
       <motion.div 
         className="z-10 text-center text-white"
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.1 }}
       >
         <motion.h1 
           className="text-5xl font-bold mb-4" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: false, amount: 0.1 }}
         >
           Unhas feitas
         </motion.h1>
@@ -108,17 +166,15 @@ const Hero = () => {
           className="text-3xl mb-8" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: false, amount: 0.1 }}
         >
           Você feliz
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: false, amount: 0.1 }}
         >
           <Link 
             href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty"
@@ -132,13 +188,7 @@ const Hero = () => {
       </motion.div>
       
       {/* Indicadores de imagem */}
-      <motion.div 
-        className="absolute bottom-6 z-10 flex space-x-2 justify-center w-full"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        viewport={{ once: false, amount: 0.1 }}
-      >
+      <div className="absolute bottom-6 z-10 flex space-x-2 justify-center w-full">
         {images.map((_, index) => (
           <button
             key={index}
@@ -149,7 +199,7 @@ const Hero = () => {
             aria-label={`Ir para slide ${index + 1}`}
           />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

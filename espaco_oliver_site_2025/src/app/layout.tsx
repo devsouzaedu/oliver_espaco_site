@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Espaço Oliver Beauty',
     images: [
       {
-        url: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg',
+        url: '/images/optimized/hero-slide-2.jpg',
         width: 1200,
         height: 630,
         alt: 'Espaço Oliver Beauty',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Espaço Oliver Beauty - Manicure e Pedicure",
     description: "Serviços de manicure, pedicure e nail design de alta qualidade em Barueri.",
-    images: ['/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg'],
+    images: ['/images/optimized/hero-slide-2.jpg'],
   },
 };
 
@@ -44,14 +44,16 @@ export default function RootLayout({
         <link 
           rel="preload" 
           as="image" 
-          href="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp"
+          href="/images/optimized/hero-slide-1.webp"
           type="image/webp"
+          fetchPriority="high"
         />
         <link 
           rel="preload" 
           as="image" 
-          href="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).jpg"
+          href="/images/optimized/hero-slide-1.jpg"
           type="image/jpeg"
+          fetchPriority="high"
         />
       </head>
       <body
