@@ -12,21 +12,25 @@ const Gallery = () => {
     {
       id: 1,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg", 
       alt: "Unhas design exclusivo"
     },
     {
       id: 2,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpg",
       alt: "Unhas decoradas"
     },
     {
       id: 3,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg",
       alt: "Design de unhas"
     },
     {
       id: 4,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.jpg",
       alt: "Nail art exclusiva"
     }
   ];
@@ -43,16 +47,20 @@ const Gallery = () => {
         
         {/* Grid simples de 4 fotos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-10">
-          {galleryItems.map((item) => (
-            <div key={item.id} className="aspect-square relative rounded-lg overflow-hidden shadow-md">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                sizes="(max-width: 640px) 100vw, 50vw"
-                className="object-cover"
-                priority={item.id <= 2}
-              />
+          {galleryItems.map(item => (
+            <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="relative w-full h-64 sm:h-80 overflow-hidden">
+                <div className="relative w-full h-full">
+                  <picture>
+                    <source srcSet={item.image} type="image/webp" />
+                    <img
+                      src={item.fallbackImage || item.image.replace('.webp', '.jpg')}
+                      alt={item.alt}
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </picture>
+                </div>
+              </div>
             </div>
           ))}
         </div>

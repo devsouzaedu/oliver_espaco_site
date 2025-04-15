@@ -7,15 +7,42 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const images = [
-    '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp',
-    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
-    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp'
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg'
+    },
+    {
+      webp: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp',
+      jpg: '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).jpg'
+    }
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,7 +51,7 @@ const Hero = () => {
   useEffect(() => {
     // Pré-carregar a primeira imagem
     const preloadImage = new window.Image();
-    preloadImage.src = images[0];
+    preloadImage.src = images[0].jpg;
     preloadImage.onload = () => setImagesLoaded(true);
     
     const timer = setInterval(() => {
@@ -47,16 +74,15 @@ const Hero = () => {
             opacity: currentImageIndex === index ? 1 : 0,
           }}
         >
-          <Image 
-            src={image}
-            alt={`Slide ${index + 1}`}
-            fill
-            sizes="100vw"
-            className="object-cover brightness-[0.7]"
-            priority={index === 0}
-            loading={index === 0 ? "eager" : "lazy"}
-            quality={80}
-          />
+          <picture>
+            <source srcSet={image.webp} type="image/webp" />
+            <img
+              src={image.jpg}
+              alt={`Slide ${index + 1}`}
+              className="absolute inset-0 w-full h-full object-cover brightness-[0.7]"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+          </picture>
         </div>
       ))}
       

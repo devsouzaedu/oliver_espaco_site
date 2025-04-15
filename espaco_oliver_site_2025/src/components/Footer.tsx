@@ -11,9 +11,9 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo e Sobre */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1">
             <Image 
               src="/images/convertedwebp/logo_branco_espaco_oliver.webp" 
               alt="Espaço Oliver" 
@@ -34,26 +34,37 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links Rápidos */}
+          {/* Mapa do Site */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Links Rápidos</h3>
+            <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Mapa do Site</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-white hover:text-gray-300 transition-colors">
                   Home
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Serviços */}
-          <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Serviços</h3>
-            <ul className="space-y-2">
               <li>
-                <Link href="/servicos/manicure" className="text-white hover:text-gray-300 transition-colors">
-                  Manicure e Pedicure
+                <Link href="/naildesign" className="text-white hover:text-gray-300 transition-colors">
+                  Nail Design
                 </Link>
+              </li>
+              <li>
+                <Link href="/Manicure" className="text-white hover:text-gray-300 transition-colors">
+                  Manicure
+                </Link>
+              </li>
+              <li>
+                <Link href="/pedicure" className="text-white hover:text-gray-300 transition-colors">
+                  Pedicure
+                </Link>
+              </li>
+              <li>
+                <a href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20no%20Espaço%20Oliver%20Beauty" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white hover:text-gray-300 transition-colors">
+                  Agendar agora
+                </a>
               </li>
             </ul>
           </div>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
+import ResponsiveImage from '@/components/ResponsiveImage';
 
 const NailDesignPage = () => {
   return (
@@ -42,13 +43,12 @@ const NailDesignPage = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
+                <ResponsiveImage
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg"
                   alt="Alongamento de Unhas"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="w-full h-full object-cover rounded-lg"
+                  loading="eager"
                 />
               </div>
             </motion.div>
@@ -99,13 +99,12 @@ const NailDesignPage = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
+                <ResponsiveImage
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg"
                   alt="Nail Art Artística"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="w-full h-full object-cover rounded-lg"
+                  loading="eager"
                 />
               </div>
             </motion.div>

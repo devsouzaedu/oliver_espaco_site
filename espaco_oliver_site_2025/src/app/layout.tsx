@@ -45,6 +45,13 @@ export default function RootLayout({
           rel="preload" 
           as="image" 
           href="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp"
+          type="image/webp"
+        />
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).jpg"
+          type="image/jpeg"
         />
       </head>
       <body
