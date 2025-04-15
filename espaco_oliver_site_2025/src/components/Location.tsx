@@ -7,12 +7,12 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const Location = () => {
   const businessHours = [
-    { day: 'Seg', hours: '08h00 às 20h00' },
-    { day: 'Ter', hours: '08h00 às 20h00' },
-    { day: 'Qua', hours: '08h00 às 20h00' },
-    { day: 'Qui', hours: '08h00 às 20h00' },
-    { day: 'Sex', hours: '08h00 às 20h00' },
-    { day: 'Sáb', hours: '08h00 às 18h00' },
+    { day: 'Seg', hours: 'Fechado' },
+    { day: 'Ter', hours: '9h00 às 19h00' },
+    { day: 'Qua', hours: '9h00 às 19h00' },
+    { day: 'Qui', hours: '9h00 às 19h00' },
+    { day: 'Sex', hours: '9h00 às 19h00' },
+    { day: 'Sáb', hours: '8h00 às 16h00' },
   ];
 
   const ref = useRef(null);

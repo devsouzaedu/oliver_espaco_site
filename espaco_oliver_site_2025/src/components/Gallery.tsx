@@ -46,25 +46,25 @@ const Gallery = () => {
         </p>
         
         <div className="relative w-full overflow-hidden">
-          <div className="flex overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryItems.map((item) => (
               <div 
                 key={item.id}
-                className="snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+                className="mb-4"
               >
                 <Link 
                   href={instagramUrl} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="block overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                  className="block overflow-hidden shadow-lg hover:shadow-xl transition-shadow rounded-lg"
                 >
-                  <div className="relative h-96 w-full">
+                  <div className="relative h-80 w-full">
                     <Image
                       src={item.image}
                       alt={item.alt}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover transition-transform duration-300 hover:scale-105"
                       loading="lazy"
                     />
                   </div>

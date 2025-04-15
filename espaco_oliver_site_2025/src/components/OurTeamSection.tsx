@@ -15,7 +15,7 @@ const OurTeamSection = () => {
     },
     {
       id: 2,
-      name: 'Joyce',
+      name: 'Joice',
       role: 'Nail Designer',
       image: '/images/espaco_oliver_beauty_time_joyce (1).jpg'
     },
@@ -29,7 +29,7 @@ const OurTeamSection = () => {
       id: 4,
       name: 'Leticia',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_leticia (1).jpg'
+      image: '/images/espaco_oliver_beauty_time_leticia.jpg'
     },
     {
       id: 5,
