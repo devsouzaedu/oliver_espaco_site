@@ -1,9 +1,8 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Gallery = () => {
   const instagramUrl = "https://www.instagram.com/espacooliverbeauty/";
@@ -37,37 +36,10 @@ const Gallery = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
 
-  // Função para avançar para o próximo slide
-  const nextSlide = () => {
-    setIsLoading(true);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryItems.length);
-  };
-
-  // Função para voltar para o slide anterior
-  const prevSlide = () => {
-    setIsLoading(true);
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1
-    );
-  };
-
-  // Função para lidar com o carregamento completo da imagem
-  const handleImageLoad = () => {
-    setIsLoading(false);
-  };
-
-  // Auto-rotação dos slides
-  useEffect(() => {
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+  // Navegação simples
+  const nextSlide = () => setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryItems.length);
+  const prevSlide = () => setCurrentIndex((prevIndex) => prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1);
 
   return (
     <section className="py-16 px-4 bg-white">
@@ -79,66 +51,42 @@ const Gallery = () => {
           Confira alguns dos nossos trabalhos mais recentes
         </p>
         
-        <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
-          {/* Botões de navegação */}
+        {/* Galeria simplificada */}
+        <div className="relative w-full max-w-2xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <div className="relative h-80 md:h-96 w-full">
+            <Image
+              src={galleryItems[currentIndex].image}
+              alt={galleryItems[currentIndex].alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          
+          {/* Botões de navegação simplificados */}
           <button 
             onClick={prevSlide} 
-            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/70 hover:bg-white text-gray-900 p-2 rounded-full"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-900 w-8 h-8 rounded-full flex items-center justify-center"
             aria-label="Slide anterior"
           >
             &#10094;
           </button>
           <button 
             onClick={nextSlide} 
-            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/70 hover:bg-white text-gray-900 p-2 rounded-full"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-900 w-8 h-8 rounded-full flex items-center justify-center"
             aria-label="Próximo slide"
           >
             &#10095;
           </button>
           
-          {/* Imagem atual com animação */}
-          <AnimatePresence initial={false} mode="wait">
-            <motion.div 
-              key={currentIndex}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="relative h-80 md:h-96 w-full"
-            >
-              <Link 
-                href={instagramUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block w-full h-full"
-              >
-                {isLoading && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-                    <div className="w-8 h-8 border-4 border-gray-300 border-t-[#C59F6E] rounded-full animate-spin"></div>
-                  </div>
-                )}
-                <Image
-                  src={galleryItems[currentIndex].image}
-                  alt={galleryItems[currentIndex].alt}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 768px"
-                  className="object-cover"
-                  priority={currentIndex === 0}
-                  loading={currentIndex === 0 ? "eager" : "lazy"}
-                  quality={80}
-                  onLoadingComplete={handleImageLoad}
-                />
-              </Link>
-            </motion.div>
-          </AnimatePresence>
-          
-          {/* Indicadores */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+          {/* Indicadores simplificados */}
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
             {galleryItems.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
+                className={`w-2 h-2 rounded-full ${
                   currentIndex === index ? 'bg-white' : 'bg-white/50'
                 }`}
                 aria-label={`Ir para slide ${index + 1}`}
