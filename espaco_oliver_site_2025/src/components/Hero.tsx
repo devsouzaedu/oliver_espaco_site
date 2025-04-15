@@ -7,15 +7,15 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const images = [
-    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
-    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp',
     '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (2).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (4).webp',
     '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (6).webp',
-    '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp'
+    '/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (2).webp',
+    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp',
+    '/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp'
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

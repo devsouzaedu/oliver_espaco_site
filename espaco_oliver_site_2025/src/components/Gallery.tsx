@@ -11,43 +11,51 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpeg",
+      image: "/images/convertedwebp/espaco_oliver_manicure_unhas1.webp",
       alt: "Manicure design exclusivo"
     },
     {
       id: 2,
-      image: "/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpeg",
+      image: "/images/convertedwebp/espaco_oliver_manicure_unhas2.webp",
       alt: "Unhas decoradas"
     },
     {
       id: 3,
-      image: "/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg",
+      image: "/images/convertedwebp/espaco_oliver_manicure_unhas3.webp",
       alt: "Design de unhas"
     },
     {
       id: 4,
-      image: "/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg",
+      image: "/images/convertedwebp/espaco_oliver_manicure_unhas4.webp",
       alt: "Nail art exclusiva"
     },
     {
       id: 5,
-      image: "/images/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.jpg",
+      image: "/images/convertedwebp/espaco_oliver_manicure_pe.webp",
       alt: "Pedicure profissional"
     }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Função para avançar para o próximo slide
   const nextSlide = () => {
+    setIsLoading(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryItems.length);
   };
 
   // Função para voltar para o slide anterior
   const prevSlide = () => {
+    setIsLoading(true);
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? galleryItems.length - 1 : prevIndex - 1
     );
+  };
+
+  // Função para lidar com o carregamento completo da imagem
+  const handleImageLoad = () => {
+    setIsLoading(false);
   };
 
   // Auto-rotação dos slides
@@ -89,7 +97,7 @@ const Gallery = () => {
           </button>
           
           {/* Imagem atual com animação */}
-          <AnimatePresence mode="wait">
+          <AnimatePresence initial={false} mode="wait">
             <motion.div 
               key={currentIndex}
               initial={{ opacity: 0 }}
@@ -104,6 +112,11 @@ const Gallery = () => {
                 rel="noopener noreferrer"
                 className="block w-full h-full"
               >
+                {isLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                    <div className="w-8 h-8 border-4 border-gray-300 border-t-[#C59F6E] rounded-full animate-spin"></div>
+                  </div>
+                )}
                 <Image
                   src={galleryItems[currentIndex].image}
                   alt={galleryItems[currentIndex].alt}
@@ -113,6 +126,7 @@ const Gallery = () => {
                   priority={currentIndex === 0}
                   loading={currentIndex === 0 ? "eager" : "lazy"}
                   quality={80}
+                  onLoadingComplete={handleImageLoad}
                 />
               </Link>
             </motion.div>
