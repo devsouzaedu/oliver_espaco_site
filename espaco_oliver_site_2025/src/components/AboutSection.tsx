@@ -26,13 +26,14 @@ const AboutSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative h-[600px] w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/espaco_oliver_beauty_fachada.jpg"
-                  alt="Fachada do Espaço Oliver Beauty"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
-                />
+                <picture>
+                  <source srcSet="/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp" type="image/webp" />
+                  <img
+                    src="/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).jpg"
+                    alt="Espaço Oliver Beauty - Interior"
+                    className="w-full h-full object-cover"
+                  />
+                </picture>
               </div>
             </motion.div>
             

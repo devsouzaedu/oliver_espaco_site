@@ -22,14 +22,16 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center">
         <div className="mb-4 md:mb-0">
           <Link href="/" className="flex items-center">
-            <Image 
-              src="/images/logo_espaco_oliver.png" 
-              alt="Espaço Oliver" 
-              width={180} 
-              height={60} 
-              className="object-contain"
-              priority
-            />
+            <picture>
+              <source srcSet="/images/convertedwebp/logo_espaco_oliver.webp" type="image/webp" />
+              <img 
+                src="/images/convertedwebp/logo_espaco_oliver.jpg" 
+                alt="Espaço Oliver" 
+                width={180} 
+                height={60} 
+                className="object-contain"
+              />
+            </picture>
           </Link>
         </div>
         <ul className="flex flex-wrap justify-center space-x-6 font-serif text-black" style={{ fontFamily: "var(--font-old-standard-tt)" }}>

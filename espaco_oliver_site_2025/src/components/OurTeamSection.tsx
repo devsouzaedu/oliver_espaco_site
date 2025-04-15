@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import ResponsiveImage from './ResponsiveImage';
 
 const OurTeamSection = () => {
   const team = [
@@ -11,37 +12,43 @@ const OurTeamSection = () => {
       id: 1,
       name: 'Mariana',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_mariana (1).JPG'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_mariana (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_mariana (1).jpg'
     },
     {
       id: 2,
       name: 'Joice',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_joyce (1).jpg'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_joice (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_joice (1).jpg'
     },
     {
       id: 3,
       name: 'Nega',
       role: 'Nail Designer',
-      image: '/images/convertedwebp/espaco_oliver_beauty_time_nega.webp'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_nega.webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_nega.jpg'
     },
     {
       id: 4,
       name: 'Leticia',
       role: 'Nail Designer',
-      image: '/images/convertedwebp/espaco_oliver_beauty_time_leticia.webp'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_leticia.webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_leticia.jpg'
     },
     {
       id: 5,
       name: 'Giovana',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_giovana2.jpg'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_giovana2.webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_giovana2.jpg'
     },
     {
       id: 6,
       name: 'Simone',
       role: 'Nail Designer',
-      image: '/images/espaco_oliver_beauty_time_simone (1).jpg'
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).jpg'
     }
   ];
 
@@ -79,15 +86,15 @@ const OurTeamSection = () => {
                 transition={{ duration: 0.2 }}
               >
                 <div className="h-72 relative">
-                  <Image
-                    src={member.image}
-                    alt={`${member.name} - ${member.role}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover object-top"
-                    loading="eager"
-                    priority={member.id <= 2}
-                  />
+                  <picture>
+                    <source srcSet={member.webp} type="image/webp" />
+                    <img
+                      src={member.fallback}
+                      alt={`${member.name} - ${member.role}`}
+                      className="absolute w-full h-full object-cover object-top"
+                      loading="eager"
+                    />
+                  </picture>
                 </div>
                 <div className="p-6">
                   <h3 
@@ -122,14 +129,14 @@ const OurTeamSection = () => {
                 Nossa equipe trabalha em conjunto para oferecer a melhor experiência possível. Venha conhecer pessoalmente nossos profissionais e descobrir por que somos referência em nail design.
               </p>
               <div className="relative h-80 w-full mb-6 rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp" 
-                  alt="Equipe Espaço Oliver Beauty"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-contain sm:object-cover object-center"
-                  priority
-                />
+                <picture>
+                  <source srcSet="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp" type="image/webp" />
+                  <img 
+                    src="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).jpg" 
+                    alt="Equipe Espaço Oliver Beauty"
+                    className="w-full h-full object-contain sm:object-cover object-center"
+                  />
+                </picture>
               </div>
               <div className="mt-6">
                 <Link 

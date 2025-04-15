@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Espaço Oliver Beauty',
     images: [
       {
-        url: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
+        url: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg',
         width: 1200,
         height: 630,
         alt: 'Espaço Oliver Beauty',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Espaço Oliver Beauty - Manicure e Pedicure",
     description: "Serviços de manicure, pedicure e nail design de alta qualidade em Barueri.",
-    images: ['/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp'],
+    images: ['/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg'],
   },
 };
 

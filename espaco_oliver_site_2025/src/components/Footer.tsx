@@ -14,13 +14,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo e Sobre */}
           <div className="col-span-1">
-            <Image 
-              src="/images/convertedwebp/logo_branco_espaco_oliver.webp" 
-              alt="Espaço Oliver" 
-              width={150} 
-              height={80}
-              className="mb-4"
-            />
+            <picture>
+              <source srcSet="/images/convertedwebp/logo_branco_espaco_oliver.webp" type="image/webp" />
+              <img 
+                src="/images/convertedwebp/logo_branco_espaco_oliver.jpg" 
+                alt="Espaço Oliver" 
+                width={150} 
+                height={80}
+                className="mb-4"
+              />
+            </picture>
             <p className="text-white mb-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
               Tornando mulheres mais belas e confiantes há mais de 15 anos.
             </p>

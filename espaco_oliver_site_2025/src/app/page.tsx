@@ -207,13 +207,16 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <div className="mb-8">
-          <img 
-            src="/logo-oliver.svg" 
-            alt="Espaço Oliver"
-            width={120}
-            height={120}
-            className="mx-auto"
-          />
+          <picture>
+            <source srcSet="/images/convertedwebp/logo_espaco_oliver.webp" type="image/webp" />
+            <img 
+              src="/images/convertedwebp/logo_espaco_oliver.jpg" 
+              alt="Espaço Oliver"
+              width={120}
+              height={120}
+              className="mx-auto"
+            />
+          </picture>
         </div>
         <h1 className="text-3xl font-serif mb-4 text-black">Site em criação</h1>
         <p className="text-lg text-black mb-8">Em breve um novo site do Espaço Oliver Beauty</p>

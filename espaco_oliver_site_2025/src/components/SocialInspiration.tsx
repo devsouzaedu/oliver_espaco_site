@@ -26,13 +26,14 @@ const SocialInspiration = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             whileHover={{ scale: 1.02 }}
           >
-            <Image
-              src="/images/image_gif_nails.webp"
-              alt="Inspirações de unhas"
-              fill
-              sizes="(max-width: 1024px) 100vw, 1024px"
-              className="object-cover"
-            />
+            <picture>
+              <source srcSet="/images/convertedwebp/hero_espaco_oliver_manicures.webp" type="image/webp" />
+              <img
+                src="/images/convertedwebp/hero_espaco_oliver_manicures.jpg"
+                alt="Inspirações de unhas"
+                className="w-full h-full object-cover"
+              />
+            </picture>
           </motion.div>
           <motion.div 
             className="text-center"

@@ -28,7 +28,8 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Ana Paula",
-      photo: "/images/convertedwebp/garotas_feedback_pfp (1).webp",
+      photoWebp: "/images/convertedwebp/garotas_feedback_pfp (1).webp",
+      photoJpg: "/images/convertedwebp/garotas_feedback_pfp (1).jpg",
       rating: 5,
       date: "12 de Março, 2025",
       text: "Adorei o serviço! As unhas ficaram perfeitas e o atendimento foi excelente. A manicure foi super cuidadosa e atenciosa. Com certeza voltarei mais vezes.",
@@ -37,7 +38,8 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Carla Silva",
-      photo: "/images/convertedwebp/garotas_feedback_pfp (2).webp",
+      photoWebp: "/images/convertedwebp/garotas_feedback_pfp (2).webp",
+      photoJpg: "/images/convertedwebp/garotas_feedback_pfp (2).jpg",
       rating: 5,
       date: "05 de Março, 2025",
       text: "Melhor lugar para fazer as unhas em Alphaville! O atendimento é impecável e os resultados são sempre incríveis. As cores são lindas e a durabilidade é ótima.",
@@ -46,7 +48,8 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Juliana Costa",
-      photo: "/images/convertedwebp/garotas_feedback_pfp (3).webp",
+      photoWebp: "/images/convertedwebp/garotas_feedback_pfp (3).webp",
+      photoJpg: "/images/convertedwebp/garotas_feedback_pfp (3).jpg",
       rating: 5,
       date: "27 de Fevereiro, 2025",
       text: "Ambiente super aconchegante e profissionais excelentes! Minhas unhas nunca ficaram tão bonitas. Recomendo demais o Espaço Oliver para quem busca qualidade.",
@@ -55,7 +58,8 @@ const Testimonials = () => {
     {
       id: 4,
       name: "Mariana Alves",
-      photo: "/images/convertedwebp/garotas_feedback_pfp (4).webp",
+      photoWebp: "/images/convertedwebp/garotas_feedback_pfp (4).webp",
+      photoJpg: "/images/convertedwebp/garotas_feedback_pfp (4).jpg",
       rating: 5,
       date: "18 de Fevereiro, 2025",
       text: "Experiência maravilhosa! As unhas ficaram perfeitas e duradouras. Adorei o atendimento personalizado e a atenção aos detalhes. Já agendei meu próximo horário!",
@@ -119,14 +123,15 @@ const Testimonials = () => {
             <div className="flex items-center justify-center gap-4">
               <div className="flex-shrink-0">
                 <div className="relative w-16 h-16 overflow-hidden">
-                  <Image
-                    src={activeTestimonial.photo}
-                    alt={activeTestimonial.name}
-                    fill
-                    sizes="64px"
-                    className="object-cover"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source srcSet={activeTestimonial.photoWebp} type="image/webp" />
+                    <img
+                      src={activeTestimonial.photoJpg}
+                      alt={activeTestimonial.name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               

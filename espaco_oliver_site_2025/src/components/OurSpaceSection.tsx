@@ -3,37 +3,44 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ResponsiveImage from './ResponsiveImage';
 
 const OurSpaceSection = () => {
   const images = [
     { 
       id: 1, 
-      src: '/images/espaco_oliver_beauty_interno_cadeiras (1).jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (1).jpg',
       alt: 'Espaço Oliver Beauty - Área interna'
     },
     { 
       id: 2, 
-      src: '/images/espaco_oliver_beauty_interno_cadeiras (5).jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (5).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (5).jpg',
       alt: 'Espaço Oliver Beauty - Estações de trabalho'
     },
     { 
       id: 3, 
-      src: '/images/espaco_oliver_beauty_interno_esmaltes_na_parede (1).jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_esmaltes_na_parede (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_interno_esmaltes_na_parede (1).jpg',
       alt: 'Espaço Oliver Beauty - Parede de esmaltes'
     },
     { 
       id: 4, 
-      src: '/images/espaco_oliver_beauty_foco_interno (1).jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_foco_interno (1).jpg',
       alt: 'Espaço Oliver Beauty - Detalhes internos'
     },
     { 
       id: 5, 
-      src: '/images/espaco_oliver_beauty_interno_cadeiras (3).jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_interno_cadeiras (3).jpg',
       alt: 'Espaço Oliver Beauty - Poltronas'
     },
     { 
       id: 6, 
-      src: '/images/espaco_oliver_beauty_parede_logo.jpg',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_parede_logo.webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_parede_logo.jpg',
       alt: 'Espaço Oliver Beauty - Parede com logo'
     },
   ];
@@ -72,14 +79,15 @@ const OurSpaceSection = () => {
                 key={image.id}
                 className="overflow-hidden rounded-lg shadow-md h-80 relative hover:scale-[1.03] transition-all duration-300"
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
-                  loading="lazy"
-                />
+                <picture>
+                  <source srcSet={image.webp} type="image/webp" />
+                  <img
+                    src={image.fallback}
+                    alt={image.alt}
+                    className="absolute w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             ))}
           </div>
