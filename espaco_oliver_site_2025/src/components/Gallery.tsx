@@ -11,22 +11,22 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "/images/convertedwebp/espaco_oliver_manicure_unhas1.webp",
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp",
       alt: "Unhas design exclusivo"
     },
     {
       id: 2,
-      image: "/images/convertedwebp/espaco_oliver_manicure_unhas2.webp",
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp",
       alt: "Unhas decoradas"
     },
     {
       id: 3,
-      image: "/images/convertedwebp/espaco_oliver_manicure_unhas3.webp",
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp",
       alt: "Design de unhas"
     },
     {
       id: 4,
-      image: "/images/convertedwebp/espaco_oliver_manicure_unhas4.webp",
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp",
       alt: "Nail art exclusiva"
     }
   ];
