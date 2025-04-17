@@ -91,7 +91,7 @@ const PedicurePage = () => {
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp"
-                  alt="Serviço de Pedicure"
+                  alt="Pedicure Completa"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-bottom rounded-lg"
@@ -115,15 +115,8 @@ const PedicurePage = () => {
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Nossa pedicure completa inclui banho relaxante, esfoliação suave, remoção de cutículas, tratamento de calosidades, modelagem das unhas e esmaltação. Um tratamento perfeito para quem busca beleza e bem-estar para os pés.
+                A pedicure completa é um cuidado estético para os pés que inclui cutilagem e esmaltação. O procedimento começa com a higienização dos pés, seguida do corte e lixamento das unhas para modelar o formato. A cutilagem remove o excesso de cutículas com alicate, após amolecê-las. Em seguida, realiza-se a esfoliação para suavizar a pele e a hidratação dos pés. Finaliza-se com a aplicação de base, esmalte (comum ou gel) e um top coat para maior durabilidade. O resultado são pés bem cuidados, com unhas bonitas e saudáveis.
               </p>
-              <ul className="list-disc list-inside mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                <li>Hidratação profunda</li>
-                <li>Remoção de cutículas</li>
-                <li>Tratamento de calosidades</li>
-                <li>Massagem relaxante</li>
-                <li>Esmaltação de sua escolha</li>
-              </ul>
               <div className="mt-6">
                 <Link 
                   href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20pedicure%20completa"
@@ -146,7 +139,7 @@ const PedicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp"
+                  src="/images/convertedwebp/IMG_0027.webp"
                   alt="Spa dos Pés"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -171,10 +164,9 @@ const PedicurePage = () => {
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Um tratamento premium para seus pés, combinando cuidados estéticos e terapêuticos. Nosso Spa dos Pés inclui banho de imersão com sais aromáticos, esfoliação profunda, máscara hidratante, massagem terapêutica e finalização com esmaltação em gel para maior durabilidade.
+                Um tratamento premium para seus pés, combinando cuidados estéticos e terapêuticos. Nosso Spa dos Pés inclui esfoliação profunda, máscara hidratante, massagem terapêutica e finalização com esmaltação em gel para maior durabilidade.
               </p>
               <ul className="list-disc list-inside mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                <li>Banho aromático relaxante</li>
                 <li>Esfoliação profunda</li>
                 <li>Máscara hidratante</li>
                 <li>Massagem com pedras quentes</li>

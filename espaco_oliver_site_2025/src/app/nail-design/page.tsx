@@ -44,9 +44,9 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
-                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg"
-                  alt="Alongamento de Unhas"
+                  webp="/images/convertedwebp/espaco_oliver_beauty_alongamento.webp"
+                  fallback="/images/convertedwebp/espaco_oliver_beauty_alongamento.jpg"
+                  alt="Alongamento em Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
                 />
@@ -69,15 +69,8 @@ const NailDesignPage = () => {
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                O alongamento em gel permite criar unhas naturalmente bonitas e resistentes. Utilizamos produtos de alta qualidade para modelar as unhas de acordo com o seu gosto, garantindo durabilidade e um acabamento perfeito.
+                O alongamento em gel permite criar unhas naturalmente bonitas e resistentes. Nesse procedimento é feito alongamento das unhas naturais com diversos extensores (trabalhamos com fibra de vidro, molde russo e molde F1), para modelar e fazer o formato desejado. Utilizamos produtos de alta qualidade para modelar as unhas de acordo com o seu gosto, garantindo durabilidade e um acabamento perfeito.
               </p>
-              <ul className="list-disc list-inside mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                <li>Preparação da unha natural</li>
-                <li>Moldagem personalizada</li>
-                <li>Aplicação de gel de alta qualidade</li>
-                <li>Esmaltação e nail art (opcional)</li>
-                <li>Acabamento de alta durabilidade</li>
-              </ul>
               <div className="mt-6">
                 <Link 
                   href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20em%20gel"
@@ -100,9 +93,9 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
-                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg"
-                  alt="Nail Art Artística"
+                  webp="/images/convertedwebp/espaco_oliver_beauty_unha_nailart.webp"
+                  fallback="/images/convertedwebp/espaco_oliver_beauty_unha_nailart.jpg"
+                  alt="Banho de Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
                 />
@@ -119,63 +112,77 @@ const NailDesignPage = () => {
                 className="text-3xl mb-6 text-black" 
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
-                Nail Art Exclusiva
+                Banho de Gel
               </h2>
               <p 
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Nossas nail designers são verdadeiras artistas, capazes de criar designs exclusivos e personalizados. Desde decorações minimalistas até nail arts mais elaboradas, oferecemos opções para todos os gostos e ocasiões.
+                 O banho de gel em unhas naturais é um procedimento estético que aplica uma camada de gel específico sobre as unhas para maior durabilidade e brilho. Primeiro, as unhas são limpas, lixadas e desidratadas. Em seguida, aplica-se uma base de gel, que é curada em cabine de LED/UV. Depois, camadas de gel colorido são aplicadas e curadas, finalizando com um top coat para selar e dar brilho.
               </p>
-              <ul className="list-disc list-inside mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                <li>Desenhos exclusivos</li>
-                <li>Aplicação de pedrarias</li>
-                <li>Técnicas de degradê</li>
-                <li>Detalhes em alto relevo</li>
-                <li>Personalização completa</li>
-              </ul>
               <div className="mt-6">
                 <Link 
-                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20exclusiva"
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20banho%20de%20gel"
                   target="_blank"
                   className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                 >
-                  Agendar agora
+                  Agendar Banho de Gel
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-12 mb-16">
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
+                <ResponsiveImage
+                  webp="/images/convertedwebp/espaco_oliver_beauty_alongamento_unha_reta.webp"
+                  fallback="/images/convertedwebp/espaco_oliver_beauty_alongamento_unha_reta.jpg"
+                  alt="Alongamento Natural"
+                  className="w-full h-full object-cover rounded-lg"
+                  loading="eager"
+                />
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <h2 
+                className="text-3xl mb-6 text-black" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                ALONGAMENTO DE UNHAS (Natural)
+              </h2>
+              <p 
+                className="text-gray-600 mb-6 text-lg" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                O alongamento natural é uma técnica que usa gel ou acrílico para estender e modelar unhas naturais, mantendo um aspecto natural. As unhas são preparadas (limpas e lixadas), e um molde ou tip é aplicado para definir o comprimento. O gel ou acrílico é moldado sobre a unha e curado em cabine LED/UV. Após modelagem e lixamento, aplica-se uma base e esmalte. O resultado é resistente, com aparência natural, e dura cerca de 3 a 4 semanas.
+              </p>
+              <div className="mt-6">
+                <Link 
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20natural"
+                  target="_blank"
+                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  Agendar Alongamento Natural
                 </Link>
               </div>
             </motion.div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-16">
-            <motion.div
-              className="bg-[#F3EDE8] p-6 rounded-lg shadow-md"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <h3 
-                className="text-xl mb-3 text-black" 
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
-              >
-                Blindagem
-              </h3>
-              <p 
-                className="text-gray-600 mb-4" 
-                style={{ fontFamily: "var(--font-funnel-sans)" }}
-              >
-                Fortalecimento das unhas naturais com camadas de fibra e gel para proteger e promover o crescimento saudável.
-              </p>
-              <Link 
-                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20blindagem%20de%20unhas"
-                target="_blank"
-                className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
-                style={{ fontFamily: "var(--font-funnel-sans)" }}
-              >
-                Saiba mais →
-              </Link>
-            </motion.div>
-
             <motion.div
               className="bg-[#F3EDE8] p-6 rounded-lg shadow-md"
               initial={{ opacity: 0, y: 20 }}
@@ -208,22 +215,50 @@ const NailDesignPage = () => {
               className="bg-[#F3EDE8] p-6 rounded-lg shadow-md"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <h3 
+                className="text-xl mb-3 text-black" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                Nail Art Criativa
+              </h3>
+              <p 
+                className="text-gray-600 mb-4" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                Designs personalizados, desde opções discretas até as mais elaboradas com pedrarias e desenhos.
+              </p>
+              <Link 
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Nail%20Art"
+                target="_blank"
+                className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                Saiba mais →
+              </Link>
+            </motion.div>
+
+            <motion.div
+              className="bg-[#F3EDE8] p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <h3 
                 className="text-xl mb-3 text-black" 
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
-                Baby Boomer
+                Manutenção Profissional
               </h3>
               <p 
                 className="text-gray-600 mb-4" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Técnica sofisticada de degradê que vai do branco ao rosa nude, criando um efeito elegante e atemporal.
+                Mantenha seu alongamento impecável com nossa manutenção especializada, garantindo a saúde e beleza das suas unhas.
               </p>
               <Link 
-                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20nail%20art%20baby%20boomer"
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20manutenção"
                 target="_blank"
                 className="text-[#C59F6E] hover:text-[#B08C5E] font-medium" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
