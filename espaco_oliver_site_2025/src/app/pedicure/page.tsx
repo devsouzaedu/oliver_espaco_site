@@ -139,7 +139,7 @@ const PedicurePage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp"
+                  src="/images/optimized/IMG_0027.webp"
                   alt="Spa dos Pés"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

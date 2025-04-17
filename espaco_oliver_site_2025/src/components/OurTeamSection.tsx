@@ -46,12 +46,9 @@ const OurTeamSection = () => {
     {
       id: 6,
       name: 'Simone',
-      title: 'Manicure',
-      image:
-      {
-        webp: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).webp',
-        fallback: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).jpg'
-      }
+      role: 'Manicure',
+      webp: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).webp',
+      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).jpg'
     }
   ];
 
