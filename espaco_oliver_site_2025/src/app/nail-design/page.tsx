@@ -44,8 +44,8 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/optimized/espaco_oliver_beauty_alongamento.webp"
-                  fallback="/images/optimized/espaco_oliver_beauty_alongamento.jpg"
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg"
                   alt="Alongamento em Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
