@@ -133,55 +133,6 @@ const NailDesignPage = () => {
             </motion.div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-12 mb-16">
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <ResponsiveImage
-                  webp="/images/optimized/espaco_oliver_beauty_alongamento_unha_reta.webp"
-                  fallback="/images/optimized/espaco_oliver_beauty_alongamento_unha_reta.jpg"
-                  alt="Alongamento Natural"
-                  className="w-full h-full object-cover rounded-lg"
-                  loading="eager"
-                />
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <h2 
-                className="text-3xl mb-6 text-black" 
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
-              >
-                ALONGAMENTO DE UNHAS (Natural)
-              </h2>
-              <p 
-                className="text-gray-600 mb-6 text-lg" 
-                style={{ fontFamily: "var(--font-funnel-sans)" }}
-              >
-                O alongamento natural é uma técnica que usa gel ou acrílico para estender e modelar unhas naturais, mantendo um aspecto natural. As unhas são preparadas (limpas e lixadas), e um molde ou tip é aplicado para definir o comprimento. O gel ou acrílico é moldado sobre a unha e curado em cabine LED/UV. Após modelagem e lixamento, aplica-se uma base e esmalte. O resultado é resistente, com aparência natural, e dura cerca de 3 a 4 semanas.
-              </p>
-              <div className="mt-6">
-                <Link 
-                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20alongamento%20natural"
-                  target="_blank"
-                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
-                  style={{ fontFamily: "var(--font-instrument-serif)" }}
-                >
-                  Agendar Alongamento Natural
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-16">
             <motion.div
               className="bg-[#F3EDE8] p-6 rounded-lg shadow-md"

@@ -11,27 +11,27 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "/images/optimized/espaco_oliver_beauty_francesa.webp",
-      fallbackImage: "/images/optimized/espaco_oliver_beauty_francesa.jpg",
-      alt: "Unha Francesa"
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg",
+      alt: "Unhas design exclusivo"
     },
     {
       id: 2,
-      image: "/images/optimized/espaco_oliver_beauty_nail_art_clean.webp",
-      fallbackImage: "/images/optimized/espaco_oliver_beauty_nail_art_clean.jpg",
-      alt: "Nail Art Clean"
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpg",
+      alt: "Unhas decoradas"
     },
     {
       id: 3,
-      image: "/images/optimized/espaco_oliver_beauty_nailart_2.webp",
-      fallbackImage: "/images/optimized/espaco_oliver_beauty_nailart_2.jpg",
-      alt: "Nail Art"
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg",
+      alt: "Design de unhas"
     },
     {
       id: 4,
-      image: "/images/optimized/espaco_oliver_beauty_alongamento_2.webp",
-      fallbackImage: "/images/optimized/espaco_oliver_beauty_alongamento_2.jpg",
-      alt: "Alongamento de Unha"
+      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp",
+      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.jpg",
+      alt: "Nail art exclusiva"
     }
   ];
 
