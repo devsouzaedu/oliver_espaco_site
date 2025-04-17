@@ -44,8 +44,8 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/convertedwebp/espaco_oliver_beauty_alongamento.webp"
-                  fallback="/images/convertedwebp/espaco_oliver_beauty_alongamento.jpg"
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).jpg"
                   alt="Alongamento em Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
@@ -93,8 +93,8 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/convertedwebp/espaco_oliver_beauty_unha_nailart.webp"
-                  fallback="/images/convertedwebp/espaco_oliver_beauty_unha_nailart.jpg"
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpg"
                   alt="Banho de Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
@@ -142,8 +142,8 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/convertedwebp/espaco_oliver_beauty_alongamento_unha_reta.webp"
-                  fallback="/images/convertedwebp/espaco_oliver_beauty_alongamento_unha_reta.jpg"
+                  webp="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp"
+                  fallback="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg"
                   alt="Alongamento Natural"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
