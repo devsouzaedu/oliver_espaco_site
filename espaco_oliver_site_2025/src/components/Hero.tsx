@@ -18,10 +18,6 @@ const Hero = () => {
       jpg: optimizedFirstImage.jpg
     },
     {
-      webp: '/images/optimized/hero-slide-1.webp',
-      jpg: '/images/optimized/hero-slide-1.jpg'
-    },
-    {
       webp: '/images/optimized/hero-slide-2.webp',
       jpg: '/images/optimized/hero-slide-2.jpg'
     },

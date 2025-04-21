@@ -25,7 +25,7 @@ const Footer = () => {
               />
             </picture>
             <p className="text-white mb-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-              Tornando mulheres mais belas e confiantes há mais de 15 anos.
+              Tornando mulheres mais belas e confiantes há mais de 5 anos.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/espacooliverbeauty" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
@@ -80,7 +80,6 @@ const Footer = () => {
               <p>Centro - Barueri/SP</p>
               <p>CEP: 06401-000</p>
               <p>Tel: (11) 95618-4727</p>
-              <p>Email: site.eobeauty@gmail.com</p>
             </address>
           </div>
         </div>

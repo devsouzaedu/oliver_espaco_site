@@ -98,26 +98,6 @@ const ContactSection = () => {
                   transition={{ duration: 0.2 }}
                 >
                   <div className="bg-[#F3EDE8] p-3 rounded-full">
-                    <FaEnvelope className="text-black w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="text-gray-600 font-medium mb-1" style={{ fontFamily: "var(--font-funnel-sans)" }}>Email</p>
-                    <Link 
-                      href="mailto:site.eobeauty@gmail.com"
-                      className="text-black hover:text-gray-700 transition-colors"
-                      style={{ fontFamily: "var(--font-funnel-sans)" }}
-                    >
-                      site.eobeauty@gmail.com
-                    </Link>
-                  </div>
-                </motion.li>
-                
-                <motion.li 
-                  className="flex items-start space-x-4"
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="bg-[#F3EDE8] p-3 rounded-full">
                     <FaMapMarkerAlt className="text-black w-6 h-6" />
                   </div>
                   <div>

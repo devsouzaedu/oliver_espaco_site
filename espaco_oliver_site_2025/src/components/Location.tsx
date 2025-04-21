@@ -12,7 +12,7 @@ const Location = () => {
     { day: 'Qua', hours: '9h00 às 19h00' },
     { day: 'Qui', hours: '9h00 às 19h00' },
     { day: 'Sex', hours: '9h00 às 19h00' },
-    { day: 'Sáb', hours: '8h00 às 16h00' },
+    { day: 'Sáb', hours: '8h00 às 18h00' },
   ];
 
   const ref = useRef(null);

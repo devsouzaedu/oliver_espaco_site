@@ -154,8 +154,8 @@ const PedicurePage = () => {
             <ul className="list-disc list-inside max-w-3xl mx-auto mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
               <li>Esfoliação profunda</li>
               <li>Máscara hidratante</li>
-              <li>Massagem com pedras quentes</li>
-              <li>Esmaltação em gel</li>
+              <li>Massagem relaxante</li>
+              <li>Lixamento e remoção de calosidades</li>
             </ul>
             
             <p 
