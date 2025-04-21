@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
+import ResponsiveImage from '@/components/ResponsiveImage';
 
 const ManicurePage = () => {
   return (
@@ -42,13 +43,12 @@ const ManicurePage = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (1).webp"
+                <ResponsiveImage
+                  webp="/images/optimized/espaco_oliver_beauty_manicure_card.webp"
+                  fallback="/images/optimized/espaco_oliver_beauty_manicure_card.JPG"
                   alt="Serviço de Manicure"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
             </motion.div>
@@ -99,13 +99,12 @@ const ManicurePage = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp"
+                <ResponsiveImage
+                  webp="/images/optimized/espaço_oliver_beauty_esmaltacao_em_gel.webp"
+                  fallback="/images/optimized/espaço_oliver_beauty_esmaltacao_em_gel.jpg"
                   alt="Esmaltação em Gel"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                  priority
+                  className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </div>
             </motion.div>
