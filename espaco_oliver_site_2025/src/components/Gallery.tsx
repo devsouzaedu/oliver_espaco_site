@@ -56,7 +56,7 @@ const Gallery = () => {
                     <img
                       src={item.fallbackImage || item.image.replace('.webp', '.jpg')}
                       alt={item.alt}
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                     />
                   </picture>
                 </div>
