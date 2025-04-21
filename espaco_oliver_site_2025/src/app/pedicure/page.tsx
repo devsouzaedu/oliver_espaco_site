@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
+import ResponsiveImage from '@/components/ResponsiveImage';
 
 const PedicurePage = () => {
   return (
@@ -184,6 +185,112 @@ const PedicurePage = () => {
               </div>
             </motion.div>
           </div>
+
+          {/* Nova seção de Antes e Depois para Spa dos Pés */}
+          <motion.div 
+            className="mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <h2 
+              className="text-3xl mb-6 text-center text-black" 
+              style={{ fontFamily: "var(--font-instrument-serif)" }}
+            >
+              Antes e Depois - Spa dos Pés
+            </h2>
+            <p 
+              className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
+              style={{ fontFamily: "var(--font-funnel-sans)" }}
+            >
+              Veja a transformação que nosso tratamento Spa dos Pés pode proporcionar. Resultados reais de nossos clientes.
+            </p>
+            
+            <div className="grid grid-cols-2 gap-8 mb-8">
+              {/* Primeiro par de antes/depois */}
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaço_oliver_beauty_spa_pes_antes-_1_.webp"
+                    fallback="/images/optimized/espaço_oliver_beauty_spa_pes_antes (1)-min.JPG"
+                    alt="Antes do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Antes
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Antes do tratamento
+                </p>
+              </div>
+              
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaco_oliver_beauty_spa_pes_depois-_1_.webp"
+                    fallback="/images/optimized/espaco_oliver_beauty_spa_pes_depois (1)-min.JPG"
+                    alt="Depois do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Depois
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Após o tratamento
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-8">
+              {/* Segundo par de antes/depois */}
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaço_oliver_beauty_spa_pes_antes-_2_.webp"
+                    fallback="/images/optimized/espaço_oliver_beauty_spa_pes_antes (2)-min.JPG"
+                    alt="Antes do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Antes
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Antes do tratamento
+                </p>
+              </div>
+              
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaco_oliver_beauty_spa_pes_depois-_2_.webp"
+                    fallback="/images/optimized/espaco_oliver_beauty_spa_pes_depois (2)-min.JPG"
+                    alt="Depois do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Depois
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Após o tratamento
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <Link 
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20Spa%20dos%20Pés"
+                target="_blank"
+                className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                Agendar meu Spa dos Pés
+              </Link>
+            </div>
+          </motion.div>
 
           {/* Seção adicional com mais imagens */}
           <motion.div 
