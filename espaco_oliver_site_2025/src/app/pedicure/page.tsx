@@ -131,62 +131,7 @@ const PedicurePage = () => {
             </motion.div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse gap-12 mb-16">
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).webp"
-                  alt="Spa dos Pés"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-bottom rounded-lg"
-                />
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <h2 
-                className="text-3xl mb-6 text-black" 
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
-              >
-                Spa dos Pés
-              </h2>
-              <p 
-                className="text-gray-600 mb-6 text-lg" 
-                style={{ fontFamily: "var(--font-funnel-sans)" }}
-              >
-                Um tratamento premium para seus pés, combinando cuidados estéticos e terapêuticos. Nosso Spa dos Pés inclui esfoliação profunda, máscara hidratante, massagem terapêutica e finalização com esmaltação em gel para maior durabilidade.
-              </p>
-              <ul className="list-disc list-inside mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                <li>Esfoliação profunda</li>
-                <li>Máscara hidratante</li>
-                <li>Massagem com pedras quentes</li>
-                <li>Esmaltação em gel</li>
-              </ul>
-              <div className="mt-6">
-                <Link 
-                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20Spa%20dos%20Pés"
-                  target="_blank"
-                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
-                  style={{ fontFamily: "var(--font-instrument-serif)" }}
-                >
-                  Agendar agora
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Nova seção de Antes e Depois para Spa dos Pés */}
+          {/* Seção Spa dos Pés com imagens de antes e depois */}
           <motion.div 
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -197,13 +142,27 @@ const PedicurePage = () => {
               className="text-3xl mb-6 text-center text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Antes e Depois - Spa dos Pés
+              Spa dos Pés
             </h2>
             <p 
               className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              Veja a transformação que nosso tratamento Spa dos Pés pode proporcionar. Resultados reais de nossos clientes.
+              Um tratamento premium para seus pés, combinando cuidados estéticos e terapêuticos. Nosso Spa dos Pés inclui esfoliação profunda, máscara hidratante, massagem terapêutica e finalização com esmaltação em gel para maior durabilidade.
+            </p>
+            
+            <ul className="list-disc list-inside max-w-3xl mx-auto mb-8 text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+              <li>Esfoliação profunda</li>
+              <li>Máscara hidratante</li>
+              <li>Massagem com pedras quentes</li>
+              <li>Esmaltação em gel</li>
+            </ul>
+            
+            <p 
+              className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
+              style={{ fontFamily: "var(--font-funnel-sans)" }}
+            >
+              Veja a transformação que nosso tratamento pode proporcionar. Resultados reais de nossos clientes.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-8">

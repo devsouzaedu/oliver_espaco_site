@@ -44,8 +44,8 @@ const NailDesignPage = () => {
             >
               <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
                 <ResponsiveImage
-                  webp="/images/optimized/espaco_oliver_beauty_unha_nailart.webp"
-                  fallback="/images/optimized/espaco_oliver_beauty_unha_nailart.jpg"
+                  webp="/images/optimized/espaco_oliver_manicure_alongamento_em_gel-_2_.webp"
+                  fallback="/images/optimized/espaco_oliver_manicure_alongamento_em_gel (2).jpg"
                   alt="Alongamento em Gel"
                   className="w-full h-full object-cover rounded-lg"
                   loading="eager"
@@ -128,6 +128,61 @@ const NailDesignPage = () => {
                   style={{ fontFamily: "var(--font-instrument-serif)" }}
                 >
                   Agendar Banho de Gel
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-12 mb-16">
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
+                <ResponsiveImage
+                  webp="/images/optimized/espaco_oliver_beauty_nail_art_card.webp"
+                  fallback="/images/optimized/espaco_oliver_beauty_nail_art_card.jpeg"
+                  alt="Nail Art"
+                  className="w-full h-full object-cover rounded-lg"
+                  loading="eager"
+                />
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <h2 
+                className="text-3xl mb-6 text-black" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                Nail Art
+              </h2>
+              <p 
+                className="text-gray-600 mb-6 text-lg" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                Transforme suas unhas em verdadeiras obras de arte com nossa Nail Art personalizada. Oferecemos designs exclusivos que vão desde decorações minimalistas e elegantes até criações mais elaboradas com pedrarias, adesivos e pinturas à mão livre. Nossos profissionais são especialistas em técnicas avançadas que garantem acabamento perfeito e durabilidade.
+              </p>
+              <p 
+                className="text-gray-600 mb-6 text-lg" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                Seja para uma ocasião especial ou para expressar seu estilo no dia a dia, nossa Nail Art é a escolha perfeita para quem busca unhas únicas e sofisticadas.
+              </p>
+              <div className="mt-6">
+                <Link 
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20serviço%20de%20Nail%20Art"
+                  target="_blank"
+                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  Agendar Nail Art
                 </Link>
               </div>
             </motion.div>
