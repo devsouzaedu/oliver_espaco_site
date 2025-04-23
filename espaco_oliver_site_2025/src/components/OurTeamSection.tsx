@@ -126,7 +126,7 @@ const OurTeamSection = () => {
                 className="text-gray-600 mb-6"
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Nossa equipe trabalha em conjunto para oferecer a melhor experiência possível. Venha conhecer pessoalmente nossos profissionais e descobrir por que somos referência em nail design.
+                Nossa equipe trabalha em conjunto para oferecer a melhor experiência possível. Venha conhecer pessoalmente nossas profissionais e descobrir por que somos referência em nail design.
               </p>
               <div className="relative h-80 w-full mb-6 rounded-lg overflow-hidden">
                 <picture>
