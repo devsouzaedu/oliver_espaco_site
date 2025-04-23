@@ -69,10 +69,10 @@ const AboutSection = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
                 <p>
-                  Fundado em 2015, o Espaço Oliver Beauty nasceu da paixão pela arte de transformar mãos e unhas em verdadeiras obras de arte. Começamos como um pequeno estúdio e hoje somos referência em nail design na região.
+                  Fundado em 2015, o Espaço Oliver Beauty nasceu da paixão pela arte de transformar mãos e unhas em verdadeiras obras de arte. Localizada no centro de Barueri, nossa esmalteria de alto padrão rapidamente se tornou referência em nail designer e manicure alto padrão na região. Começamos como um pequeno estúdio e hoje somos reconhecidos como referência em nail designer e manicure alto padrão em Barueri.
                 </p>
                 <p>
-                  Nossa missão é proporcionar momentos de beleza, autocuidado e bem-estar para todos os nossos clientes, oferecendo serviços de alta qualidade em um ambiente acolhedor e sofisticado.
+                  Nossa missão é proporcionar momentos de beleza, autocuidado e bem-estar para todos os nossos clientes, oferecendo serviços de manicure alto padrão, nail designer e pedicure de referência em um ambiente acolhedor, climatizado e sofisticado, com atendimento de excelência.
                 </p>
                 <p>
                   Com uma equipe de profissionais altamente capacitados e em constante atualização, trabalhamos com as melhores técnicas e produtos do mercado, garantindo resultados impecáveis e duradouros.
@@ -135,7 +135,7 @@ const AboutSection = () => {
                 Nossa Visão
               </h3>
               <p className="text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                Ser referência em nail design, reconhecido pela excelência, inovação e pelo compromisso com a qualidade e satisfação dos clientes.
+                Ser referência em nail designer, manicure alto padrão e pedicure em Barueri, reconhecido pela excelência, inovação e pelo compromisso com a qualidade e satisfação dos clientes.
               </p>
             </div>
             <div className="bg-[#F3EDE8] p-6 rounded-lg shadow-md">
