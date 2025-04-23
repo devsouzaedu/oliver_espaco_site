@@ -25,13 +25,13 @@ const ManicurePage = () => {
               className="text-4xl md:text-5xl mb-4 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Serviços de Manicure
+              Manicure alto padrão em Barueri – Unhas impecáveis e experiência de beleza
             </h1>
             <p 
               className="max-w-3xl mx-auto text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              Conheça nossos serviços especializados de manicure, oferecidos por profissionais qualificadas e com produtos de alta qualidade.
+              Descubra a manicure alto padrão referência em Barueri. Nossos serviços incluem nail designer, alongamento de unhas em fibra de vidro, molde F1, molde russo, blindagem de unhas, manutenção de alongamentos, unhas decoradas Barueri e muito mais. Atendimento de excelência unhas, resultado impecável unhas e bem-estar e beleza Barueri em um ambiente acolhedor e sofisticado.
             </p>
           </motion.div>
 

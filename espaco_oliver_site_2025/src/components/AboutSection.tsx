@@ -69,16 +69,16 @@ const AboutSection = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
                 <p>
-                  Fundado em 2015, o Espaço Oliver Beauty nasceu da paixão pela arte de transformar mãos e unhas em verdadeiras obras de arte. Localizada no centro de Barueri, nossa esmalteria de alto padrão rapidamente se tornou referência em nail designer e manicure alto padrão na região. Começamos como um pequeno estúdio e hoje somos reconhecidos como referência em nail designer e manicure alto padrão em Barueri.
+                  Fundado em 2015, o Espaço Oliver Beauty é a esmalteria de alto padrão referência em Barueri, reconhecida pelo atendimento de excelência em nail designer, manicure alto padrão, pedicure em Barueri e experiência de beleza exclusiva. Nossa história começou como um pequeno estúdio e hoje somos referência em unhas Barueri, proporcionando bem-estar e beleza para nossos clientes.
                 </p>
                 <p>
-                  Nossa missão é proporcionar momentos de beleza, autocuidado e bem-estar para todos os nossos clientes, oferecendo serviços de manicure alto padrão, nail designer e pedicure de referência em um ambiente acolhedor, climatizado e sofisticado, com atendimento de excelência.
+                  Nossa missão é proporcionar momentos únicos de beleza, autocuidado e bem-estar, com serviços de manicure em Barueri, pedicure em Barueri, alongamento de unhas em fibra de vidro, molde F1, molde russo, blindagem de unhas, manutenção de alongamentos, unhas decoradas Barueri, SPA dos pés Barueri e esmalteria com vinho Barueri. Tudo isso em um ambiente climatizado esmalteria, sofisticado e acolhedor.
                 </p>
                 <p>
-                  Com uma equipe de profissionais altamente capacitados e em constante atualização, trabalhamos com as melhores técnicas e produtos do mercado, garantindo resultados impecáveis e duradouros.
+                  Nossa equipe é formada por profissionais altamente capacitados e atualizados nas melhores técnicas do mercado, garantindo resultado impecável unhas e atendimento de excelência unhas, sempre com foco no bem-estar e beleza Barueri.
                 </p>
                 <p>
-                  No Espaço Oliver Beauty, acreditamos que cuidar das unhas vai além da estética – é um momento de conexão consigo mesmo, uma pausa no dia a dia para se dedicar ao autocuidado e ao bem-estar.
+                  No Espaço Oliver Beauty, cuidar das unhas é mais do que estética: é viver uma experiência de beleza Barueri, com conforto, exclusividade e atenção aos detalhes. Venha conhecer a esmalteria de alto padrão que é referência em Barueri!
                 </p>
               </motion.div>
               

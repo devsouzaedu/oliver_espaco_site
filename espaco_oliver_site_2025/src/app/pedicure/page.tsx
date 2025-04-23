@@ -25,13 +25,13 @@ const PedicurePage = () => {
               className="text-4xl md:text-5xl mb-4 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Serviços de Pedicure
+              Pedicure em Barueri – SPA dos pés, unhas decoradas e experiência de beleza
             </h1>
             <p 
               className="max-w-3xl mx-auto text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              Cuide dos seus pés com nossos tratamentos exclusivos de pedicure, oferecidos com o máximo conforto e qualidade.
+              Descubra o melhor da pedicure em Barueri em uma esmalteria de alto padrão. Oferecemos nail designer, SPA dos pés Barueri, unhas decoradas Barueri, experiência de beleza Barueri, ambiente climatizado esmalteria, atendimento de excelência unhas, resultado impecável unhas e bem-estar e beleza Barueri.
             </p>
           </motion.div>
 
