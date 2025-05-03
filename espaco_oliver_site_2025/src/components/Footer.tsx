@@ -25,7 +25,7 @@ const Footer = () => {
               />
             </picture>
             <p className="text-white mb-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-              Esmalteria de alto padrão referência em Barueri: nail designer, manicure alto padrão, pedicure em Barueri, experiência de beleza Barueri, ambiente climatizado esmalteria, atendimento de excelência unhas, resultado impecável unhas, bem-estar e beleza Barueri.
+              Espaço Oliver Beauty - Excelência em serviços de beleza para unhas em Barueri. Qualidade, conforto e bem-estar em um único lugar.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/espacooliverbeauty" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">

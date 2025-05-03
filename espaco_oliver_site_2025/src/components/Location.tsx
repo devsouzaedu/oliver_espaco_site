@@ -60,7 +60,7 @@ const Location = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Localizada no coração de Barueri, nossa esmalteria de alto padrão oferece nail designer, manicure em Barueri, pedicure em Barueri, SPA dos pés Barueri, unhas decoradas Barueri e experiência de beleza Barueri em um ambiente climatizado esmalteria. Venha conhecer nosso atendimento de excelência unhas, com resultado impecável unhas, bem-estar e beleza Barueri.
+            Esmalteria de alto padrão referência em Barueri: nail designer, manicure alto padrão, pedicure em Barueri, experiência de beleza Barueri, ambiente climatizado esmalteria, atendimento de excelência unhas, resultado impecável unhas, bem-estar e beleza Barueri.
           </motion.p>
           <motion.div 
             className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12"

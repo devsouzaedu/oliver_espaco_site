@@ -25,13 +25,13 @@ const NailDesignPage = () => {
               className="text-4xl md:text-5xl mb-4 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Nail Designer referência em Barueri
+              Arte em Unhas: Nail Designer em Barueri
             </h1>
             <p 
               className="max-w-3xl mx-auto text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              Somos referência em nail designer e manicure alto padrão em Barueri. Transforme suas unhas em verdadeiras obras de arte com nossos serviços especializados de nail designer, alongamento em fibra de vidro, molde F1, molde russo, blindagem de unhas, manutenção de alongamentos, unhas decoradas e muito mais. Ambiente climatizado, confortável e atendimento de excelência para seu bem-estar.
+              Transforme suas unhas em verdadeiras obras de arte com nossos serviços especializados. Oferecemos alongamento em fibra de vidro, molde F1, molde russo, blindagem de unhas, manutenção e unhas decoradas. Tudo isso em um ambiente confortável e climatizado, com profissionais especializados para garantir sua satisfação.
             </p>
           </motion.div>
 
@@ -69,7 +69,7 @@ const NailDesignPage = () => {
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Somos referência em alongamento de unhas em gel em Barueri. O alongamento em gel permite criar unhas naturalmente bonitas e resistentes, com técnicas de nail designer de alto padrão. Utilizamos fibra de vidro, molde russo e molde F1, sempre com produtos de alta qualidade para garantir resultados impecáveis e duradouros.
+                O alongamento em gel cria unhas naturalmente bonitas e resistentes com acabamento profissional. Nossa equipe utiliza as melhores técnicas como fibra de vidro, molde russo e molde F1, sempre com produtos premium que garantem resultados duradouros e um visual sofisticado para suas mãos.
               </p>
               <div className="mt-6">
                 <Link 
@@ -112,13 +112,13 @@ const NailDesignPage = () => {
                 className="text-3xl mb-6 text-black" 
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
-                Banho de Gel – Manicure Alto Padrão
+                Banho de Gel – Beleza e Durabilidade
               </h2>
               <p 
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                O banho de gel em unhas naturais é um dos serviços de manicure alto padrão que oferecemos em Barueri. Aplicamos uma camada de gel específico sobre as unhas para maior durabilidade e brilho, com acabamento perfeito e técnica de referência.
+                Nosso banho de gel proporciona brilho intenso e maior durabilidade às unhas naturais. Aplicamos uma camada especial que protege, fortalece e embeleza, sem necessidade de alongamento. O resultado é um acabamento perfeito que dura muito mais que o esmalte comum.
               </p>
               <div className="mt-6">
                 <Link 
@@ -161,19 +161,19 @@ const NailDesignPage = () => {
                 className="text-3xl mb-6 text-black" 
                 style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
-                Nail Art – Referência em Barueri
+                Nail Art – Expressão e Criatividade
               </h2>
               <p 
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Nossa esmalteria é referência em Nail Art em Barueri. Designs exclusivos, técnicas de nail designer de alto padrão, unhas decoradas para todas as ocasiões, sempre com atendimento diferenciado e ambiente confortável.
+                Expresse sua personalidade através de designs exclusivos criados por nossa equipe de artistas especialistas. Oferecemos desde desenhos delicados até trabalhos elaborados com pedrarias, adesivos e texturas que transformam suas unhas em verdadeiras peças artísticas.
               </p>
               <p 
                 className="text-gray-600 mb-6 text-lg" 
                 style={{ fontFamily: "var(--font-funnel-sans)" }}
               >
-                Seja para uma ocasião especial ou para expressar seu estilo no dia a dia, nossa Nail Art é a escolha perfeita para quem busca unhas únicas e sofisticadas.
+                Para festas, casamentos, formações ou apenas para destacar seu estilo único no dia a dia, nossas opções de Nail Art combinam tendências atuais com técnicas avançadas de decoração.
               </p>
               <div className="mt-6">
                 <Link 
@@ -284,14 +284,14 @@ const NailDesignPage = () => {
               className="text-3xl mb-6 text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Transforme suas unhas
+              Realize o sonho de unhas perfeitas
             </h2>
             <p 
               className="max-w-3xl mx-auto text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              No Espaço Oliver Beauty, oferecemos serviços de nail design de alto padrão, 
-              combinando técnica, qualidade e criatividade para resultados surpreendentes.
+              Visite o Espaço Oliver Beauty e descubra como podemos realçar sua beleza natural.
+              Nossa equipe de especialistas está pronta para atender cada necessidade com atenção personalizada.
             </p>
             <Link 
               href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20serviço%20de%20nail%20design"
