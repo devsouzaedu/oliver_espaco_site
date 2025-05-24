@@ -56,16 +56,15 @@ export default function BlogPostPage() {
     return (
       <div className="min-h-screen bg-[#F3EDE8] py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold mb-4 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+          <h1 className="text-3xl font-bold mb-4 text-black text-lg">
             Post não encontrado
           </h1>
-          <p className="text-black mb-8" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+          <p className="text-black mb-8 text-lg">
             {error || 'O post que você está procurando não existe ou não está disponível.'}
           </p>
           <Link 
             href="/novidadesblog" 
-            className="inline-block px-6 py-3 bg-black text-white hover:bg-gray-800 transition-colors"
-            style={{ fontFamily: "var(--font-instrument-serif)" }}
+            className="inline-block px-6 py-3 bg-black text-white hover:bg-gray-800 transition-colors text-lg"
           >
             Voltar para o Blog
           </Link>
@@ -84,8 +83,7 @@ export default function BlogPostPage() {
       <div className="container mx-auto px-4">
         <Link 
           href="/novidadesblog" 
-          className="inline-flex items-center mb-8 text-black hover:underline"
-          style={{ fontFamily: "var(--font-instrument-serif)" }}
+          className="inline-flex items-center mb-8 text-black hover:underline text-lg"
         >
           ← Voltar para o Blog
         </Link>
@@ -108,8 +106,7 @@ export default function BlogPostPage() {
                 {post.tags.map((tag, index) => (
                   <span 
                     key={index} 
-                    className="bg-gray-100 text-black text-xs px-2 py-1 rounded"
-                    style={{ fontFamily: "var(--font-instrument-serif)" }}
+                    className="bg-gray-100 text-black text-xs px-2 py-1 rounded text-base"
                   >
                     {tag}
                   </span>
@@ -117,23 +114,22 @@ export default function BlogPostPage() {
               </div>
               <h1 
                 className="text-3xl md:text-4xl font-bold mb-4 text-black"
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
               >
                 {post.title}
               </h1>
               <div className="flex items-center text-black mb-8">
                 {post.author && (
-                  <span className="mr-4" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                  <span className="mr-4 text-lg">
                     Por {post.author}
                   </span>
                 )}
-                <span style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                <span className="text-lg">
                   {new Date(post.created_at).toLocaleDateString('pt-BR')}
                 </span>
               </div>
             </div>
 
-            <div className="prose prose-xl max-w-none" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+            <div className="prose prose-xl max-w-none blog-content">
               <ReactMarkdown 
                 remarkPlugins={[remarkGfm]}
                 components={{
