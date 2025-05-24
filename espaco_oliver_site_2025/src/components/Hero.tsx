@@ -51,16 +51,16 @@ const Hero = () => {
     },
     // Novas imagens de spa dos pés
     {
-      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg',
-      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg'
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa-min.jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa-min.jpg'
     },
     {
-      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2).jpg',
-      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2).jpg'
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2)-min.jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2)-min.jpg'
     },
     {
-      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg',
-      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg'
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto-min.jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto-min.jpg'
     }
   ];
   

@@ -35,108 +35,12 @@ const PedicurePage = () => {
             </p>
           </motion.div>
 
-          {/* Galeria de imagens */}
+          {/* Seção Spa dos Pés com as novas imagens */}
           <motion.div 
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).webp"
-                  alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                  className="object-cover object-bottom"
-                />
-              </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).webp"
-                  alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                  className="object-cover object-bottom"
-                />
-              </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).webp"
-                  alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                  className="object-cover object-bottom"
-                />
-              </div>
-              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).webp"
-                  alt="Serviço de Pedicure"
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                  className="object-cover object-bottom"
-                />
-              </div>
-            </div>
-          </motion.div>
-
-          <div className="flex flex-col md:flex-row gap-12 mb-16">
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
-                <Image
-                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp"
-                  alt="Pedicure Completa"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-bottom rounded-lg"
-                />
-              </div>
-            </motion.div>
-            
-            <motion.div 
-              className="md:w-1/2"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              <h2 
-                className="text-3xl mb-6 text-black" 
-                style={{ fontFamily: "var(--font-instrument-serif)" }}
-              >
-                Pedicure Completa
-              </h2>
-              <p 
-                className="text-gray-600 mb-6 text-lg" 
-                style={{ fontFamily: "var(--font-funnel-sans)" }}
-              >
-                A pedicure completa é um cuidado estético para os pés que inclui cutilagem e esmaltação. O procedimento começa com a higienização dos pés, seguida do corte e lixamento das unhas para modelar o formato. A cutilagem remove o excesso de cutículas com alicate, após amolecê-las. Em seguida, realiza-se a esfoliação para suavizar a pele e a hidratação dos pés. Finaliza-se com a aplicação de base, esmalte (comum ou gel) e um top coat para maior durabilidade. O resultado são pés bem cuidados, com unhas bonitas e saudáveis.
-              </p>
-              <div className="mt-6">
-                <Link 
-                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20pedicure%20completa"
-                  target="_blank"
-                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
-                  style={{ fontFamily: "var(--font-instrument-serif)" }}
-                >
-                  Agendar agora
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Seção Spa dos Pés com imagens de antes e depois */}
-          <motion.div 
-            className="mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h2 
               className="text-3xl mb-6 text-center text-black" 
@@ -162,7 +66,7 @@ const PedicurePage = () => {
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (1).jpg"
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (1)-min.jpg"
                   alt="Serviço de Spa dos Pés"
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
@@ -171,7 +75,7 @@ const PedicurePage = () => {
               </div>
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg"
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto-min.jpg"
                   alt="Cadeira Spa dos Pés"
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
@@ -180,7 +84,7 @@ const PedicurePage = () => {
               </div>
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_vela_foto_mesa.jpg"
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_vela_foto_mesa-min.jpg"
                   alt="Ambiente Relaxante Spa dos Pés"
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
@@ -189,7 +93,7 @@ const PedicurePage = () => {
               </div>
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_velas_toalhas_foto.jpg"
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_velas_toalhas_foto-min.jpg"
                   alt="Ambiente Relaxante Spa dos Pés"
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
@@ -198,49 +102,34 @@ const PedicurePage = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              {/* Imagem de destaque do serviço */}
-              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-md">
+            {/* Mais fotos dos trabalhos tradicionais de pedicure */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg"
-                  alt="Spa dos Pés Completo"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).webp"
+                  alt="Trabalho de Pedicure"
+                  width={220}
+                  height={220}
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
                 />
               </div>
-              
-              {/* Resultados */}
-              <div className="flex flex-col space-y-4">
-                <h3 
-                  className="text-2xl text-black" 
-                  style={{ fontFamily: "var(--font-instrument-serif)" }}
-                >
-                  Resultados incríveis
-                </h3>
-                <p className="text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                  Nosso tratamento de Spa dos Pés proporciona uma experiência completa de relaxamento e beleza. Veja a transformação que podemos realizar em seus pés.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                    <Image
-                      src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (1).jpg"
-                      alt="Pés Femininos Tratados"
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
-                    <Image
-                      src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (4).jpg"
-                      alt="Pés Femininos Tratados"
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (2).webp"
+                  alt="Trabalho de Pedicure"
+                  width={220}
+                  height={220}
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                />
+              </div>
+              <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (3).webp"
+                  alt="Trabalho de Pedicure"
+                  width={220}
+                  height={220}
+                  className="w-full h-full object-cover object-bottom mb-4 rounded-lg"
+                />
               </div>
             </div>
             
@@ -293,7 +182,56 @@ const PedicurePage = () => {
             </div>
           </motion.div>
 
-          {/* Seção adicional com mais imagens */}
+          {/* Seção de Pedicure Completa */}
+          <div className="flex flex-col md:flex-row gap-12 mb-16">
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp"
+                  alt="Pedicure Completa"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-bottom rounded-lg"
+                />
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="md:w-1/2"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <h2 
+                className="text-3xl mb-6 text-black" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                Pedicure Completa
+              </h2>
+              <p 
+                className="text-gray-600 mb-6 text-lg" 
+                style={{ fontFamily: "var(--font-funnel-sans)" }}
+              >
+                A pedicure completa é um cuidado estético para os pés que inclui cutilagem e esmaltação. O procedimento começa com a higienização dos pés, seguida do corte e lixamento das unhas para modelar o formato. A cutilagem remove o excesso de cutículas com alicate, após amolecê-las. Em seguida, realiza-se a esfoliação para suavizar a pele e a hidratação dos pés. Finaliza-se com a aplicação de base, esmalte (comum ou gel) e um top coat para maior durabilidade. O resultado são pés bem cuidados, com unhas bonitas e saudáveis.
+              </p>
+              <div className="mt-6">
+                <Link 
+                  href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20uma%20pedicure%20completa"
+                  target="_blank"
+                  className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  Agendar agora
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+          {/* Seção com as imagens originais de pedicure */}
           <motion.div 
             className="mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -304,15 +242,57 @@ const PedicurePage = () => {
               className="text-3xl mb-6 text-center text-black" 
               style={{ fontFamily: "var(--font-instrument-serif)" }}
             >
-              Nossos Trabalhos
+              Nossos Trabalhos de Pedicure
             </h2>
             <p 
               className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
               style={{ fontFamily: "var(--font-funnel-sans)" }}
             >
-              Confira alguns dos nossos trabalhos realizados com excelência e dedicação.
+              Confira alguns dos nossos trabalhos de pedicure realizados com excelência e dedicação.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            {/* Galeria de imagens originais */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (4).webp"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (5).webp"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (6).webp"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (7).webp"
+                  alt="Serviço de Pedicure"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover object-bottom"
+                />
+              </div>
+            </div>
+            
+            {/* Mais fotos dos trabalhos tradicionais de pedicure */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
               <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
                 <Image
                   src="/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé (1).webp"
@@ -341,8 +321,56 @@ const PedicurePage = () => {
                 />
               </div>
             </div>
+            
+            <div className="grid grid-cols-2 gap-8">
+              {/* Segundo par de antes/depois */}
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaço_oliver_beauty_spa_pes_antes-_2_.webp"
+                    fallback="/images/optimized/espaço_oliver_beauty_spa_pes_antes (2)-min.JPG"
+                    alt="Antes do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Antes
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Antes do tratamento
+                </p>
+              </div>
+              
+              <div className="flex flex-col space-y-2">
+                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+                  <ResponsiveImage
+                    webp="/images/optimized/espaco_oliver_beauty_spa_pes_depois-_2_.webp"
+                    fallback="/images/optimized/espaco_oliver_beauty_spa_pes_depois (2)-min.JPG"
+                    alt="Depois do Spa dos Pés"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
+                    Depois
+                  </div>
+                </div>
+                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Após o tratamento
+                </p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <Link 
+                href="https://wa.me/5511956184727?text=Olá,%20gostaria%20de%20agendar%20um%20Spa%20dos%20Pés"
+                target="_blank"
+                className="inline-block bg-[#C59F6E] hover:bg-[#B08C5E] transition-colors text-white font-bold py-3 px-8 text-lg" 
+                style={{ fontFamily: "var(--font-instrument-serif)" }}
+              >
+                Agendar meu Spa dos Pés
+              </Link>
+            </div>
           </motion.div>
-
+          
           <motion.div 
             className="text-center mt-16"
             initial={{ opacity: 0, y: 30 }}
