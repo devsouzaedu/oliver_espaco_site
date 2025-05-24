@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Gallery = () => {
   const instagramUrl = "https://www.instagram.com/espacooliverbeauty/";
   
-  // Apenas 4 imagens em um grid simples
+  // Grid com 6 imagens incluindo o novo serviço de spa dos pés
   const galleryItems = [
     {
       id: 1,
@@ -17,21 +17,33 @@ const Gallery = () => {
     },
     {
       id: 2,
+      image: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg",
+      fallbackImage: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg",
+      alt: "Spa dos Pés - Serviço Premium"
+    },
+    {
+      id: 3,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).webp",
       fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (2).jpg",
       alt: "Unhas decoradas"
     },
     {
-      id: 3,
+      id: 4,
+      image: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (1).jpg",
+      fallbackImage: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (1).jpg",
+      alt: "Serviço de Spa dos Pés"
+    },
+    {
+      id: 5,
       image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).webp",
       fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_unhas (3).jpg",
       alt: "Design de unhas"
     },
     {
-      id: 4,
-      image: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.webp",
-      fallbackImage: "/images/convertedwebp/espaco_oliver_manicure_pedicure_nail_designer_barueri_alphaville_pé.jpg",
-      alt: "Nail art exclusiva"
+      id: 6,
+      image: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (2).jpg",
+      fallbackImage: "/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (2).jpg",
+      alt: "Pés femininos tratados"
     }
   ];
 
@@ -45,11 +57,11 @@ const Gallery = () => {
           Confira alguns dos nossos trabalhos mais recentes
         </p>
         
-        {/* Grid simples de 4 fotos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-10">
+        {/* Grid de 6 fotos em 3x2 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto mb-10">
           {galleryItems.map(item => (
             <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-              <div className="relative w-full h-64 sm:h-80 overflow-hidden">
+              <div className="relative w-full h-64 sm:h-72 overflow-hidden">
                 <div className="relative w-full h-full">
                   <picture>
                     <source srcSet={item.image} type="image/webp" />

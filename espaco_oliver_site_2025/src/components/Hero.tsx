@@ -48,6 +48,19 @@ const Hero = () => {
     {
       webp: '/images/optimized/hero-slide-9.webp',
       jpg: '/images/optimized/hero-slide-9.jpg'
+    },
+    // Novas imagens de spa dos pés
+    {
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg'
+    },
+    {
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2).jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2).jpg'
+    },
+    {
+      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg',
+      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg'
     }
   ];
   

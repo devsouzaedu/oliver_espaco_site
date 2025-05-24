@@ -158,47 +158,89 @@ const PedicurePage = () => {
               <li>Lixamento e remoção de calosidades</li>
             </ul>
             
-            <p 
-              className="max-w-3xl mx-auto text-center text-gray-600 mb-8 text-lg" 
-              style={{ fontFamily: "var(--font-funnel-sans)" }}
-            >
-              Veja a transformação que nosso tratamento pode proporcionar. Resultados reais de nossos clientes.
-            </p>
+            {/* Galeria de imagens de Spa dos Pés */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (1).jpg"
+                  alt="Serviço de Spa dos Pés"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto.jpg"
+                  alt="Cadeira Spa dos Pés"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_vela_foto_mesa.jpg"
+                  alt="Ambiente Relaxante Spa dos Pés"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_velas_toalhas_foto.jpg"
+                  alt="Ambiente Relaxante Spa dos Pés"
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
             
-            <div className="grid grid-cols-2 gap-8 mb-8">
-              {/* Primeiro par de antes/depois */}
-              <div className="flex flex-col space-y-2">
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
-                  <ResponsiveImage
-                    webp="/images/optimized/espaço_oliver_beauty_spa_pes_antes-_1_.webp"
-                    fallback="/images/optimized/espaço_oliver_beauty_spa_pes_antes (1)-min.JPG"
-                    alt="Antes do Spa dos Pés"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
-                    Antes
-                  </div>
-                </div>
-                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                  Antes do tratamento
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              {/* Imagem de destaque do serviço */}
+              <div className="relative h-[400px] rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa.jpg"
+                  alt="Spa dos Pés Completo"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
               </div>
               
-              <div className="flex flex-col space-y-2">
-                <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
-                  <ResponsiveImage
-                    webp="/images/optimized/espaco_oliver_beauty_spa_pes_depois-_1_.webp"
-                    fallback="/images/optimized/espaco_oliver_beauty_spa_pes_depois (1)-min.JPG"
-                    alt="Depois do Spa dos Pés"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute bottom-0 left-0 bg-[#C59F6E] text-white px-4 py-2 rounded-tr-lg font-bold">
-                    Depois
+              {/* Resultados */}
+              <div className="flex flex-col space-y-4">
+                <h3 
+                  className="text-2xl text-black" 
+                  style={{ fontFamily: "var(--font-instrument-serif)" }}
+                >
+                  Resultados incríveis
+                </h3>
+                <p className="text-gray-600 text-lg" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  Nosso tratamento de Spa dos Pés proporciona uma experiência completa de relaxamento e beleza. Veja a transformação que podemos realizar em seus pés.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                    <Image
+                      src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (1).jpg"
+                      alt="Pés Femininos Tratados"
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="relative aspect-square rounded-lg overflow-hidden shadow-md">
+                    <Image
+                      src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (4).jpg"
+                      alt="Pés Femininos Tratados"
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                      className="object-cover"
+                    />
                   </div>
                 </div>
-                <p className="text-center text-gray-600" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-                  Após o tratamento
-                </p>
               </div>
             </div>
             
