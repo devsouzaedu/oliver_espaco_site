@@ -45,23 +45,13 @@ const Hero = () => {
       webp: '/images/optimized/hero-slide-8.webp',
       jpg: '/images/optimized/hero-slide-8.jpg'
     },
-    {
-      webp: '/images/optimized/hero-slide-9.webp',
-      jpg: '/images/optimized/hero-slide-9.jpg'
-    },
-    // Novas imagens de spa dos pés
-    {
-      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa-min.jpg',
-      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_horizontal_capa-min.jpg'
-    },
+    // Imagem do slide 9 foi removida
+    // Imagem do spa horizontal foi removida
     {
       webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2)-min.jpg',
       jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_fazendo_servico_atendendo (2)-min.jpg'
-    },
-    {
-      webp: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto-min.jpg',
-      jpg: '/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_cadeira_foto-min.jpg'
     }
+    // Imagem da cadeira de spa foi removida
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
