@@ -4,22 +4,68 @@ const blogPosts = [
   {
     title: 'Tendências de Nail Design 2025: Luxo e Sofisticação',
     slug: 'tendencias-nail-design-2025',
-    content: `O universo das unhas está em constante transformação, e 2025 promete ser um ano de pura sofisticação e criatividade. As tendências de nail design deste ano trazem uma fusão entre o luxo clássico e a ousadia contemporânea, com destaque para acabamentos metalizados, nail arts minimalistas e formatos inovadores. 
+    content: `# Tendências de Nail Design 2025: Luxo e Sofisticação no Espaço Oliver Beauty
 
-Entre as novidades, estão as unhas cromadas em tons de dourado e prata, que garantem um visual elegante e moderno. O minimalismo ganha força com linhas finas, desenhos geométricos e aplicações pontuais de brilho, perfeitas para quem busca um toque de exclusividade sem exageros. As cores clássicas, como nude, vermelho e preto, continuam em alta, mas agora aparecem combinadas com detalhes em foil, pedras e glitter.
+O universo do nail design está mais vibrante e sofisticado do que nunca em 2025! As unhas deixaram de ser apenas um detalhe estético e se tornaram uma verdadeira extensão da personalidade, refletindo tendências que combinam inovação, luxo e autenticidade. No Espaço Oliver Beauty, estamos prontos para transformar suas unhas em obras-primas que acompanham as tendências mais quentes do ano. Neste post, mergulhamos nas principais tendências de nail design para 2025, trazendo inspirações que unem elegância e modernidade, perfeitas para quem deseja se destacar com unhas impecáveis. Prepare-se para descobrir o que está em alta e como você pode adotar essas tendências no seu próximo agendamento!
 
-Além disso, as técnicas de alongamento e encapsulamento permitem criar efeitos tridimensionais e personalizar cada unha como uma verdadeira obra de arte. Aposte também nas francesinhas repaginadas, com pontas coloridas ou degradês, e nas nail arts inspiradas em joias, que trazem um ar de sofisticação incomparável.
+## 1. Minimalismo Luxuoso: Menos é Mais, Mas com Sofisticação
 
-Dica: Para manter suas unhas sempre impecáveis, invista em hidratação das cutículas, uso de base fortalecedora e escolha esmaltes de alta qualidade. Lembre-se: unhas bonitas são sinônimo de cuidado e autoestima!
+O minimalismo continua sendo uma tendência forte em 2025, mas com um toque de requinte que eleva o estilo a outro patamar. O conceito de "menos é mais" agora incorpora detalhes sutis, mas impactantes, que exalam sofisticação. Pense em unhas com tons neutros, como nude, bege dourado, cinza lunar ou marfim, combinados com acabamentos brilhantes ou foscos de alta qualidade. Pequenos detalhes, como linhas finas em dourado, prata ou bronze, adicionam um charme discreto, enquanto esmaltes com acabamentos acetinados ou perolados trazem um brilho elegante.
 
----
+No Espaço Oliver Beauty, nossas manicures dominam a arte do minimalismo luxuoso, criando designs que equilibram simplicidade e glamour. Que tal unhas em tom nude com uma delicada linha metálica ou um toque de glitter encapsulado? Essa tendência é perfeita para ocasiões formais ou para quem busca um visual clean, mas cheio de personalidade.
 
-[Agende seu horário e venha experimentar as tendências de 2025!](https://wa.me/5511956184727?text=Olá,%20quero%20agendar%20minhas%20unhas%20com%20as%20novas%20tendências%202025%20no%20Espaço%20Oliver%20Beauty)
+**Dica prática:** Escolha esmaltes de alta durabilidade, como os de gel, para manter o look impecável por semanas. Agende agora no Espaço Oliver Beauty e experimente essa tendência com um acabamento perfeito!
+
+## 2. Metais e Pedras Preciosas: Brilho que Encanta
+
+Os tons metálicos e inspirações em pedras preciosas estão dominando o nail design em 2025. Cores como ouro rosa, cobre, bronze e prata pálida trazem um toque de glamour sem exageros, perfeitos para eventos especiais ou para adicionar um brilho sofisticado ao dia a dia. Além disso, designs que imitam mármore, ônix ou ágata estão em alta, muitas vezes combinados com detalhes em foil metálico ou glitter para um efeito tridimensional.
+
+No Espaço Oliver Beauty, oferecemos técnicas avançadas, como unhas encapsuladas com foil ou designs marmorizados, que transformam suas unhas em verdadeiras joias. Imagine unhas com um fundo preto galáctico, inspirado no cosmos, com toques de dourado ou prata que refletem a luz de forma hipnotizante. Essa tendência é ideal para quem quer se destacar com um visual ousado e luxuoso.
+
+**Dica prática:** Combine unhas metálicas com acessórios dourados ou prateados para um look harmonioso. Marque seu horário no Espaço Oliver Beauty e brilhe com unhas que roubam a cena!
+
+## 3. Texturas e Efeitos 3D: Uma Nova Dimensão para Suas Unhas
+
+Os efeitos tridimensionais estão entre as tendências mais inovadoras de 2025. Unhas com texturas que simulam pedras naturais, veludo ou relevos geométricos criam um visual dinâmico e moderno. A aplicação de elementos como pérolas, strass ou glitter em camadas adiciona profundidade e sofisticação, transformando cada unha em uma pequena obra de arte.
+
+No Espaço Oliver Beauty, nossas nail designers são especialistas em criar efeitos 3D personalizados, garantindo um acabamento impecável e duradouro. Que tal experimentar unhas com um efeito de veludo em tons de púrpura místico ou um design com strass que reflete a luz em cada movimento? Essa tendência é perfeita para quem ama inovar e deseja um visual único.
+
+**Dica prática:** Para manter o efeito 3D, opte por uma manutenção regular. Agende sua sessão no Espaço Oliver Beauty para garantir que suas unhas permaneçam perfeitas!
+
+## 4. Tons Terrosos e Vibrantes: Uma Paleta de Sofisticação
+
+A paleta de cores para 2025 reflete uma fusão entre neutralidade e ousadia. Tons terrosos, como terracota, mocha mousse e bege dourado, criam uma base acolhedora e elegante, enquanto cores vibrantes, como azul celestial, verde esmeralda e púrpura místico, adicionam personalidade. A combinação de tons neutros com acentos metálicos ou vibrantes cria um contraste sofisticado, perfeito para quem busca versatilidade.
+
+No Espaço Oliver Beauty, trabalhamos com uma ampla gama de esmaltes premium que garantem cores vibrantes e duradouras. Experimente um degradê de terracota com detalhes em dourado ou um azul profundo com acabamento fosco para um visual moderno e elegante.
+
+**Dica prática:** Use tons terrosos como base e adicione um toque vibrante em uma ou duas unhas para um efeito statement. Reserve seu horário no Espaço Oliver Beauty e personalize sua paleta de cores!
+
+## 5. Nail Art Inspirada na Natureza: Biofilia nas Unhas
+
+A biofilia, tendência que integra elementos da natureza ao design, também chegou ao nail design em 2025. Unhas com estampas que remetem a folhagens, flores ou texturas orgânicas, como madeira ou pedra, estão em alta. Designs com detalhes em verde oliva, menta ou terracota, muitas vezes combinados com elementos dourados ou prateados, criam um visual que conecta sofisticação e natureza.
+
+No Espaço Oliver Beauty, nossas manicures criam nail arts personalizadas que capturam a essência da biofilia, como unhas com desenhos delicados de folhagem ou efeitos marmorizados que lembram pedras naturais. Essa tendência é ideal para quem busca um visual fresco e conectado ao meio ambiente.
+
+**Dica prática:** Combine unhas com estampas naturais com tons neutros para um look equilibrado. Agende agora no Espaço Oliver Beauty e traga a natureza para suas unhas!
+
+## Por que Escolher o Espaço Oliver Beauty?
+
+No Espaço Oliver Beauty, acreditamos que suas unhas são uma tela para expressar sua personalidade. Nossas manicures são altamente qualificadas e acompanham as últimas tendências para oferecer designs que combinam luxo, sofisticação e inovação. Utilizamos apenas produtos de alta qualidade, como esmaltes de gel e materiais premium, para garantir um acabamento impecável e duradouro. Além disso, nosso ambiente é pensado para proporcionar conforto e bem-estar, tornando cada visita uma experiência única.
+
+## Agende Sua Transformação no Espaço Oliver Beauty!
+
+Pronto para elevar suas unhas ao próximo nível com as tendências de 2025? No Espaço Oliver Beauty, estamos prontos para criar o design perfeito para você, seja um minimalismo luxuoso, um brilho metálico ou uma nail art inspirada na natureza. Não perca tempo e agende seu horário agora mesmo pelo nosso WhatsApp!
+
+[Agendar no Espaço Oliver Beauty](https://api.whatsapp.com/send/?phone=5511956184727&text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio+no+Espa%C3%A7o+Oliver+Beauty&type=phone_number&app_absent=0)
+
+📍 Rua Campos Sales 303, Centro, Barueri, São Paulo | 📅 Disponibilidade de horários flexíveis | ✨ Unhas que refletem sua personalidade
+
+**Hashtags para compartilhar seu look:** #NailDesign2025 #TendênciasUnhas #EspaçoOliverBeauty #NailArtLuxo #UnhasSofisticadas
 `,
-    image_url: 'https://images.unsplash.com/photo-1512499617640-c2f999098c01',
-    tags: ['tendências', 'nail design', '2025', 'luxo'],
+    image_url: 'https://espacobe.com.br/wp-content/uploads/2024/05/Be-Blog-2-3-1110x600.png',
+    tags: ['tendências', 'nail design', '2025', 'luxo', 'minimalismo', 'metais', 'texturas 3D', 'biofilia'],
     published: true,
-    excerpt: 'Descubra o que estará em alta nas unhas em 2025: luxo, sofisticação e inovação no design.'
+    excerpt: 'Explore as tendências de nail design para 2025: minimalismo luxuoso, brilho de metais e pedras, texturas 3D, cores sofisticadas e a biofilia invadindo suas unhas. Agende no Espaço Oliver Beauty!'
   },
   {
     title: 'Alongamento em Fibra: A Escolha das Mulheres de Sucesso',

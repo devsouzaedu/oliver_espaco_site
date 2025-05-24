@@ -59,7 +59,7 @@ export default function BlogPostPage() {
           <h1 className="text-3xl font-bold mb-4 text-black" style={{ fontFamily: "var(--font-instrument-serif)" }}>
             Post não encontrado
           </h1>
-          <p className="text-black mb-8" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+          <p className="text-black mb-8" style={{ fontFamily: "var(--font-instrument-serif)" }}>
             {error || 'O post que você está procurando não existe ou não está disponível.'}
           </p>
           <Link 
@@ -109,7 +109,7 @@ export default function BlogPostPage() {
                   <span 
                     key={index} 
                     className="bg-gray-100 text-black text-xs px-2 py-1 rounded"
-                    style={{ fontFamily: "var(--font-funnel-sans)" }}
+                    style={{ fontFamily: "var(--font-instrument-serif)" }}
                   >
                     {tag}
                   </span>
@@ -123,29 +123,29 @@ export default function BlogPostPage() {
               </h1>
               <div className="flex items-center text-black mb-8">
                 {post.author && (
-                  <span className="mr-4" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                  <span className="mr-4" style={{ fontFamily: "var(--font-instrument-serif)" }}>
                     Por {post.author}
                   </span>
                 )}
-                <span style={{ fontFamily: "var(--font-funnel-sans)" }}>
+                <span style={{ fontFamily: "var(--font-instrument-serif)" }}>
                   {new Date(post.created_at).toLocaleDateString('pt-BR')}
                 </span>
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none" style={{ fontFamily: "var(--font-funnel-sans)" }}>
+            <div className="prose prose-xl max-w-none" style={{ fontFamily: "var(--font-instrument-serif)" }}>
               <ReactMarkdown 
                 remarkPlugins={[remarkGfm]}
                 components={{
                   h1: ({node, ...props}) => <h1 className="text-3xl font-bold mt-8 mb-4 text-black" {...props} />,
                   h2: ({node, ...props}) => <h2 className="text-2xl font-bold mt-6 mb-4 text-black" {...props} />,
                   h3: ({node, ...props}) => <h3 className="text-xl font-bold mt-5 mb-3 text-black" {...props} />,
-                  p: ({node, ...props}) => <p className="text-black mb-4" {...props} />,
+                  p: ({node, ...props}) => <p className="text-black mb-5 text-lg" {...props} />,
                   ul: ({node, ...props}) => <ul className="list-disc pl-6 mb-4" {...props} />,
                   ol: ({node, ...props}) => <ol className="list-decimal pl-6 mb-4" {...props} />,
-                  li: ({node, ...props}) => <li className="mb-1 text-black" {...props} />,
-                  a: ({node, ...props}) => <a className="text-black underline hover:text-gray-600" {...props} />,
-                  blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4 text-black" {...props} />,
+                  li: ({node, ...props}) => <li className="mb-2 text-black text-lg" {...props} />,
+                  a: ({node, ...props}) => <a className="text-black underline hover:text-gray-600 text-lg" {...props} />,
+                  blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4 text-black text-lg" {...props} />,
                   img: ({node, ...props}) => (
                     <div className="my-6">
                       <img className="w-full rounded-lg" {...props} />
