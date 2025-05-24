@@ -59,7 +59,7 @@ p, a, button, li, span {
 
 /* Regras específicas para o conteúdo do blog */
 .blog-content {
-  font-family: var(--font-instrument-serif), serif !important;
+  font-family: var(--font-funnel-sans), sans-serif !important;
   font-size: 1.25rem !important;
   line-height: 1.8 !important;
 }
@@ -67,40 +67,47 @@ p, a, button, li, span {
 .blog-content h1 {
   font-size: 2.5rem !important;
   margin-bottom: 1.5rem !important;
+  font-family: var(--font-old-standard-tt), serif !important;
 }
 
 .blog-content h2 {
   font-size: 2rem !important;
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
+  font-family: var(--font-old-standard-tt), serif !important;
 }
 
 .blog-content h3 {
   font-size: 1.75rem !important;
   margin-top: 1.5rem !important;
   margin-bottom: 1rem !important;
+  font-family: var(--font-old-standard-tt), serif !important;
 }
 
 .blog-content p {
   font-size: 1.25rem !important;
   margin-bottom: 1.5rem !important;
   line-height: 1.8 !important;
+  font-family: var(--font-funnel-sans), sans-serif !important;
 }
 
 .blog-content ul, .blog-content ol {
   font-size: 1.25rem !important;
   margin-left: 1.5rem !important;
   margin-bottom: 1.5rem !important;
+  font-family: var(--font-funnel-sans), sans-serif !important;
 }
 
 .blog-content li {
   font-size: 1.25rem !important;
   margin-bottom: 0.75rem !important;
+  font-family: var(--font-funnel-sans), sans-serif !important;
 }
 
 .blog-content a {
   font-size: 1.25rem !important;
   text-decoration: underline;
+  font-family: var(--font-funnel-sans), sans-serif !important;
 }
 
 .font-serif {
