@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-wrap justify-center space-x-6 font-serif text-black" style={{ fontFamily: "var(--font-old-standard-tt)" }}>
           <li className="hover:text-pink-500 transition-colors">
-            <Link href="/nail-design">Nail-design</Link>
+            <Link href="/nail-design">Nail Design</Link>
           </li>
           <li className="hover:text-pink-500 transition-colors">
             <Link href="/manicure">Manicure</Link>
