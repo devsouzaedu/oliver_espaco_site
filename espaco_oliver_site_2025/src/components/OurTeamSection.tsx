@@ -38,13 +38,6 @@ const OurTeamSection = () => {
     },
     {
       id: 5,
-      name: 'Giovana',
-      role: 'Nail Designer',
-      webp: '/images/convertedwebp/espaco_oliver_beauty_time_giovana2.webp',
-      fallback: '/images/convertedwebp/espaco_oliver_beauty_time_giovana2.jpg'
-    },
-    {
-      id: 6,
       name: 'Simone',
       role: 'Manicure',
       webp: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).webp',
@@ -129,14 +122,11 @@ const OurTeamSection = () => {
                 Nossa equipe trabalha em conjunto para oferecer a melhor experiência possível. Venha conhecer pessoalmente nossas profissionais e descobrir por que somos referência em nail designer.
               </p>
               <div className="relative h-80 w-full mb-6 rounded-lg overflow-hidden">
-                <picture>
-                  <source srcSet="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).webp" type="image/webp" />
-                  <img 
-                    src="/images/convertedwebp/espaco_oliver_beauty_time_todas_juntas (4).jpg" 
-                    alt="Equipe Espaço Oliver Beauty"
-                    className="w-full h-full object-contain sm:object-cover object-center"
-                  />
-                </picture>
+                <img 
+                  src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_vela_foto_mesa-min.jpg" 
+                  alt="Equipe Espaço Oliver Beauty"
+                  className="w-full h-full object-contain sm:object-cover object-center"
+                />
               </div>
               <div className="mt-6">
                 <Link 

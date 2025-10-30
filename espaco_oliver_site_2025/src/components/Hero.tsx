@@ -38,10 +38,6 @@ const Hero = () => {
       jpg: '/images/optimized/hero-slide-6.jpg'
     },
     {
-      webp: '/images/optimized/hero-slide-7.webp',
-      jpg: '/images/optimized/hero-slide-7.jpg'
-    },
-    {
       webp: '/images/optimized/hero-slide-8.webp',
       jpg: '/images/optimized/hero-slide-8.jpg'
     },

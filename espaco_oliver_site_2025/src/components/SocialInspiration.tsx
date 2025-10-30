@@ -26,14 +26,11 @@ const SocialInspiration = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             whileHover={{ scale: 1.02 }}
           >
-            <picture>
-              <source srcSet="/images/convertedwebp/hero_espaco_oliver_manicures.webp" type="image/webp" />
-              <img
-                src="/images/convertedwebp/hero_espaco_oliver_manicures.jpg"
-                alt="Inspirações de unhas"
-                className="w-full h-full object-cover"
-              />
-            </picture>
+            <img
+              src="/images/optimized/espaco_oliver_esmalteria_barueri_alphavlle_spa_pes_pes_femininos_lindos (4).jpg"
+              alt="Inspirações de unhas"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
           <motion.div 
             className="text-center"
