@@ -76,9 +76,9 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4 text-white" style={{ fontFamily: "var(--font-instrument-serif)" }}>Contato</h3>
             <address className="not-italic text-white space-y-2" style={{ fontFamily: "var(--font-funnel-sans)" }}>
-              <p>Rua Campos Sales, 303</p>
+              <p>Av. Arnaldo Rodrigues Bittencourt, 642</p>
               <p>Centro - Barueri/SP</p>
-              <p>CEP: 06401-000</p>
+              <p>CEP: 06401-125</p>
               <p>Tel: (11) 95618-4727</p>
             </address>
           </div>

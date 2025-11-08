@@ -155,16 +155,16 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Unhas feitas
+          Estamos em um novo Endereço
         </motion.h1>
         <motion.h2 
-          className="text-3xl mb-8" 
+          className="text-2xl mb-8" 
           style={{ fontFamily: "var(--font-instrument-serif)" }}
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Você feliz
+          Av. Arnaldo Rodrigues Bittencourt, 642 - Centro, Barueri - SP, 06401-125
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 15 }}

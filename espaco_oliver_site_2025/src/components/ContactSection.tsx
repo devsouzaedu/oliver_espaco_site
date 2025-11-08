@@ -103,14 +103,14 @@ const ContactSection = () => {
                   <div>
                     <p className="text-gray-600 font-medium mb-1" style={{ fontFamily: "var(--font-funnel-sans)" }}>Endereço</p>
                     <Link 
-                      href="https://maps.google.com/?q=Rua+Campos+Sales+303,+Centro,+Barueri,+São+Paulo"
+                      href="https://maps.google.com/?q=Av.+Arnaldo+Rodrigues+Bittencourt,+642+-+Centro,+Barueri+-+SP,+06401-125"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-black hover:text-gray-700 transition-colors"
                       style={{ fontFamily: "var(--font-funnel-sans)" }}
                     >
-                      Rua Campos Sales 303, Centro<br />
-                      Barueri, São Paulo
+                      Av. Arnaldo Rodrigues Bittencourt, 642<br />
+                      Centro, Barueri - SP, 06401-125
                     </Link>
                   </div>
                 </motion.li>
@@ -146,7 +146,7 @@ const ContactSection = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3305786317285!2d-46.8778623229675!3d-23.517325060351028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01d65f4d1a3b%3A0x70a69e6c21946ba8!2sR.%20Campos%20Sales%2C%20303%20-%20Centro%2C%20Barueri%20-%20SP%2C%2006401-000!5e0!3m2!1sen!2sbr!4v1712262583777!5m2!1sen!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3!2d-46.877!3d-23.517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzAxLjQiUyA0NsKwNTInMzguNyJX!5e0!3m2!1sen!2sbr!4v1712262583777!5m2!1sen!2sbr" 
                 width="100%" 
                 height="300" 
                 style={{ border: 0, borderRadius: '0.5rem' }} 
