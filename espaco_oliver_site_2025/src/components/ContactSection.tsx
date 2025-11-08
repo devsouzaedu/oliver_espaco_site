@@ -146,14 +146,14 @@ const ContactSection = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2844717891814!2d-46.87886872398398!3d-23.51817256035289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01d4e5555555%3A0x5555555555555555!2sAv.%20Arnaldo%20Rodrigues%20Bittencourt%2C%20642%20-%20Centro%2C%20Barueri%20-%20SP%2C%2006401-125!5e0!3m2!1spt-BR!2sbr!4v1731081600000!5m2!1spt-BR!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.0201036797!2d-46.869926303287826!3d-23.509001534393803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf034efe4d2361%3A0x8c0b339857512ef6!2sEspa%C3%A7o%20Oliver%20Beauty%20-%20Manicure%2C%20Nail%20Designer%2C%20Lash%20Designer%20e%20Alongamento%20de%20Unhas%20-%20Barueri!5e0!3m2!1spt-BR!2sbr!4v1762605006409!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="300" 
                 style={{ border: 0, borderRadius: '0.5rem' }} 
-                allowFullScreen={false} 
+                allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização do Espaço Oliver - Av. Arnaldo Rodrigues Bittencourt, 642"
+                title="Espaço Oliver Beauty - Av. Arnaldo Rodrigues Bittencourt, 642"
                 className="mb-6"
               ></iframe>
               
