@@ -91,8 +91,8 @@ const OurTeamSection = () => {
                     <img
                       src={member.fallback}
                       alt={`${member.name} - ${member.role}`}
-                      className="absolute w-full h-full object-cover object-top"
-                      loading="eager"
+                      className="absolute w-full h-full object-cover object-center"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
