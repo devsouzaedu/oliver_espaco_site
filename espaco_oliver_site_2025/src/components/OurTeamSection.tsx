@@ -42,6 +42,13 @@ const OurTeamSection = () => {
       role: 'Manicure',
       webp: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).webp',
       fallback: '/images/convertedwebp/espaco_oliver_beauty_time_simone (1).jpg'
+    },
+    {
+      id: 6,
+      name: 'Esmeralda',
+      role: 'Nail Designer',
+      webp: '/images/optimized/nail_esmeralda_espacooliver.webp',
+      fallback: '/images/optimized/nail_esmeralda_espacooliver.jpg'
     }
   ];
 
