@@ -146,14 +146,14 @@ const ContactSection = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
             >
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3!2d-46.877!3d-23.517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzAxLjQiUyA0NsKwNTInMzguNyJX!5e0!3m2!1sen!2sbr!4v1712262583777!5m2!1sen!2sbr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2844717891814!2d-46.87886872398398!3d-23.51817256035289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01d4e5555555%3A0x5555555555555555!2sAv.%20Arnaldo%20Rodrigues%20Bittencourt%2C%20642%20-%20Centro%2C%20Barueri%20-%20SP%2C%2006401-125!5e0!3m2!1spt-BR!2sbr!4v1731081600000!5m2!1spt-BR!2sbr" 
                 width="100%" 
                 height="300" 
                 style={{ border: 0, borderRadius: '0.5rem' }} 
                 allowFullScreen={false} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização do Espaço Oliver"
+                title="Localização do Espaço Oliver - Av. Arnaldo Rodrigues Bittencourt, 642"
                 className="mb-6"
               ></iframe>
               
